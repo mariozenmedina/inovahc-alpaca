@@ -1,0 +1,37 @@
+/*
+Theme Name: InovaHC v1.0
+Theme URI: 
+Description: Tema Wordpress para InovaHC
+Version: 1.0
+Author: Alpaca Web
+Author URI: http://alpacaweb.com.br
+*/
+html { overflow: auto; height: 100%; }
+/********************************* GERAL *********************************/
+.screen-reader-response,
+.wpcf7-not-valid-tip{
+	display:none !important;
+}
+.wpcf7-validation-errors{
+	padding:15px;
+	background:#ECBBBB;
+	color:#900;
+	border-radius:5px;
+	font-weight:500;
+	font-size:16px;
+}
+.wpcf7-mail-sent-ok{
+	padding:15px;
+	background:#D1F5C9;
+	color:#360;
+	border-radius:5px;
+	font-weight:500;
+	font-size:16px;
+}
+.wpcf7-list-item{
+	padding-right:15px;
+}
+.ui-loading .ui-loader { display: block; }
+.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
+
+/********************************* ITENS *********************************/
