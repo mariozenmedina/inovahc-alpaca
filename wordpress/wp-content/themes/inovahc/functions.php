@@ -31,7 +31,7 @@ add_image_size('capa', 1600, 700, true);
 add_image_size('capa-mobile', 900, 1200, true); */
 
 //REGISTRANDO POST TYPE
-//include_once(get_stylesheet_directory() . '/functions/custom-post-type.php');
+include_once(get_stylesheet_directory() . '/functions/custom-post-type.php');
 
 //REGISTRANDO TAXONOMY
 //include_once(get_stylesheet_directory() . '/functions/custom-taxonomy.php');
