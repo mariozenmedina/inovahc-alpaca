@@ -68,30 +68,21 @@ module.exports = {
       poppins: ["Poppins, sans-serif"],
     },
     fontSize: {
-      xlarge: ["1.5rem", "2.rem"],
+      /*       xlarge: ["1.5rem", "2.rem"],
       large: ["1.125rem", "1.75rem"],
       h1: ["3rem", "3.3rem"],
       h2: ["2.25rem", "2.5rem"],
       h3: ["1.75rem", "1.875rem"],
-      h4: ["1.5rem", "1.65rem"],
+      h4: ["1.5rem", "1.65rem"], */
     },
     dropShadow: {
       glowbranco: "0 0 4px rgba(255, 255, 255, 1)",
     },
     screens: {
-      sm: "768px",
+      /*     sm: "768px",
       md: "992px",
       lg: "1024px",
-      xl: "1400px",
-    },
-    keyframes: {
-      fadeIn: {
-        "0%": { opacity: 0 },
-        "100%": { opacity: 1 },
-      },
-    },
-    animation: {
-      fadeIn: "fadeIn .7s ease-out both",
+      xl: "1400px", */
     },
   },
 };

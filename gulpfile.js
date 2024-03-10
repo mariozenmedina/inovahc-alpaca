@@ -21,11 +21,11 @@ function devStyles() {
     .pipe(dest(options.paths.wordpress.css));
 }
 function devScriptsClasses() {
-    return src([`${options.paths.src.js}/class/*.js`])
-      .pipe(concat({ path: "classes.js" }))
-      .pipe(dest(options.paths.build.js))
-      .pipe(dest(options.paths.wordpress.js));
-  }
+  return src([`${options.paths.src.js}/class/*.js`])
+    .pipe(concat({ path: "classes.js" }))
+    .pipe(dest(options.paths.build.js))
+    .pipe(dest(options.paths.wordpress.js));
+}
 
 function devScripts() {
   return src([`${options.paths.src.js}/*.js`])
@@ -41,11 +41,15 @@ function watchFiles() {
       `${options.paths.src.css}/**/*.scss`,
       `${options.paths.src.css}/**/*.less`,
       `${options.paths.base}/**/*.{html,js,php}`,
+      `${options.paths.base}/*.{html,js,php}`,
       `${options.paths.src.js}/**/*.js`,
     ],
     series(devStyles)
   );
-  watch(`${options.paths.src.js}/**/*.js`, series(devScripts, devScriptsClasses));
+  watch(
+    `${options.paths.src.js}/**/*.js`,
+    series(devScripts, devScriptsClasses)
+  );
   console.log("\n\t" + logSymbols.info, "Aguardando por mudanças..\n");
 }
 
@@ -62,4 +66,7 @@ exports.default = series(
   watchFiles // Vigiando arquivos para verificar mudanças
 );
 
-exports.prod = series(parallel(devStyles, devScripts, devScriptsClasses), buildFinish);
+exports.prod = series(
+  parallel(devStyles, devScripts, devScriptsClasses),
+  buildFinish
+);
