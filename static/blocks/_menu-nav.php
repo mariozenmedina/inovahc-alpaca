@@ -1,6 +1,6 @@
 
-<nav class=" bg-inovahc-green-800   shadow-lg" >  
-    <div class="container mx-auto flex justify-between items-center h-14 px-4 ">
+<nav class=" bg-inovahc-green-800 py-2" >  
+    <div class="container mx-auto flex justify-between items-center">
         <!-- Menu Mobile -->
         <input type="checkbox" id="toggle-menuMobile" style="display:none;">
         <div class="md:hidden w-6 h-6 flex justify-center items-center cursor-pointer">
@@ -14,7 +14,7 @@
                 <label for="toggle-menuMobile" class="absolute right-6 top-5 block"><?php svg('icon-fechar',16,16,"fill-branco");?></label>
                 
                 <div class=" flex justify-center mb-20"> 
-                   LOGO
+               logo
                 </div>
                 <ul class=" w-full flex flex-col justify-center text-center font-campuni text-large font-semibold mb-20 ">
                     <li>Item 1</li>
@@ -39,12 +39,12 @@
             <div class="md:justify-start md:w-1/12 lg:w-4/12 items-center">
                 <!-- Logo Versão Mobile -->
                 <div class="md:hidden">
-                    Logo
+                <?php svg('logo-inovahc',55,40,"fill-branco");?> 
                 </div>
                 <!-- Logo Versão Desktop -->
                 <div class="hidden md:flex">
                     <a href="<?php echo home_url(); ?>">
-                       Logo
+                    <?php svg('logo-inovahc',55,40,"fill-branco");?> 
                     </a> 
                 </div>
             </div>
@@ -65,7 +65,6 @@
             <?php svg('icon-busca',24,24,"fill-branco");?> 
         </div>
     </div> 
-   
 </nav> 
 
 
