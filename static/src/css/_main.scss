@@ -14,8 +14,13 @@
 
 @layer components {
   .btn {
-    @apply rounded-md px-3 py-2 text-xs drop-shadow-md transition duration-300 ease-in-out hover:drop-shadow-none;
-    cursor: pointer;
+    @apply cursor-pointer rounded-lg bg-inovahc-green-800 px-3 py-2  font-bold text-white transition duration-300 ease-in-out;
+    &:hover {
+      @apply bg-inovahc-green-500;
+    }
+  }
+  .btn-menu {
+    @apply h-7 bg-white py-1 text-sm leading-3 text-inovahc-green-800;
   }
 }
 
