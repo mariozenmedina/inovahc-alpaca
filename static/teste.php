@@ -6,7 +6,7 @@
 <main>
     <section class="bg-inovahc-purple-100">
         <!-- #Slide Noticias -->
-        <div class="flex items-center overflow-hidden p-0"><!-- overflow-hidden -->
+        <div class="flex items-center overflow-hidden ">
             <div class="container mx-auto px-5">
                 <!-- Slide Noticias -->
                 <div id="noticias-slide" class="splide" aria-label="Noticias">
