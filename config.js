@@ -3,12 +3,6 @@ module.exports = {
     tailwindjs: "./tailwind.config.js",
     port: 9050,
   },
-  plugins: {
-    typography: false,
-    forms: false,
-    lineClamp: false,
-    containerQueries: false,
-  },
   paths: {
     root: "./static/",
     base: "./static/",
@@ -25,6 +19,7 @@ module.exports = {
       js: "./wordpress/wp-content/themes/inovahc/build/js",
     },
   },
+  content: ["./*.php", "./**/*.php"],
   extend: {
     colors: {
       inovahc: {
@@ -33,50 +28,71 @@ module.exports = {
           500: "#F64943",
           900: "#5E213E",
         },
+        gray: {
+          400: "#4B5563" /* Usado */,
+        },
         green: {
           50: "#f0fdf4",
           100: "#BEEFD9",
-          300: "#83EEA7",
-          500: "#41CC96",
+          300: "#83EEA7" /* Usado */,
+          500: "#41CC96" /* Usado */,
           600: "#049F84",
-          800: "#047474",
+          800: "#047474" /* Usado */,
           900: "#035656",
           1000: "#1B3E3E",
         },
         blue: {
           50: "#F0F5F8",
-          100: "#D3E2EB",
+          100: "#D3E2EB" /* Usado */,
           300: "#83A5D2",
           500: "#5289D7",
           600: "#2966BE",
-          800: "#23549A",
+          800: "#23549A" /* Usado */,
           900: "#1A3F74",
         },
         purple: {
           50: "#F2EEFB",
-          100: "#CCBCF1",
+          100: "#CCBDF1" /* Usado */,
           300: "#AD92E7",
           500: "#896BC8",
           600: "#7254B1",
-          800: "#604B8C",
+          800: "#604B8C" /* Usado */,
           900: "#48386A",
         },
       },
     },
+    typography: ({ theme }) => ({
+      inovahc: {
+        css: {
+          "--tw-prose-headings": theme("colors.inovahc.green[800]"),
+          "--tw-prose-body": theme("colors.inovahc.gray[400]"),
+          "--tw-prose-pre-code": theme("colors.white"),
+          "--tw-prose-pre-bg": theme("colors.inovahc.green[800]"),
+          "--tw-prose-links": theme("colors.inovahc.green[800]"),
+          "--tw-prose-code": theme("colors.inovahc.green[500]"),
+          "--tw-prose-bold": theme("colors.inovahc.green[800]"),
+          "--tw-prose-counters": theme("colors.inovahc.green[500]"),
+          "--tw-prose-bullets": theme("colors.inovahc.green[500]"),
+          "--tw-prose-captions": theme("colors.inovahc.green[500]"),
+          "--tw-prose-lead": theme("colors.inovahc.green[500]"),
+          "--tw-prose-hr": theme("colors.inovahc.green[500]"),
+          "--tw-prose-quotes": theme("colors.inovahc.green[800]"),
+          "--tw-prose-quote-borders": theme("colors.inovahc.green[500]"),
+        },
+      },
+    }),
     fontFamily: {
       mulish: ["Mulish, sans-serif"],
       poppins: ["Poppins, sans-serif"],
     },
     fontSize: {
-      /*       xlarge: ["1.5rem", "2.rem"],
-      large: ["1.125rem", "1.75rem"],
-      h1: ["3rem", "3.3rem"],
-      h2: ["2.25rem", "2.5rem"],
-      h3: ["1.75rem", "1.875rem"],
-      h4: ["1.5rem", "1.65rem"], */
+      xsmall: [".631rem"],
     },
-    dropShadow: {
-      glowbranco: "0 0 4px rgba(255, 255, 255, 1)",
+
+    boxShadow: {
+      /*      inovahc: "0px 2px 4px rgba(0, 0, 0, 0.2)", */
+
+      inovahc: "0 2px 8px 0px rgba(145, 140, 153, 0.25)",
     },
     screens: {
       /*     sm: "768px",

@@ -1,28 +1,60 @@
 
 <nav class=" bg-inovahc-green-800" >  
-    <div class="container mx-auto flex justify-between p-6 py-2">
+    <div class="container mx-auto flex justify-between p-6 py-4">
         <!-- Menu Mobile -->
         <input type="checkbox" id="toggle-menuMobile" style="display:none;">
         <div class="menuMobile overflow-hidden ">
             <div class="flex flex-col w-full">
-                <label for="toggle-menuMobile" class="absolute right-6 top-5 block"><?php svg('icon-fechar',16,16,"fill-white");?></label>
-                
-                <div class=" flex justify-center mb-20"> 
-               logo
+
+                <div class="absolute left-6 top-4 block"> 
+                    <a href="<?php echo home_url(); ?>">
+                        <?php svg('logo-inovahc',55,40,"fill-white");?> 
+                    </a>
                 </div>
-                <ul class=" w-full flex flex-col justify-center text-center font-campuni text-large font-semibold mb-20 text-white">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                <label for="toggle-menuMobile" class="absolute right-6 top-5 block">
+                    <?php svg('icon-fechar-menu',20,20,"fill-white");?>
+                </label>
+                
+
+                <ul class=" w-full flex flex-col  text-white gap-3 text-lg mt-20">
+                    <a href="#"><li>home</li></a>
+                    <a href="#"><li>quem somos</li></a>
+                    <a href="#"><li>serviços</li></a>
+                    <a href="#"><li>projetos</li></a>
+                    <a href="#"><li>notícias e conteúdos</li></a>
+                    <a href="#"><li>eventos</li></a>
+                    <a href="#"><li>contatos</li></a>
                 </ul>
 
+                <div class="flex gap-2 my-12 items-center">
+                    <button class="btn-icon btn-icon-white btn-icon-small active">PT</button>
+                    <button class="btn-icon btn-icon-white btn-icon-small">EN</button>
+                    <button class="btn-icon btn-icon-white">
+                     <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
+                    </button>
+                </div>
+
+                <div class="mb-6">
+                    <button class="btn btn-menu btn-menu-purple "> inove conosco </button>
+                </div>
+
              
-                <div class="flex gap-4 justify-center">
-                    <?php svg('icon-twitter',24,24,"fill-white");?> 
-                    <?php svg('icon-facebook',24,24,"fill-white");?> 
-                    <?php svg('icon-whatsapp',24,24,"fill-white");?> 
-                    <?php svg('icon-linkedin',24,24,"fill-white");?> 
-                    <?php svg('icon-compartilhar',24,24,"fill-white");?> 
+                <div class="flex gap-3">
+                    <button class="btn-icon btn-icon-purple">  
+                         <?php svg('icon-x',19,17,"");?> 
+                    </button>
+                    <button class="btn-icon btn-icon-purple">  
+                         <?php svg('icon-linkedin',19,19,"");?> 
+                    </button>
+                    <button class="btn-icon btn-icon-purple">  
+                         <?php svg('icon-flicker',20,16,"");?> 
+                    </button>
+                    <button class="btn-icon btn-icon-purple">  
+                         <?php svg('icon-facebook',11,20,"");?> 
+                    </button>
+                    <button class="btn-icon btn-icon-purple">  
+                         <?php svg('icon-instagram',19,19,"");?> 
+                    </button>   
                 </div>
             </div>
 
@@ -32,35 +64,41 @@
         <div class="flex w-full justify-between">
         
                 <!-- Logo Versão Desktop -->
-                <div class="flex">
+                <div class="flex logo">
                     <a href="<?php echo home_url(); ?>">
                     <?php svg('logo-inovahc',55,40,"fill-white");?> 
                     </a> 
                 </div>
     
                 <!-- Menu Versão Desktop -->
-                <div class="hidden md:flex">
+                <div class="hidden md:flex flex-1 justify-end">
                 
-                    <ul class="flex font-mulish  items-center text-white gap-6">
-                        <li>quem somos</li>
-                        <li>serviços</li>
-                        <li>projetos</li>
-                        <li>conteúdos</li>
-                        <li>eventos</li>
-                        <li>contato</li>
-                        <button class="btn btn-menu">inove conosco</button>
+                    <ul class="flex  font-mulish  items-center text-white md:gap-2 lg:gap-6">
+                        <a href="#"> <li>quem somos</li></a>
+                        <a href="#"><li>serviços</li></a>
+                        <a href="#"><li>projetos</li></a>
+                        <a href="#"><li>conteúdos</li></a>
+                        <a href="#"><li>eventos</li></a>
+                        <a href="#"><li>contato</li></a>
+                        <a href="#"><button class="btn btn-menu whitespace-nowrap">inove conosco</button></a>
                     </ul>
 
-                    <ul>
-                        <li>PT</li>
-                        <li>EN</li>
-                    </ul>
-                
+                    <div class="flex gap-2 md:mx-2 lg:mx-8 items-center">
+                        <button class="btn-icon btn-icon-white btn-icon-small active">PT</button>
+                        <button class="btn-icon btn-icon-white btn-icon-small">EN</button>
+                    </div>
+
+                    <div class="flex  items-center">
+                        <button class="btn-icon btn-icon-white btn-icon-big">
+                            <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
+                        </button>
+                    </div>
+
                 </div>
 
                 <div class="md:hidden flex items-center">
                     <label for="toggle-menuMobile">
-                        <?php svg('icon-menu',20,12,"fill-white");?> 
+                        <?php svg('icon-menu',24,20,"fill-white");?> 
                     </label>
                 </div>
      

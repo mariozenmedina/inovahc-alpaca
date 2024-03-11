@@ -12,4 +12,5 @@ module.exports = {
   theme: {
     extend: options.extend,
   },
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
