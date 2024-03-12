@@ -8,6 +8,9 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    .container {
+      @apply max-w-5xl;
+    }
   }
   body {
     @apply cursor-default font-mulish text-inovahc-gray-400 antialiased;
@@ -21,6 +24,7 @@
     &:hover {
       @apply bg-inovahc-green-500;
     }
+
     &.btn-menu {
       @apply h-7 bg-white py-1 text-sm leading-3 text-inovahc-green-800;
       &:hover {
@@ -28,6 +32,12 @@
       }
       &.btn-menu-purple {
         @apply bg-inovahc-purple-100 py-2;
+      }
+    }
+    &.btn-white {
+      @apply bg-white text-inovahc-green-800;
+      &:hover {
+        @apply bg-inovahc-green-500 text-white;
       }
     }
   }
@@ -46,7 +56,8 @@
 
   /* Icones / Botoes circulares  */
   .btn-icon {
-    @apply flex h-7 w-7 items-center  justify-center rounded-full bg-inovahc-green-800  fill-white text-xsmall font-bold  text-white transition duration-300 ease-in-out;
+    @apply flex h-7 w-7 items-center  justify-center rounded-full bg-inovahc-green-800  fill-white text-xsmall font-bold  text-white transition duration-300 ease-in-out disabled:bg-inovahc-gray-400 disabled:opacity-20 disabled:hover:bg-inovahc-gray-400;
+
     &.active,
     &:hover {
       @apply bg-inovahc-green-500;
@@ -157,9 +168,10 @@
       @apply absolute  -top-28;
     }
     .title {
-      @apply flex w-2/3 font-poppins text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
+      @apply mt-2 flex w-2/3 font-poppins text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
     }
   }
+
   .banner {
     @apply relative flex   gap-5  rounded-3xl px-5 pb-10 pt-40 md:px-16 md:py-14;
     .banner-container {
@@ -223,16 +235,17 @@
 #noticias-slide {
   @apply w-full;
   .splide__track {
-    @apply w-full overflow-visible p-20  md:pb-20 md:pt-10;
+    @apply w-full overflow-visible pb-10 pt-6  md:pb-20 md:pt-10;
     .splide__list {
-      @apply w-[90%] gap-5 md:w-[23.8%];
       .splide__slide {
-        @apply w-20;
+        @media (max-width: 639px) {
+          max-width: 90%;
+        }
       }
     }
   }
   .splide__pagination {
-    @apply flex -translate-y-10 md:hidden;
+    @apply flex -translate-y-2 md:hidden;
   }
   .splide__arrows {
     @apply absolute bottom-10  left-1/2 z-40 w-[120px] translate-x-[-50%] transform gap-0 bg-black;

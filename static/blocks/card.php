@@ -8,7 +8,7 @@
             <div class="data">08/09/2023</div>
             <div class="texto">Introdução ou fragmento da notícia consectetur adipiscing elit, sed do eiusmod tempor incididunt...</div>
         </div>
-     <!--    <div class="card-info">
+        <div class="card-info">
             <div class="representante">
                 <div class="titulo">Prof. Representante</div>
                 <div class="nome">Prof. Dr. Fabio Jatene</div>
@@ -18,7 +18,7 @@
                 <div class="titulo">Conheça mais</div>
                 <button class="link small">www.fz.org.br/inovaincor</button>
             </div>
-        </div> -->
+        </div> 
         <div>
         <button class="link">
             leia mais

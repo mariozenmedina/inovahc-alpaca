@@ -1,5 +1,5 @@
 
-<nav class=" bg-inovahc-green-800" >  
+<nav class=" bg-inovahc-green-800" id="topo" >  
     <div class="container mx-auto flex justify-between p-6 py-4">
         <!-- Menu Mobile -->
         <input type="checkbox" id="toggle-menuMobile" style="display:none;">
@@ -17,21 +17,23 @@
                 
 
                 <ul class=" w-full flex flex-col  text-white gap-3 text-lg mt-20">
-                    <a href="#"><li>home</li></a>
-                    <a href="#"><li>quem somos</li></a>
-                    <a href="#"><li>serviços</li></a>
-                    <a href="#"><li>projetos</li></a>
-                    <a href="#"><li>notícias e conteúdos</li></a>
-                    <a href="#"><li>eventos</li></a>
-                    <a href="#"><li>contatos</li></a>
+                    <a href="indes"><li>home</li></a>
+                    <a href="quem-somos"><li>quem somos</li></a>
+                    <a href="servicos"><li>serviços</li></a>
+                    <a href="projetos"><li>projetos</li></a>
+                    <a href="noticias"><li>notícias e conteúdos</li></a>
+                    <a href="eventos"><li>eventos</li></a>
+                    <a href="contatos"><li>contatos</li></a>
                 </ul>
 
                 <div class="flex gap-2 my-12 items-center">
                     <button class="btn-icon btn-icon-white btn-icon-small active">PT</button>
                     <button class="btn-icon btn-icon-white btn-icon-small">EN</button>
-                    <button class="btn-icon btn-icon-white">
-                     <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
-                    </button>
+                    <a href="search">
+                        <button class="btn-icon btn-icon-white">
+                        <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
+                        </button>
+                    </a>
                 </div>
 
                 <div class="mb-6">
@@ -74,12 +76,12 @@
                 <div class="hidden md:flex flex-1 justify-end">
                 
                     <ul class="flex  font-mulish  items-center text-white md:gap-2 lg:gap-6">
-                        <a href="#"> <li>quem somos</li></a>
-                        <a href="#"><li>serviços</li></a>
-                        <a href="#"><li>projetos</li></a>
-                        <a href="#"><li>conteúdos</li></a>
-                        <a href="#"><li>eventos</li></a>
-                        <a href="#"><li>contato</li></a>
+                        <a href="quem-somos"> <li>quem somos</li></a>
+                        <a href="servicos"><li>serviços</li></a>
+                        <a href="projetos"><li>projetos</li></a>
+                        <a href="conteudos"><li>conteúdos</li></a>
+                        <a href="eventos"><li>eventos</li></a>
+                        <a href="contato"><li>contato</li></a>
                         <a href="#"><button class="btn btn-menu whitespace-nowrap">inove conosco</button></a>
                     </ul>
 
@@ -89,9 +91,11 @@
                     </div>
 
                     <div class="flex  items-center">
+                        <a href="search">
                         <button class="btn-icon btn-icon-white btn-icon-big">
                             <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
                         </button>
+                        </a>
                     </div>
 
                 </div>

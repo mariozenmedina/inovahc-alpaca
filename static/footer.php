@@ -5,8 +5,9 @@
   
         <section class="bg-inovahc-green-600"> 
             <div class="container mx-auto p-6 flex flex-col md:flex-row md:justify-between justify-start">
-
-               <button class="btn mb-10 md:mb-0">voltar ao topo</button>
+                <a href="#topo">
+                 <button class="btn mb-10 md:mb-0">voltar ao topo</button>
+               </a>
 
                <div class="flex flex-col md:flex-row md:gap-4 justify-start md:items-center">
 
@@ -68,16 +69,14 @@
                         <div class="mb-1.5 text-xs text-inovahc-green-300">Mapa</div>
                        
                         <ul class="flex text-xs gap-y-1 flex-wrap gap-x-2 text-white font-semibold ">
-                            <a href="#"> <li>início</li></a>
-                            <a href="#"> <li>quem somos</li></a>
-                            <a href="#"><li>serviços</li></a>
-                            <a href="#"><li>projetos</li></a>
-                            <a href="#"><li>conteúdos</li></a>
-                            <a href="#"><li>eventos</li></a>
-                            <a href="#"><li>contato</li></a>
+                            <a href="home"> <li>início</li></a>
+                            <a href="quem-somos"> <li>quem somos</li></a>
+                            <a href="servicos"><li>serviços</li></a>
+                            <a href="projetos"><li>projetos</li></a>
+                            <a href="conteudos"><li>conteúdos</li></a>
+                            <a href="eventos"><li>eventos</li></a>
+                            <a href="contato"><li>contato</li></a>
                         </ul>
-                        
-
                     </div>
                 </div>
             </div> 

@@ -125,10 +125,10 @@
       </div>
     </div>
   </section>
-  <!-- Section Destaques em notícias -->
+  <!-- Section Notícias -->
   <section class=" bg-inovahc-purple-100">
     <div class="container mx-auto px-6 pt-12 relative ">
-      <!--  Section Header -->
+      <!--  Section Notícias Header -->
       <div class="section-header">
         <figure >
             <img src="./assets/img/sessao/megafone.svg" alt="megafone">
@@ -136,7 +136,7 @@
         <div class="title">Destaques em notícias</div>
       </div>
     </div>
-    <!-- #Slide Noticias -->
+    <!-- #Slider Noticias -->
     <div class="flex items-center overflow-hidden ">
         <div class="container mx-auto px-5">
             <!-- Slide Noticias -->
@@ -161,25 +161,16 @@
                         <li class="splide__slide">
                             <?php get_template_part('blocks/card'); ?>       
                         </li>
-                        <li class="splide__slide">
-                            <?php get_template_part('blocks/card'); ?>       
-                        </li>
-                        <li class="splide__slide">
-                            <?php get_template_part('blocks/card'); ?>       
-                        </li>
-                
-                
+
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Section Rodape -->
+    <!-- Section Notícias Rodape -->
     <div class="container mx-auto px-6 pb-12">
       <button class="btn">ir para a página de conteúdos</button>
     </div>
-
-
   </section>
   <!-- Section Banner -->
   <section>

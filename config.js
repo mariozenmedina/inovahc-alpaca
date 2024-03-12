@@ -32,7 +32,7 @@ module.exports = {
           400: "#4B5563" /* Usado */,
         },
         green: {
-          50: "#f0fdf4",
+          50: "#EFFCFB" /* Usado */,
           100: "#BEEFD9",
           300: "#83EEA7" /* Usado */,
           500: "#41CC96" /* Usado */,
@@ -44,7 +44,7 @@ module.exports = {
         blue: {
           50: "#F0F5F8",
           100: "#D3E2EB" /* Usado */,
-          300: "#83A5D2",
+          300: "#82A5D1" /* Usado */,
           500: "#5289D7",
           600: "#2966BE",
           800: "#23549A" /* Usado */,

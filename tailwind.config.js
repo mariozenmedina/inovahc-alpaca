@@ -3,6 +3,7 @@ const options = require("./config");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: [
     "./static/*.{html,js,php}",
     "./static/**/*.{html,js,php}",

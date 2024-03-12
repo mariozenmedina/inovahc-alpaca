@@ -21,6 +21,7 @@
     "gulp-terser": "^2.1.0",
     "log-symbols": "^4.1.0",
     "postcss": "^8.4.21",
+    "postcss-import": "^16.0.1",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
     "sass": "^1.58.1",
