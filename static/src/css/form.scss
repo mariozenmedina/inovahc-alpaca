@@ -27,6 +27,17 @@
   .form-radio {
     @apply mt-0 block  border-0 border-b border-white px-0.5  py-2 text-white placeholder:text-gray-300 focus:border-inovahc-green-300 focus:text-inovahc-green-300 focus:ring-0;
   }
+  &.form-green {
+    .form-input,
+    .form-textarea,
+    .form-select,
+    .form-multiselect,
+    .form-checkbox,
+    .form-radio {
+      @apply border-inovahc-green-800 text-inovahc-gray-400 placeholder:text-inovahc-gray-400
+      focus:border-inovahc-green-500 focus:text-inovahc-green-800;
+    }
+  }
 }
 .form-solid {
   .form-input,

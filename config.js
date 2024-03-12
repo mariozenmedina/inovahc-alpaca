@@ -23,41 +23,25 @@ module.exports = {
   extend: {
     colors: {
       inovahc: {
-        red: {
-          300: "#F38B75",
-          500: "#F64943",
-          900: "#5E213E",
-        },
         gray: {
-          400: "#4B5563" /* Usado */,
+          400: "#4B5563",
         },
         green: {
-          50: "#EFFCFB" /* Usado */,
-          100: "#BEEFD9",
-          300: "#83EEA7" /* Usado */,
-          500: "#41CC96" /* Usado */,
+          50: "#EFFCFB",
+          300: "#83EEA7",
+          500: "#41CC96",
           600: "#049F84",
-          800: "#047474" /* Usado */,
-          900: "#035656",
-          1000: "#1B3E3E",
+          800: "#047474",
         },
         blue: {
-          50: "#F0F5F8",
-          100: "#D3E2EB" /* Usado */,
-          300: "#82A5D1" /* Usado */,
-          500: "#5289D7",
-          600: "#2966BE",
-          800: "#23549A" /* Usado */,
-          900: "#1A3F74",
+          100: "#D3E2EB",
+          300: "#82A5D1",
+          800: "#23549A",
         },
         purple: {
-          50: "#F2EEFB",
-          100: "#CCBDF1" /* Usado */,
+          100: "#CCBDF1",
           300: "#AD92E7",
-          500: "#896BC8",
-          600: "#7254B1",
-          800: "#604B8C" /* Usado */,
-          900: "#48386A",
+          800: "#604B8C",
         },
       },
     },
@@ -88,17 +72,11 @@ module.exports = {
     fontSize: {
       xsmall: [".631rem"],
     },
-
     boxShadow: {
-      /*      inovahc: "0px 2px 4px rgba(0, 0, 0, 0.2)", */
-
       inovahc: "0 2px 8px 0px rgba(145, 140, 153, 0.25)",
     },
-    screens: {
-      /*     sm: "768px",
-      md: "992px",
-      lg: "1024px",
-      xl: "1400px", */
+    backgroundPosition: {
+      search: "right bottom",
     },
   },
 };

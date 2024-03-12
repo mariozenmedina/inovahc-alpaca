@@ -9,11 +9,63 @@
   html {
     scroll-behavior: smooth;
     .container {
-      @apply max-w-5xl;
+      @apply max-w-6xl;
     }
   }
   body {
     @apply cursor-default font-mulish text-inovahc-gray-400 antialiased;
+  }
+
+  article {
+    .post-header {
+      .post-header-categoria {
+        @apply text-inovahc-green-500;
+      }
+      .post-header-titulo {
+        @apply mb-0 font-poppins text-5xl font-bold text-inovahc-green-800;
+      }
+      .post-header-info {
+        @apply mb-1;
+      }
+    }
+    h3 {
+      @apply font-poppins text-3xl text-inovahc-green-800;
+      display: block;
+      margin-block-start: 1.5em;
+      margin-block-end: 0;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      &.lead {
+        @apply text-xl font-semibold;
+      }
+    }
+    blockquote {
+      @apply text-center text-xl  text-inovahc-purple-800;
+      &:before {
+        @apply block h-5 w-4 bg-red-600 content-[""];
+      }
+      &::after {
+        @apply block h-5 w-4 bg-blue-600 content-[""];
+      }
+    }
+    figure {
+      @apply flex flex-col overflow-clip;
+      max-width: 100%; /* Permite que a figura ocupe no máximo a largura total do container */
+      display: flex; /* Transforma a figura em um container flexbox */
+      justify-content: center; /* Centraliza a imagem horizontalmente */
+      align-items: center; /* Centraliza a imagem verticalmente */
+      max-height: 350px; /* Define a altura máxima da imagem */
+      img {
+        @apply rounded-3xl object-cover;
+      }
+    }
   }
 }
 
@@ -38,6 +90,12 @@
       @apply bg-white text-inovahc-green-800;
       &:hover {
         @apply bg-inovahc-green-500 text-white;
+      }
+    }
+    &.btn-outline {
+      @apply border-[1.5px] border-inovahc-green-800 bg-transparent text-inovahc-green-800;
+      &:hover {
+        @apply border-inovahc-green-500 text-inovahc-green-500;
       }
     }
   }
@@ -76,6 +134,7 @@
         @apply max-w-6;
       }
     }
+
     /*  Icone White */
     &.btn-icon-white {
       @apply bg-white fill-inovahc-green-800 text-inovahc-green-800;
