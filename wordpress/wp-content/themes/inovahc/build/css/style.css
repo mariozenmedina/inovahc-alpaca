@@ -3038,6 +3038,12 @@ footer ul li:hover{
   .md\:mb-8{
     margin-bottom: 2rem !important;
   }
+  .md\:mb-10{
+    margin-bottom: 2.5rem !important;
+  }
+  .md\:mb-20{
+    margin-bottom: 5rem !important;
+  }
   .md\:flex{
     display: flex !important;
   }

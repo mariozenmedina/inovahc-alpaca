@@ -169,7 +169,9 @@
     </div>
     <!-- Section Notícias Rodape -->
     <div class="container mx-auto px-6 pb-12">
-      <button class="btn">ir para a página de conteúdos</button>
+      <a href="conteudos">
+        <button class="btn">ir para a página de conteúdos</button>
+      </a>
     </div>
   </section>
   <!-- Section Banner -->
@@ -187,7 +189,9 @@
             <div class="text-area md:w-1/2"> 
               <div class="mb-2 md:mb-4 text-inovahc-blue-800 text-3xl font-poppins ">Inove conosco</div>
               <div class="mb-4 md:mb-8">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
-              <button class="btn">conheça a plataforma</button>
+              <a href="quem-somos">
+                <button class="btn">conheça a plataforma</button>
+              </a>
             </div>
         </div>
        </div>
