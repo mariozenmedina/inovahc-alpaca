@@ -126,10 +126,21 @@
        <div class="banner bg-inovahc-purple-100">
          <div class="banner-container">
             <div class="figure-area md:w-1/2">
-              <figure>
-                <img src="./assets/img/banner/banner3.png" alt="" class="principal">
-                <img src="./assets/img/banner/esquerda3.svg" alt="" class="esquerda">
-                <img src="./assets/img/banner/direita3.svg" alt="" class="direita">
+              <!-- Versao Desktop Parallax -->
+              <figure id="scene" ref="scene" class="md:flex hidden">
+                <img data-depth="0.1" src="./assets/img/banner/contato/base.png" >
+                <!-- Esquerda -->
+                <img data-depth-x="0.2" src="./assets/img/banner/contato/esquerda1.png" >
+                <img data-depth="0.15" src="./assets/img/banner/contato/esquerda2.png" >
+                <img data-depth="0.3" src="./assets/img/banner/contato/esquerda3.png" >
+                 <!-- Direita -->
+                 <img data-depth-y="0.3" src="./assets/img/banner/contato/direita1.png" >
+                <img data-depth="0.2" src="./assets/img/banner/contato/direita2.png" >
+                <img data-depth="0.25" src="./assets/img/banner/contato/direita3.png" >
+              </figure>
+              <!-- Versao Mobile Sem Parallax -->
+              <figure class="flex md:hidden">
+                <img  src="./assets/img/banner/contato/full.png" alt="" class="principal">
               </figure>
             </div>
             <div class="text-area md:w-1/2"> 

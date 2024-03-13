@@ -110,3 +110,12 @@ document.addEventListener("click", closeDropdownsOnOutsideClick);
 dropdownButtons.forEach((button) =>
   button.addEventListener("click", toggleDropdown)
 );
+/* -------------- */
+/* Parallax */
+/* -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  var scene = document.getElementById("scene");
+  var parallaxInstance = new Parallax(scene, {
+    relativeInput: true,
+  });
+});

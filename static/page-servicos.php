@@ -84,10 +84,21 @@
        <div class="banner bg-inovahc-green-800">
          <div class="banner-container">
             <div class="figure-area md:w-1/2">
-              <figure>
-                <img src="./assets/img/banner/banner2.png" alt="" class="principal">
-                <img src="./assets/img/banner/esquerda2.svg" alt="" class="esquerda">
-                <img src="./assets/img/banner/direita2.svg" alt="" class="direita">
+              <!-- Versao Desktop Parallax -->
+              <figure id="scene" ref="scene" class="md:flex hidden">
+                <img data-depth="0.1" src="./assets/img/banner/servicos/base.png" >
+                <!-- Esquerda -->
+                <img data-depth-x="0.2" src="./assets/img/banner/servicos/esquerda1.png" >
+                <img data-depth="0.15" src="./assets/img/banner/servicos/esquerda2.png" >
+                <img data-depth="0.3" src="./assets/img/banner/servicos/esquerda3.png" >
+                 <!-- Direita -->
+                 <img data-depth-y="0.3" src="./assets/img/banner/servicos/direita1.png" >
+                <img data-depth="0.2" src="./assets/img/banner/servicos/direita2.png" >
+                <img data-depth="0.25" src="./assets/img/banner/servicos/direita3.png" >
+              </figure>
+              <!-- Versao Mobile Sem Parallax -->
+              <figure class="flex md:hidden">
+                <img  src="./assets/img/banner/servicos/full.png" alt="" class="principal">
               </figure>
             </div>
             <div class="text-area md:w-1/2"> 

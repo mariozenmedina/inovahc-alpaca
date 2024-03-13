@@ -327,15 +327,9 @@
       @apply md:pl-3;
     }
     figure {
-      @apply relative flex scale-75 justify-center  md:scale-100;
+      @apply flex scale-75 justify-center  md:scale-100;
       .principal {
-        @apply h-auto w-80 rounded-3xl object-cover  object-center md:scale-90 lg:scale-100;
-      }
-      .esquerda {
-        @apply absolute -left-10 bottom-3 md:-left-5 md:scale-90 lg:left-5 lg:scale-100;
-      }
-      .direita {
-        @apply absolute -right-10 top-3 md:-right-5 md:scale-90 lg:right-5 lg:scale-100;
+        @apply h-auto -translate-y-10 rounded-3xl object-cover  object-center;
       }
     }
   }
