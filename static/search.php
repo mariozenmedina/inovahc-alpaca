@@ -20,12 +20,12 @@
             <!--   Filtros / Forms -->
             <div class="flex md:justify-center md:flex-row flex-col py-8">
                 <div class="flex justify-between md:w-8/12 md:items-center md:flex-row flex-col">
-                    <div class="flex form-underline form-green ">
+                    <div class="flex form-inovahc ">
                         <label for="search-input" class="block relative w-[330px]">
                             <input
                             id="search-input"
                             type="search"
-                            class="form-input pr-8 w-[85%] md:w-full bg-transparent"
+                            class="pr-8 w-[85%] md:w-full bg-transparent"
                             aria-label="Input (search)"
                             placeholder="busca por palavras-chave"
                             />

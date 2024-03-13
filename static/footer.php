@@ -13,9 +13,9 @@
 
                 <div class="font-poppins text-3xl font-light text-white">Assine a news</div>
 
-                <div class="flex form-underline ">
+                <div class="flex form-inovahc type-white items-center">
                     <label for="email-input" class="flex-1">
-                        <input id="email-input" type="email" class="form-input mt-1 block w-full md:w-[273px] bg-transparent" placeholder="email@..." aria-label="Input (email)">
+                        <input id="email-input" type="email" class=" block w-full md:w-[273px] bg-transparent" placeholder="email@..." aria-label="Input (email)">
                     </label>
 
                     <button class="btn-icon btn-icon-big">

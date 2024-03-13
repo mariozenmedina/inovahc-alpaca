@@ -20,11 +20,40 @@
             </div>
         </div>
     </section>
-    <!-- Section Filtro  -->
-    <section>
-        <div class="container mx-auto px-6 md:pt-16 flex flex-col md:flex-row ">
-            FILTROS
+    <!-- Filter -->
+    <section class="py-2 md:py-14">
+        <div class="container mx-auto p-6 flex md:flex-row flex-col gap-3 md:gap-6 md:justify-center">
+ 
+            <!-- Busca -->
+            <div class="form-inovahc py-4 md:py-0">
+                <label for="search-input" class="block relative w-[330px]">
+                    <input
+                    id="search-input"
+                    type="search"
+                    class="pr-8 w-[85%] md:w-full bg-transparent"
+                    aria-label="Input (search)"
+                    placeholder="busca por palavras-chave"
+                    />
+                    <!-- Button desktop -->
+                    <button type="submit" class="absolute right-0 top-0 mt-[0.7rem] mr-2 hidden md:flex">
+                        <?php svg('icon-busca',17,17,"fill-inovahc-gray-400");?> 
+                    </button>
+
+                    <!-- Button mobile -->
+                    <button type="submit" class="btn-icon btn-icon-big absolute right-0 -top-2 mt-[0.7rem] flex md:hidden">
+                            <?php svg('icon-busca',14,14,"fill-iwhite");?> 
+                    </button>
+            
+                </label>
+            </div>
+
+            <div class="flex gap-4 justify-between md:justify-start">
+                <button class="btn">aplicar e pesquisar</button>
+                <button class="btn btn-outline">limpar</button>
+            </div>
+          
         </div>
+
     </section>
     <!-- Section Eventos   -->
     <section>

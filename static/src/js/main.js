@@ -1,24 +1,101 @@
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#hero-slide", {
-    width: "100vw",
-    type: "loop", // Enable looping for continuous playback
-    autoplay: true, // Enable autoplay
-    interval: 3000, // Set autoplay interval in milliseconds (3 seconds)
-    pagination: false,
-    // Other Splide options as needed (e.g., arrows, pagination)
-  }).mount();
+  var heroSlide = document.getElementById("hero-slide");
+  if (heroSlide) {
+    new Splide(heroSlide, {
+      width: "100vw",
+      type: "loop",
+      autoplay: true,
+      interval: 3000,
+      pagination: false,
+      // Other Splide options as needed
+    }).mount();
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#noticias-slide", {
-    gap: "20px",
-    pagination: true,
-    paginationPosition: "bottom",
-    perPage: 4,
-    breakpoints: {
-      640: {
-        perPage: 1,
+  var noticiasSlide = document.getElementById("noticias-slide");
+  if (noticiasSlide) {
+    new Splide(noticiasSlide, {
+      gap: "20px",
+      pagination: true,
+      paginationPosition: "bottom",
+      perPage: 4,
+      breakpoints: {
+        640: {
+          perPage: 1,
+        },
       },
-    },
-  }).mount();
+    }).mount();
+  }
 });
+
+// Seleciona todos os botões que abrem dropdowns
+const dropdownButtons = document.querySelectorAll(".select-inovahc-button");
+
+// Função para alternar a visibilidade do dropdown ao clicar em um botão
+function toggleDropdown(event) {
+  // Obtém o botão que foi clicado
+  const button = event.currentTarget;
+
+  // Obtém o ID associado ao botão clicado
+  const dropdownId = button.getAttribute("data-id");
+
+  // Seleciona o dropdown correspondente usando o ID
+  const dropdownMenu = document.querySelector(
+    `.select-inovahc-dropdown[data-id="${dropdownId}"]`
+  );
+
+  // Obtém a seta dentro do botão para girar conforme necessário
+  const chevron = button.querySelector(".chevron");
+
+  // Verifica se o dropdown está atualmente aberto
+  const isActive = dropdownMenu.classList.contains("active");
+
+  // Fecha todos os dropdowns antes de abrir o atual
+  closeAllDropdowns();
+
+  // Se o dropdown não estiver aberto, abre e gira a seta
+  if (!isActive) {
+    dropdownMenu.classList.add("active");
+    chevron.style.transform = "rotate(180deg)";
+  }
+
+  // Evita que o clique no botão propague para o documento
+  event.stopPropagation();
+}
+
+// Função para fechar todos os dropdowns abertos
+function closeAllDropdowns() {
+  dropdownButtons.forEach((button) => {
+    const dropdownId = button.getAttribute("data-id");
+    const dropdownMenu = document.querySelector(
+      `.select-inovahc-dropdown[data-id="${dropdownId}"]`
+    );
+    const chevron = button.querySelector(".chevron");
+
+    // Se o dropdown estiver aberto, fecha e restaura a posição da seta
+    if (dropdownMenu && dropdownMenu.classList.contains("active")) {
+      dropdownMenu.classList.remove("active");
+      chevron.style.transform = "rotate(0deg)";
+    }
+  });
+}
+
+// Função para fechar dropdowns ao clicar fora dos botões
+function closeDropdownsOnOutsideClick(event) {
+  // Verifica se o clique ocorreu dentro de um dropdown
+  const isDropdownClick = event.target.closest(".select-inovahc-dropdown");
+
+  // Se o clique não ocorreu dentro de um dropdown, fecha todos os dropdowns
+  if (!isDropdownClick) {
+    closeAllDropdowns();
+  }
+}
+
+// Adiciona um ouvinte de eventos ao documento para fechar dropdowns ao clicar fora dos botões
+document.addEventListener("click", closeDropdownsOnOutsideClick);
+
+// Adiciona um ouvinte de eventos de clique a cada botão para alternar os dropdowns
+dropdownButtons.forEach((button) =>
+  button.addEventListener("click", toggleDropdown)
+);
