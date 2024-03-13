@@ -992,6 +992,147 @@ footer ul li:hover{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+/* Formatacao dos forms */
+.form-inovahc input,
+  .form-inovahc textarea,
+  .form-inovahc select{
+  margin-top: 0px;
+  display: block;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(4 116 116 / var(--tw-border-opacity));
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+}
+.form-inovahc input::placeholder,
+  .form-inovahc textarea::placeholder,
+  .form-inovahc select::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.form-inovahc input:focus,
+  .form-inovahc textarea:focus,
+  .form-inovahc select:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(65 204 150 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.form-inovahc input[type=checkbox],
+  .form-inovahc input[type=radio]{
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(4 116 116 / var(--tw-border-opacity));
+}
+.form-inovahc.type-white input,
+  .form-inovahc.type-white textarea,
+  .form-inovahc.type-white select,
+  .form-inovahc.type-white .multiselect,
+  .form-inovahc.type-white .checkbox,
+  .form-inovahc.type-white .radio{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(65 204 150 / var(--tw-text-opacity));
+}
+.form-inovahc.type-white input::placeholder,
+  .form-inovahc.type-white textarea::placeholder,
+  .form-inovahc.type-white select::placeholder,
+  .form-inovahc.type-white .multiselect::placeholder,
+  .form-inovahc.type-white .checkbox::placeholder,
+  .form-inovahc.type-white .radio::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(65 204 150 / var(--tw-text-opacity));
+}
+.form-inovahc.type-white input:focus,
+  .form-inovahc.type-white textarea:focus,
+  .form-inovahc.type-white select:focus,
+  .form-inovahc.type-white .multiselect:focus,
+  .form-inovahc.type-white .checkbox:focus,
+  .form-inovahc.type-white .radio:focus{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+/* Select Dropdown personalizado */
+.select-inovahc{
+  position: relative;
+  width: 100%;
+    /* Botão */
+    /* Dropdown */
+    /* Exibe o dropdown quando tem a classe 'active' */
+}
+.select-inovahc .select-inovahc-button{
+  position: relative;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 84 154 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.select-inovahc .select-inovahc-button:hover{
+  opacity: 0.9;
+}
+.select-inovahc .select-inovahc-button .chevron{
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.select-inovahc .select-inovahc-dropdown{
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  margin-top: 0.375rem;
+  display: none;
+  min-width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  --tw-shadow: 0 2px 8px 0px rgba(145, 140, 153, 0.25);
+  --tw-shadow-colored: 0 2px 8px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); /* Inicialmente oculto */
+}
+.select-inovahc .select-inovahc-dropdown ul{
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 768px){
+  .select-inovahc .select-inovahc-dropdown ul.two-colls{
+    width: 460px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.select-inovahc .select-inovahc-dropdown ul li{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.select-inovahc .select-inovahc-dropdown.active {
+    display: flex;
+  }
 .visible{
   visibility: visible !important;
 }
@@ -1329,10 +1470,6 @@ footer ul li:hover{
 .py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
-}
-.py-20{
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
 }
 .pb-12{
   padding-bottom: 3rem !important;
@@ -1896,6 +2033,38 @@ footer ul li:hover{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
+/* Modal */
+.overlay{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
+}
+.modal{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 20;
+  display: none;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+}
+.modal .close{
+  position: absolute;
+  top: -2rem;
+  right: 0px;
+  cursor: pointer;
+}
 /* Base do projeto */
 /* Componentes do projeto */
 /* Utilitarios do projeto */
@@ -2085,146 +2254,6 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
 }
 #noticias-slide .splide__arrow:hover svg{
   fill: #AD92E7;
-}
-
-/* Formatacao dos forms */
-.form-inovahc input,
-.form-inovahc textarea,
-.form-inovahc select{
-  margin-top: 0px;
-  display: block;
-  border-width: 0px;
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(4 116 116 / var(--tw-border-opacity));
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(4 116 116 / var(--tw-text-opacity));
-}
-.form-inovahc input::placeholder,
-.form-inovahc textarea::placeholder,
-.form-inovahc select::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-.form-inovahc input:focus,
-.form-inovahc textarea:focus,
-.form-inovahc select:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(65 204 150 / var(--tw-border-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(4 116 116 / var(--tw-text-opacity));
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-.form-inovahc input[type=checkbox],
-.form-inovahc input[type=radio]{
-  height: 1.25rem;
-  width: 1.25rem;
-  border-radius: 0.375rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(4 116 116 / var(--tw-border-opacity));
-}
-.form-inovahc.type-white input,
-.form-inovahc.type-white textarea,
-.form-inovahc.type-white select,
-.form-inovahc.type-white .multiselect,
-.form-inovahc.type-white .checkbox,
-.form-inovahc.type-white .radio{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(65 204 150 / var(--tw-text-opacity));
-}
-.form-inovahc.type-white input::placeholder,
-.form-inovahc.type-white textarea::placeholder,
-.form-inovahc.type-white select::placeholder,
-.form-inovahc.type-white .multiselect::placeholder,
-.form-inovahc.type-white .checkbox::placeholder,
-.form-inovahc.type-white .radio::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(65 204 150 / var(--tw-text-opacity));
-}
-.form-inovahc.type-white input:focus,
-.form-inovahc.type-white textarea:focus,
-.form-inovahc.type-white select:focus,
-.form-inovahc.type-white .multiselect:focus,
-.form-inovahc.type-white .checkbox:focus,
-.form-inovahc.type-white .radio:focus{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-/* Select Dropdown personalizado */
-.select-inovahc{
-  position: relative;
-  width: 100%;
-  /* Botão */
-  /* Dropdown */
-  /* Exibe o dropdown quando tem a classe 'active' */
-}
-.select-inovahc .select-inovahc-button{
-  position: relative;
-  display: flex;
-  width: 100%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  border-radius: 0.75rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 84 154 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.select-inovahc .select-inovahc-button .chevron{
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.select-inovahc .select-inovahc-dropdown{
-  position: absolute;
-  left: 0px;
-  z-index: 10;
-  margin-top: 0.375rem;
-  display: none;
-  min-width: 100%;
-  flex-direction: column;
-  gap: 1.5rem;
-  border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 1rem;
-  --tw-shadow: 0 2px 8px 0px rgba(145, 140, 153, 0.25);
-  --tw-shadow-colored: 0 2px 8px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); /* Inicialmente oculto */
-}
-.select-inovahc .select-inovahc-dropdown ul{
-  display: grid;
-  gap: 1rem;
-}
-@media (min-width: 768px){
-  .select-inovahc .select-inovahc-dropdown ul.two-colls{
-    width: 460px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-.select-inovahc .select-inovahc-dropdown ul li{
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.select-inovahc .select-inovahc-dropdown.active {
-  display: flex;
 }
 
 .splide__container {
@@ -2703,6 +2732,10 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
+  .md\:py-14{
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
   .md\:py-16{
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
@@ -2710,17 +2743,6 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
   .md\:py-28{
     padding-top: 7rem !important;
     padding-bottom: 7rem !important;
-  }
-  .md\:py-20{
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-  }
-  .md\:py-14{
-    padding-top: 3.5rem !important;
-    padding-bottom: 3.5rem !important;
-  }
-  .md\:pt-16{
-    padding-top: 4rem !important;
   }
   .md\:text-left{
     text-align: left !important;

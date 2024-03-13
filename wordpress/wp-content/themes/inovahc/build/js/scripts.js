@@ -1,3 +1,6 @@
+/* -------------- */
+/* Slides*/
+/* -------------- */
 document.addEventListener("DOMContentLoaded", function () {
   var heroSlide = document.getElementById("hero-slide");
   if (heroSlide) {
@@ -11,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }).mount();
   }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   var noticiasSlide = document.getElementById("noticias-slide");
   if (noticiasSlide) {
@@ -28,26 +30,38 @@ document.addEventListener("DOMContentLoaded", function () {
     }).mount();
   }
 });
-
+/* -------------- */
+/* Modal */
+/* -------------- */
+function ativarmodalnew() {
+  var modal = document.getElementById("modalnews");
+  var overlay = document.getElementById("overlay");
+  modal.style.display = "block";
+  overlay.style.display = "block";
+}
+function fecharmodalnew() {
+  var modal = document.getElementById("modalnews");
+  var overlay = document.getElementById("overlay");
+  modal.style.display = "none";
+  overlay.style.display = "none";
+}
+/* -------------- */
+/* Select Custom + Dropbox */
+/* -------------- */
 // Seleciona todos os botões que abrem dropdowns
 const dropdownButtons = document.querySelectorAll(".select-inovahc-button");
-
 // Função para alternar a visibilidade do dropdown ao clicar em um botão
 function toggleDropdown(event) {
   // Obtém o botão que foi clicado
   const button = event.currentTarget;
-
   // Obtém o ID associado ao botão clicado
   const dropdownId = button.getAttribute("data-id");
-
   // Seleciona o dropdown correspondente usando o ID
   const dropdownMenu = document.querySelector(
     `.select-inovahc-dropdown[data-id="${dropdownId}"]`
   );
-
   // Obtém a seta dentro do botão para girar conforme necessário
   const chevron = button.querySelector(".chevron");
-
   // Verifica se o dropdown está atualmente aberto
   const isActive = dropdownMenu.classList.contains("active");
 
@@ -59,7 +73,6 @@ function toggleDropdown(event) {
     dropdownMenu.classList.add("active");
     chevron.style.transform = "rotate(180deg)";
   }
-
   // Evita que o clique no botão propague para o documento
   event.stopPropagation();
 }
@@ -91,10 +104,8 @@ function closeDropdownsOnOutsideClick(event) {
     closeAllDropdowns();
   }
 }
-
 // Adiciona um ouvinte de eventos ao documento para fechar dropdowns ao clicar fora dos botões
 document.addEventListener("click", closeDropdownsOnOutsideClick);
-
 // Adiciona um ouvinte de eventos de clique a cada botão para alternar os dropdowns
 dropdownButtons.forEach((button) =>
   button.addEventListener("click", toggleDropdown)
