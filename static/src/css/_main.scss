@@ -353,9 +353,9 @@
       .splide__slide {
         @apply relative;
         figure {
-          @apply h-full w-full;
+          @apply h-full w-full bg-inovahc-green-600;
           img {
-            @apply h-full object-cover object-center;
+            @apply h-full object-cover object-center md:min-h-[600px] md:w-full;
           }
         }
 

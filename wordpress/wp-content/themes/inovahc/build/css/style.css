@@ -1975,11 +1975,19 @@ footer ul li:hover{
 #hero-slide .splide__track .splide__list .splide__slide figure{
   height: 100%;
   width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 159 132 / var(--tw-bg-opacity));
 }
 #hero-slide .splide__track .splide__list .splide__slide figure img{
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+@media (min-width: 768px){
+  #hero-slide .splide__track .splide__list .splide__slide figure img{
+    min-height: 600px;
+    width: 100%;
+  }
 }
 #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area{
   position: absolute;
