@@ -18,7 +18,7 @@
          
         </div>
         <div>
-          <div class="text-xl text-inovahc-green-300 mb-4">Lorem ipsum dolor amet, consectetur adipiscing elit, reprehendit sed do eiusmod tempor incididunt.</div>
+          <div class="text-xl text-inovahc-green-500 mb-4">Lorem ipsum dolor amet, consectetur adipiscing elit, reprehendit sed do eiusmod tempor incididunt.</div>
 
           <div>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud. Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud.</div>
         </div>
@@ -39,7 +39,9 @@
                 <div class="mb-2 md:mb-4 text-inovahc-purple-800 text-3xl font-poppins ">Inove conosco</div>
                 <div class="mb-4 md:w-8/12 ">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
                 <div>
-                    <button class="btn">conheça a plataforma</button>
+                    <a href="#">
+                      <button class="btn">conheça a plataforma</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -51,7 +53,9 @@
                     <div class="mb-2 text-inovahc-purple-800 text-3xl font-poppins ">in.cube</div>
                     <div class="mb-4 ">Programa de capacitação e apoio à inovação para intraempreendedores que tenham ideias e projetos iniciais de inovação em saúde.</div>
                     <div>
+                      <a href="#">
                         <button class="btn">conheça a plataforma</button>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -61,7 +65,9 @@
                     <div class="mb-2 text-inovahc-purple-800 text-3xl font-poppins ">in.cube</div>
                     <div class="mb-4 ">Programa de capacitação e apoio à inovação para intraempreendedores que tenham ideias e projetos iniciais de inovação em saúde.</div>
                     <div>
+                      <a href="#">
                         <button class="btn">conheça a plataforma</button>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -71,7 +77,9 @@
                     <div class="mb-2 text-inovahc-purple-800 text-3xl font-poppins ">in.cube</div>
                     <div class="mb-4 ">Programa de capacitação e apoio à inovação para intraempreendedores que tenham ideias e projetos iniciais de inovação em saúde.</div>
                     <div>
+                      <a href="#">
                         <button class="btn">conheça a plataforma</button>
+                      </a>
                     </div>
                 </div>
             </div>

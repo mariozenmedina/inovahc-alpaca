@@ -11,6 +11,9 @@
   body {
     @apply cursor-default font-mulish text-inovahc-gray-400 antialiased;
   }
+  main {
+    @apply pt-[72px]; /* Altura da navbar */
+  }
   /*  Formatação das paginas Single */
   article {
     h3 {
@@ -72,6 +75,7 @@
   }
   /* Navegação do topo */
   nav {
+    @apply translate-y-0 transition-all duration-500  ease-in-out;
     ul li {
       @apply w-fit whitespace-nowrap border-b border-transparent px-1 transition-all duration-300 ease-in-out hover:border-inovahc-green-300 hover:text-inovahc-green-300;
     }
@@ -84,6 +88,13 @@
       @apply translate-x-full;
     }
   }
+  .scroll-on nav {
+    @apply -translate-y-32 transition-all duration-1000 ease-in-out;
+  }
+  .scroll-up nav {
+    @apply translate-y-0 transition-all duration-500  ease-in-out;
+  }
+
   /* Rodapé */
   footer {
     ul li {
@@ -166,7 +177,7 @@
   }
   /* Tags / Tag-Big*/
   .tag {
-    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-inovahc-blue-100 bg-inovahc-blue-100 px-2 py-1 text-xsmall font-semibold text-inovahc-blue-800 hover:border-inovahc-blue-800 hover:bg-white md:px-1 md:py-0.5;
+    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-inovahc-blue-100 bg-inovahc-blue-100 px-2 py-1 text-sm font-semibold text-inovahc-blue-800 hover:border-inovahc-blue-800 hover:bg-white md:px-1 md:py-0.5;
     &.tag-big {
       @apply px-3 py-1 text-sm font-semibold;
     }
@@ -319,7 +330,7 @@
       @apply absolute -top-32  md:-top-28;
     }
     .title {
-      @apply mb-4 mt-2 flex w-2/3 font-poppins  text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
+      @apply mb-4 mt-2 flex w-full font-poppins  text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
     }
   }
   /* Section Banner */

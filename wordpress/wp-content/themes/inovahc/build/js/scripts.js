@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       width: "100vw",
       type: "loop",
       autoplay: true,
-      interval: 3000,
+      interval: 3500,
       pagination: false,
       // Other Splide options as needed
     }).mount();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (noticiasSlide) {
     new Splide(noticiasSlide, {
       gap: "20px",
-      pagination: true,
+      pagination: false,
       paginationPosition: "bottom",
       perPage: 4,
       breakpoints: {
@@ -118,6 +118,41 @@ document.addEventListener("DOMContentLoaded", function () {
   var parallaxInstance = new Parallax(scene, {
     relativeInput: true,
   });
+});
+
+/* -------------- */
+/* Scroll */
+/* -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  let isScrolled = false;
+  let isScrollUp = false;
+  let scrollPos = 0;
+
+  const controllerNav = document.querySelector(".controller-nav");
+
+  function handleScroll() {
+    isScrolled = window.scrollY > 100;
+    isScrollUp = window.scrollY < scrollPos;
+    scrollPos = window.scrollY;
+    if (isScrolled && !isScrollUp) {
+      controllerNav.classList.add("scroll-on");
+      controllerNav.classList.remove("scroll-up");
+    } else {
+      controllerNav.classList.remove("scroll-on");
+      controllerNav.classList.add("scroll-up");
+    }
+  }
+  function mountScrollHandler() {
+    scrollPos = window.scrollY;
+    window.addEventListener("scroll", handleScroll);
+  }
+
+  function unmountScrollHandler() {
+    window.removeEventListener("scroll", handleScroll);
+  }
+
+  mountScrollHandler();
+  window.addEventListener("beforeunload", unmountScrollHandler);
 });
 
 !(function (t) {

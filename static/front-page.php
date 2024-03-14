@@ -177,9 +177,9 @@
   <!-- Section Banner -->
   <section>
     <div class="container mx-auto px-6 pt-28 pb-14 md:py-28  ">
-       <div class="banner bg-inovahc-blue-100">
+       <div class="banner bg-inovahc-blue-100 ">
          <div class="banner-container">
-            <div class="figure-area md:w-1/2">
+            <div class="figure-area md:w-1/2 ">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
                 <img  src="./assets/img/banner/home/base.png" >
@@ -200,8 +200,8 @@
             </div>
             <div class="text-area md:w-1/2"> 
               <div class="mb-2 md:mb-4 text-inovahc-blue-800 text-3xl font-poppins ">Inove conosco</div>
-              <div class="mb-4 md:mb-8">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
-              <a href="quem-somos">
+              <div class="mb-4 md:mb-8">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
+              <a href="#">
                 <button class="btn">conheça a plataforma</button>
               </a>
             </div>

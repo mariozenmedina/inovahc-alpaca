@@ -24,13 +24,13 @@
     <section class="py-2 md:py-14">
         <div class="container mx-auto p-6 flex flex-col md:flex-row gap-3 md:gap-6">
  
-            <!-- Busca -->
-            <div class="form-inovahc py-4 md:py-0">
-                <label for="search-input" class="block relative w-[330px]">
+             <!-- Busca -->
+             <div class="form-inovahc py-4 md:py-0">
+                <label for="search-input" class="block relative w-full ">
                     <input
                     id="search-input"
                     type="search"
-                    class="pr-8 w-[85%] md:w-full bg-transparent"
+                    class="pr-8 w-[90%] md:w-full bg-transparent"
                     aria-label="Input (search)"
                     placeholder="busca por palavras-chave"
                     />
@@ -59,8 +59,8 @@
     <section>
         <div class="container mx-auto px-6 py-16 flex flex-col">
             <div class="flex flex-col justify-center">
-                <div class="mt-2 flex w-2/3 font-poppins text-3xl  md:w-full md:justify-center md:text-center text-inovahc-green-800 ">CTA próximos eventos</div>
-                <div class="md:text-center  mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                <div class="mt-2 flex w-2/3 font-poppins text-3xl  md:w-full  text-inovahc-green-800 ">CTA próximos eventos</div>
+                <div class=" mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
             </div> 
             <!-- Mostragem dos Projetos -->
             <div class="grid md:grid-cols-4 gap-5">

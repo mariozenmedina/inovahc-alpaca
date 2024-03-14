@@ -82,13 +82,13 @@
                     </div>
                 </label>
             </div>
-            <!-- Busca -->
-            <div class="form-inovahc py-4 md:py-0">
-                <label for="search-input" class="block relative w-[330px]">
+             <!-- Busca -->
+             <div class="form-inovahc py-4 md:py-0">
+                <label for="search-input" class="block relative w-full ">
                     <input
                     id="search-input"
                     type="search"
-                    class="pr-8 w-[85%] md:w-full bg-transparent"
+                    class="pr-8 w-[90%] md:w-full bg-transparent"
                     aria-label="Input (search)"
                     placeholder="busca por palavras-chave"
                     />

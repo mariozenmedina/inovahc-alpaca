@@ -18,7 +18,7 @@
          
         </div>
         <div>
-          <div class="text-xl text-inovahc-green-300 mb-4">Lorem ipsum dolor amet, consectetur adipiscing elit, reprehendit sed do eiusmod tempor incididunt.</div>
+          <div class="text-xl text-inovahc-green-500 mb-4">Lorem ipsum dolor amet, consectetur adipiscing elit, reprehendit sed do eiusmod tempor incididunt.</div>
 
           <div>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud. Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud.</div>
         </div>
@@ -133,8 +133,8 @@
             </div>
             <div class="text-area md:w-1/2"> 
               <div class="mb-2 md:mb-4 text-inovahc-blue-800 text-3xl font-poppins ">Inove conosco</div>
-              <div class="mb-4 md:mb-8">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
-              <a href="quem-somos">
+              <div class="mb-4 md:mb-8">Lorem ipsum dolor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation. Ut enim ad minim veniam nostrud eiusmod tempor incididunt exercitation.</div>
+              <a href="#">
                 <button class="btn">conheça a plataforma</button>
               </a>
             </div>

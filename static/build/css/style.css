@@ -487,6 +487,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main{
+  padding-top: 72px; /* Altura da navbar */
+}
 /*  Formatação das paginas Single */
 article h3{
   font-family: Poppins, sans-serif;
@@ -596,9 +599,14 @@ article .post-header .post-header-info{
   margin-bottom: 0.25rem;
 }
 /* Navegação do topo */
-nav {
+nav{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* Formatacao do Menu Responsivo */
-  }
+}
 nav ul li{
   width: fit-content;
   white-space: nowrap;
@@ -642,6 +650,20 @@ nav .menuMobile{
 nav #toggle-menuMobile:checked ~ .menuMobile{
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scroll-on nav{
+  --tw-translate-y: -8rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.scroll-up nav{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Rodapé */
 footer ul li{
@@ -962,7 +984,8 @@ footer ul li:hover{
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  font-size: .631rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(35 84 154 / var(--tw-text-opacity));
@@ -1172,6 +1195,9 @@ footer ul li:hover{
 .static{
   position: static !important;
 }
+.fixed{
+  position: fixed !important;
+}
 .absolute{
   position: absolute !important;
 }
@@ -1198,6 +1224,9 @@ footer ul li:hover{
 }
 .top-5{
   top: 1.25rem !important;
+}
+.z-50{
+  z-index: 50 !important;
 }
 .mx-auto{
   margin-left: auto !important;
@@ -1287,6 +1316,9 @@ footer ul li:hover{
 }
 .min-h-\[110px\]{
   min-height: 110px !important;
+}
+.min-h-\[50px\]{
+  min-height: 50px !important;
 }
 .w-2\/3{
   width: 66.666667% !important;
@@ -1927,7 +1959,7 @@ footer ul li:hover{
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   display: flex;
-  width: 66.666667%;
+  width: 100%;
   font-family: Poppins, sans-serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1945,7 +1977,7 @@ footer ul li:hover{
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   display: flex;
-  width: 66.666667%;
+  width: 100%;
   font-family: Poppins, sans-serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2743,6 +2775,9 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
   }
   .md\:gap-x-12{
     column-gap: 3rem !important;
+  }
+  .md\:bg-\[url\(\'\.\.\/\.\.\/assets\/img\/grafismo\/bg-search\.png\'\)\]{
+    background-image: url('../../assets/img/grafismo/bg-search.png') !important;
   }
   .md\:p-6{
     padding: 1.5rem !important;

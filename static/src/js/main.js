@@ -119,3 +119,38 @@ document.addEventListener("DOMContentLoaded", function () {
     relativeInput: true,
   });
 });
+
+/* -------------- */
+/* Scroll */
+/* -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  let isScrolled = false;
+  let isScrollUp = false;
+  let scrollPos = 0;
+
+  const controllerNav = document.querySelector(".controller-nav");
+
+  function handleScroll() {
+    isScrolled = window.scrollY > 100;
+    isScrollUp = window.scrollY < scrollPos;
+    scrollPos = window.scrollY;
+    if (isScrolled && !isScrollUp) {
+      controllerNav.classList.add("scroll-on");
+      controllerNav.classList.remove("scroll-up");
+    } else {
+      controllerNav.classList.remove("scroll-on");
+      controllerNav.classList.add("scroll-up");
+    }
+  }
+  function mountScrollHandler() {
+    scrollPos = window.scrollY;
+    window.addEventListener("scroll", handleScroll);
+  }
+
+  function unmountScrollHandler() {
+    window.removeEventListener("scroll", handleScroll);
+  }
+
+  mountScrollHandler();
+  window.addEventListener("beforeunload", unmountScrollHandler);
+});
