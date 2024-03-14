@@ -182,7 +182,7 @@
             <div class="figure-area md:w-1/2">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
-                <img data-depth="0.1" src="./assets/img/banner/home/base.png" >
+                <img  src="./assets/img/banner/home/base.png" >
                 <!-- Esquerda -->
                 <img data-depth-x="0.2" src="./assets/img/banner/home/esquerda1.png" >
                 <img data-depth="0.15" src="./assets/img/banner/home/esquerda2.png" >

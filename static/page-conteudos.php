@@ -12,7 +12,7 @@
                 </figure>
             
                 <div class="flex flex-col md:flex-1 justify-center md:justify-start text-center md:text-left">
-                    <div class=" text-inovahc-green-300">Conteúdos</div>
+                    <div class=" text-inovahc-green-500">Conteúdos</div>
                     <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl">Conteúdos e notícias</div>
                     <div>Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum lorem ipsum reprehendit.</div>
                 </div>
@@ -76,8 +76,8 @@
 
 
                         <div class="flex justify-between">
-                            <button class="btn">selecionar</button>
-                            <button class="btn btn-outline">cancelar</button>
+                            <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
+                            <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
                         </div>
                     </div>
                 </label>

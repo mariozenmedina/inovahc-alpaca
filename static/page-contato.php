@@ -13,7 +13,7 @@
             </figure>
        
             <div class="flex flex-col md:flex-1 justify-center md:justify-start text-center md:text-left">
-                <div class=" text-inovahc-green-300">Contatos</div>
+                <div class=" text-inovahc-green-500">Contatos</div>
                 <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl md:text-5xl">Fale conosco</div>
                 <div>Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum lorem ipsum reprehendit.</div>
             </div>
@@ -56,7 +56,7 @@
           </figure>
           <div class="flex items-center">
             <div class="">
-                <div class="mb-2 text-xs text-inovahc-green-300">Acompanhe as redes sociais</div>
+                <div class="mb-2 text-xs text-inovahc-green-500">Acompanhe as redes sociais</div>
                 
                 <div class="flex gap-4">
                     <button class="btn-icon ">  
@@ -128,7 +128,7 @@
             <div class="figure-area md:w-1/2">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
-                <img data-depth="0.1" src="./assets/img/banner/contato/base.png" >
+                <img  src="./assets/img/banner/contato/base.png" >
                 <!-- Esquerda -->
                 <img data-depth-x="0.2" src="./assets/img/banner/contato/esquerda1.png" >
                 <img data-depth="0.15" src="./assets/img/banner/contato/esquerda2.png" >

@@ -15,46 +15,51 @@
                     <?php svg('icon-fechar-menu',20,20,"fill-white");?>
                 </label>
                 
-
                 <ul class=" w-full flex flex-col  text-white gap-3 text-lg mt-20">
                     <a href="indes"><li>home</li></a>
                     <a href="quem-somos"><li>quem somos</li></a>
                     <a href="servicos"><li>serviços</li></a>
                     <a href="projetos"><li>projetos</li></a>
-                    <a href="noticias"><li>notícias e conteúdos</li></a>
+                    <a href="conteudos"><li>conteúdos</li></a>
                     <a href="eventos"><li>eventos</li></a>
                     <a href="contatos"><li>contatos</li></a>
                 </ul>
 
-                <div class="flex gap-2 my-12 items-center">
-                    <button class="btn-icon btn-icon-white btn-icon-small active">PT</button>
-                    <button class="btn-icon btn-icon-white btn-icon-small">EN</button>
-                    <a href="search">
-                        <button class="btn-icon btn-icon-white">
-                        <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
-                        </button>
-                    </a>
+                <div class="flex gap-2 my-12 items-center justify-between">
+                    <div>
+                        <a href="search">
+                            <button class="btn-icon btn-icon-white">
+                            <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn-icon btn-icon-white btn-icon-small active">PT</button>
+                        <button class="btn-icon btn-icon-white btn-icon-small">EN</button>
+                    </div>
+                    
+                  
                 </div>
 
                 <div class="mb-6">
-                    <button class="btn btn-menu btn-menu-purple "> inove conosco </button>
+                    <button class="btn btn-purple "> inove conosco </button>
                 </div>
 
              
                 <div class="flex gap-3">
-                    <button class="btn-icon btn-icon-purple">  
+                    <button class="btn-icon btn-icon-big btn-icon-purple">  
                          <?php svg('icon-x',19,17,"");?> 
                     </button>
-                    <button class="btn-icon btn-icon-purple">  
+                    <button class="btn-icon btn-icon-big btn-icon-purple">  
                          <?php svg('icon-linkedin',19,19,"");?> 
                     </button>
-                    <button class="btn-icon btn-icon-purple">  
+                    <button class="btn-icon btn-icon-big btn-icon-purple">  
                          <?php svg('icon-flicker',20,16,"");?> 
                     </button>
-                    <button class="btn-icon btn-icon-purple">  
+                    <button class="btn-icon btn-icon-big btn-icon-purple">  
                          <?php svg('icon-facebook',11,20,"");?> 
                     </button>
-                    <button class="btn-icon btn-icon-purple">  
+                    <button class="btn-icon  btn-icon-big btn-icon-purple">  
                          <?php svg('icon-instagram',19,19,"");?> 
                     </button>   
                 </div>

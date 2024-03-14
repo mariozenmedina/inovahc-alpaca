@@ -12,7 +12,7 @@
                 </figure>
             
                 <div class="flex flex-col md:flex-1 justify-center md:justify-start text-center md:text-left">
-                    <div class=" text-inovahc-green-300">Eventos</div>
+                    <div class=" text-inovahc-green-500">Eventos</div>
                     <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl">Encontros, palestras, cursos e mais</div>
                   
                     <div>Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum lorem ipsum reprehendit.</div>
@@ -22,7 +22,7 @@
     </section>
     <!-- Filter -->
     <section class="py-2 md:py-14">
-        <div class="container mx-auto p-6 flex md:flex-row flex-col gap-3 md:gap-6 md:justify-center">
+        <div class="container mx-auto p-6 flex flex-col md:flex-row gap-3 md:gap-6">
  
             <!-- Busca -->
             <div class="form-inovahc py-4 md:py-0">

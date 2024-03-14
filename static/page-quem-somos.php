@@ -13,7 +13,7 @@
     <div class="container mx-auto p-6 flex gap-5 flex-col md:flex-row">
       <div class="flex gap-8 flex-col md:w-1/2 justify-center">
         <div>
-          <div class=" text-inovahc-green-300">Quem somos</div>
+          <div class=" text-inovahc-green-500">Quem somos</div>
           <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl md:text-5xl">O inovaHC</div>
          
         </div>
@@ -53,7 +53,8 @@
         <div class=" md:text-center md:w-1/2">
           <div class=" text-inovahc-green-800 text-3xl font-poppins mb-4">HUB inovaHC</div>
           <div class=" mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-          <button class="btn">entre em contato</button>
+          <a href="contato"> <button class="btn">entre em contato</button></a>
+         
         </div>
       </div>
     </div>
@@ -115,7 +116,7 @@
             <div class="figure-area md:w-1/2">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
-                <img data-depth="0.1" src="./assets/img/banner/home/base.png" >
+                <img  src="./assets/img/banner/home/base.png" >
                 <!-- Esquerda -->
                 <img data-depth-x="0.2" src="./assets/img/banner/home/esquerda1.png" >
                 <img data-depth="0.15" src="./assets/img/banner/home/esquerda2.png" >
@@ -299,14 +300,14 @@
     </div>
   </section>
   <!-- Section Projetos premiados -->
-  <section class=" bg-inovahc-blue-300">
-    <div class="container mx-auto px-6 py-12 relative ">
+  <section >
+    <div class="container mx-auto px-6 mt-10 md:mt-0 bg-inovahc-blue-300 py-12 relative">
       <!--  Section Projetos premiados Header -->
       <div class="section-header flex flex-col justify-center">
         <figure >
             <img src="./assets/img/sessao/premio.svg" alt="premio" >
         </figure>
-        <div class="title text-inovahc-blue-800 mt-3">Projetos premiados</div>
+        <div class="title w-full text-inovahc-blue-800 mt-3">Projetos premiados</div>
         <div class="text-white md:text-center md:w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
       </div>
       <!-- #Grid Premios -->
@@ -317,7 +318,7 @@
             <img src="./assets/img/premios/premio.jpg" alt="Premio" class="w-full rounded-lg object-cover">
           </figure>
           <div class="flex justify-center flex-col md:w-1/2">
-            <div class=" text-blue-800 mb-1 text-xl">OpenCare 5G</div>
+            <div class=" text-inovahc-blue-800 mb-1 text-xl">OpenCare 5G</div>
             <div class="  text-white text-xs ">09/2023</div>
           </div>
         </div>
@@ -327,7 +328,7 @@
             <img src="./assets/img/premios/premio.jpg" alt="Premio" class="w-full rounded-lg object-cover">
           </figure>
           <div class="flex justify-center flex-col md:w-1/2">
-            <div class=" text-blue-800 mb-1 text-xl">OpenCare 5G</div>
+            <div class=" text-inovahc-blue-800 mb-1 text-xl">OpenCare 5G</div>
             <div class="  text-white text-xs ">09/2023</div>
           </div>
         </div>
@@ -337,7 +338,7 @@
             <img src="./assets/img/premios/premio.jpg" alt="Premio" class="w-full rounded-lg object-cover">
           </figure>
           <div class="flex justify-center flex-col md:w-1/2">
-            <div class=" text-blue-800 mb-1 text-xl">OpenCare 5G</div>
+            <div class=" text-inovahc-blue-800 mb-1 text-xl">OpenCare 5G</div>
             <div class="  text-white text-xs ">09/2023</div>
           </div>
         </div>
@@ -356,8 +357,8 @@
           <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
       </div>
-      <!-- #Linha1 Parceiros -->
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4 pt-8 pb-5 border-b border-inovahc-purple-100 ">
+      <!-- #Linha1 Parceiros grid grid-cols-3 md:grid-cols-6  -->
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-8 md:gap-x-12 gap-y-4  pt-8 pb-5 mb-8">
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
           <img src="./assets/img/parceiros/logo1.png" alt="parceiro" >
@@ -378,50 +379,56 @@
         <figure class=" flex justify-center items-center" >
           <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
         </figure>
-        <!-- Logo Parceiros -->
-        <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo6.png" alt="parceiro" class="w-fit" >
-        </figure>   
-      </div>
-      <!-- #Linha2 Parceiros -->
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4  pt-5 pb-5 border-b border-inovahc-purple-100">
-        <!-- Logo Parceiros -->
-        <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo6.png" alt="parceiro" >
+         <!-- Logo Parceiros -->
+         <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" class="w-fit" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" class="w-fit" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
+        </figure>
+         <!-- Logo Parceiros -->
+         <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" class="w-fit" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" class="w-fit" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo2.png" alt="parceiro" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
+        </figure>
+         <!-- Logo Parceiros -->
+         <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo1.png" alt="parceiro" class="w-fit" >
-        </figure>   
-      </div>
-      <!-- #Linha3 Parceiros -->
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4  pt-5 pb-8 flex-wrap">
-        <!-- Logo Parceiros -->
-        <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo1.png" alt="parceiro" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" class="w-fit" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
-          <img src="./assets/img/parceiros/logo2.png" alt="parceiro" class="w-fit" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
+        </figure>
+         <!-- Logo Parceiros -->
+         <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
         </figure>
         <!-- Logo Parceiros -->
         <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" class="w-fit" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
+        </figure>
+         <!-- Logo Parceiros -->
+         <figure class=" flex justify-center items-center" >
           <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
         </figure>
         <!-- Logo Parceiros -->
@@ -437,6 +444,7 @@
           <img src="./assets/img/parceiros/logo6.png" alt="parceiro" class="w-fit" >
         </figure>   
       </div>
+     
       
       <div class=" mb-10">
         <button class="btn">carregar mais</button>
@@ -445,8 +453,8 @@
     </div>
   </section>
   <!-- Section Seja nosso parceiro -->
-  <section class=" bg-inovahc-green-50">
-    <div class="container mx-auto px-6 py-12 relative ">
+  <section >
+    <div class="container mx-auto px-6 py-12  mt-10 md:mt-0 relative bg-inovahc-green-50">
       <!--  Section Projetos premiados Header -->
       <div class="section-header flex flex-col justify-center">
         <figure >
@@ -456,7 +464,9 @@
         <div class="md:text-center md:w-1/2 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
         <div>
           <button class="btn">link externo</button>
-          <button class="btn">contatos</button>
+          <a href="contato">
+            <button class="btn">contatos</button>
+          </a>
         </div>
       </div>   
     </div>

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       width: "100vw",
       type: "loop",
       autoplay: true,
-      interval: 3000,
+      interval: 3500,
       pagination: false,
       // Other Splide options as needed
     }).mount();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (noticiasSlide) {
     new Splide(noticiasSlide, {
       gap: "20px",
-      pagination: true,
+      pagination: false,
       paginationPosition: "bottom",
       perPage: 4,
       breakpoints: {

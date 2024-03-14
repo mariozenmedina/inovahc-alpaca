@@ -58,7 +58,7 @@
       }
     }
     .post-header {
-      @apply my-2;
+      @apply my-8;
       .post-header-categoria {
         @apply text-inovahc-green-500;
       }
@@ -95,7 +95,7 @@
 @layer components {
   /*  Botoes / Btn-Menu / White / Outline */
   .btn {
-    @apply w-fit cursor-pointer rounded-lg bg-inovahc-green-800 px-3  py-2 font-bold text-white transition duration-300 ease-in-out;
+    @apply w-fit cursor-pointer rounded-lg bg-inovahc-green-800 px-3  py-2 font-semibold text-white transition duration-300 ease-in-out focus:outline-0 focus:ring-0 active:border-none;
     &:hover {
       @apply bg-inovahc-green-500;
     }
@@ -113,6 +113,9 @@
       &:hover {
         @apply bg-inovahc-green-500 text-white;
       }
+    }
+    &.btn-purple {
+      @apply bg-inovahc-purple-100 py-2 text-inovahc-green-800;
     }
     &.btn-outline {
       @apply border-[1.5px] border-inovahc-green-800 bg-transparent text-inovahc-green-800;
@@ -163,7 +166,7 @@
   }
   /* Tags / Tag-Big*/
   .tag {
-    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-inovahc-blue-100 bg-inovahc-blue-100 px-1 py-0.5 text-xsmall font-semibold text-inovahc-blue-800 hover:border-inovahc-blue-800 hover:bg-white;
+    @apply flex cursor-pointer items-center whitespace-nowrap rounded-md border border-inovahc-blue-100 bg-inovahc-blue-100 px-2 py-1 text-xsmall font-semibold text-inovahc-blue-800 hover:border-inovahc-blue-800 hover:bg-white md:px-1 md:py-0.5;
     &.tag-big {
       @apply px-3 py-1 text-sm font-semibold;
     }
@@ -189,6 +192,11 @@
     input[type="checkbox"],
     input[type="radio"] {
       @apply h-5 w-5 rounded-md border-2 border-inovahc-green-800;
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+      @apply relative h-[18px] w-[18px] bg-no-repeat;
+      -webkit-appearance: none;
+      background-image: url('data:image/svg+xml,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 15L2.99993 2.99993" stroke="%234B5563" stroke-width="2" stroke-linecap="round"/><path d="M3 15L15.0001 2.99993" stroke="%234B5563" stroke-width="2" stroke-linecap="round"/></svg>');
     }
 
     &.type-white {
@@ -252,13 +260,13 @@
       .card-header {
         @apply flex flex-col gap-1;
         .titulo {
-          @apply font-bold text-inovahc-purple-800;
+          @apply text-lg font-semibold text-inovahc-purple-800 md:text-base md:font-bold;
         }
         .data {
           @apply text-xs;
         }
         .texto {
-          @apply text-xs;
+          @apply text-sm md:text-xs;
         }
       }
       .card-info {
@@ -306,28 +314,28 @@
   }
   /* Section Header */
   .section-header {
-    @apply relative  mx-auto flex flex-col  md:w-full md:items-center md:justify-center;
+    @apply relative  mx-auto my-6 flex flex-col  md:my-0 md:w-full md:items-center md:justify-center;
     figure {
-      @apply absolute  -top-28;
+      @apply absolute -top-32  md:-top-28;
     }
     .title {
-      @apply mt-2 flex w-2/3 font-poppins text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
+      @apply mb-4 mt-2 flex w-2/3 font-poppins  text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
     }
   }
   /* Section Banner */
   .banner {
-    @apply relative flex   gap-5  rounded-3xl px-5 pb-10 pt-40 md:px-16 md:py-14;
+    @apply relative flex   gap-5  rounded-3xl px-5 py-10 pb-10 md:px-16;
     .banner-container {
       @apply relative flex flex-col justify-end md:flex-row;
     }
     .figure-area {
-      @apply absolute bottom-0 mb-6 -translate-y-44 md:left-0 md:mb-0 md:-translate-y-0  md:pr-3;
+      @apply relative min-h-[120px] md:pr-3;
     }
     .text-area {
       @apply md:pl-3;
     }
     figure {
-      @apply flex scale-75 justify-center  md:scale-100;
+      @apply absolute -top-20 left-0 flex  justify-center;
       .principal {
         @apply h-auto -translate-y-10 rounded-3xl object-cover  object-center;
       }
@@ -379,7 +387,7 @@
 }
 /* Noticias Slide */
 #noticias-slide {
-  @apply w-full;
+  @apply mb-8 w-full md:mb-0;
   .splide__track {
     @apply w-full overflow-visible pb-10 pt-6  md:pb-20 md:pt-10;
     .splide__list {
@@ -394,12 +402,12 @@
     @apply flex -translate-y-2 md:hidden;
   }
   .splide__arrows {
-    @apply absolute bottom-10  left-1/2 z-40 w-[120px] translate-x-[-50%] transform gap-0 bg-black;
+    @apply absolute bottom-2 left-1/2  z-40 w-[120px] translate-x-[-50%] transform gap-0 bg-black md:bottom-10;
   }
   .splide__arrow--next,
   .splide__arrow--prev,
   .splide__arrow {
-    @apply hidden border-2 border-inovahc-green-300  bg-inovahc-green-800 p-2 focus:outline-0 md:flex;
+    @apply flex border-2  border-inovahc-green-300 bg-inovahc-green-800 p-2 focus:outline-0;
 
     svg {
       @apply border-inovahc-green-300 fill-white;

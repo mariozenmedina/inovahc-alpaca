@@ -11,9 +11,9 @@
                     <img src="./assets/img/sessao/projetos.svg" alt="Contato" class="md:w-32">
                 </figure>
             
-                <div class="flex flex-col md:flex-1 justify-center md:justify-start text-center md:text-left">
-                    <div class=" text-inovahc-green-300">Portfólio</div>
-                    <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl">Conheça os projetos</div>
+                <div class="flex flex-col md:flex-1 justify-center md:justify-start w-full text-center md:text-left">
+                    <div class=" text-inovahc-green-500">Portfólio</div>
+                    <div class=" text-inovahc-green-800 font-poppins font-bold w-full text-4xl">Conheça os projetos</div>
                     <div>Lorem ipsum dolor, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum lorem ipsum reprehendit.</div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
     </section>
     <!-- Filter -->
     <section class="py-2 md:py-14">
-        <div class="container mx-auto p-6 flex flex-col md:flex-row gap-3 md:gap-6">
+        <div class="container w-full grid grid-cols-1 md:grid-cols-4 mx-auto p-6  flex-col  gap-3 md:gap-6">
  
             <!--  filtrar por temática -->
             <div class="select-inovahc">
@@ -76,8 +76,8 @@
 
 
                         <div class="flex justify-between">
-                            <button class="btn">selecionar</button>
-                            <button class="btn btn-outline">cancelar</button>
+                            <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
+                            <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
                         </div>
                     </div>
                 </label>
@@ -114,8 +114,8 @@
 
 
                         <div class="flex justify-between">
-                            <button class="btn">selecionar</button>
-                            <button class="btn btn-outline">cancelar</button>
+                            <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
+                            <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
                         </div>
                     </div>
                 </label>
@@ -152,19 +152,19 @@
 
 
                         <div class="flex justify-between">
-                            <button class="btn">selecionar</button>
-                            <button class="btn btn-outline">cancelar</button>
+                            <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
+                            <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
                         </div>
                     </div>
                 </label>
             </div>  
             <!-- Busca -->
             <div class="form-inovahc py-4 md:py-0">
-                <label for="search-input" class="block relative w-[330px]">
+                <label for="search-input" class="block relative w-full ">
                     <input
                     id="search-input"
                     type="search"
-                    class="pr-8 w-[85%] md:w-full bg-transparent"
+                    class="pr-8 w-[90%] md:w-full bg-transparent"
                     aria-label="Input (search)"
                     placeholder="busca por palavras-chave"
                     />

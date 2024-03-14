@@ -106,24 +106,24 @@
                     </a>
                 </div>
                 <!-- Compartilhe somente Mobile -->
-                <div class="flex flex-col md:hidden mb-10 justify-center items-center">
-                    <div class="mb-2 text-xs text-inovahc-green-300">
+                 <div class="flex flex-col md:hidden mb-10 justify-center items-center">
+                    <div class="mb-2 text-sm text-inovahc-green-500">
                          Compartilhe este conteúdo:
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-icon ">  
+                        <button class="btn-icon btn-icon-big ">  
                             <?php svg('icon-x',19,17,"");?> 
                         </button>
-                        <button class="btn-icon ">  
+                        <button class="btn-icon btn-icon-big">  
                             <?php svg('icon-linkedin',19,19,"");?> 
                         </button>
-                        <button class="btn-icon ">  
+                        <button class="btn-icon btn-icon-big">  
                             <?php svg('icon-flicker',20,16,"");?> 
                         </button>
-                        <button class="btn-icon ">  
+                        <button class="btn-icon btn-icon-big">  
                             <?php svg('icon-facebook',11,20,"");?> 
                         </button>
-                        <button class="btn-icon ">  
+                        <button class="btn-icon btn-icon-big">  
                             <?php svg('icon-instagram',19,19,"");?> 
                         </button>   
                     </div>

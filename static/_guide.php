@@ -1,29 +1,55 @@
-<!-- Pega o Header -->
-<?php $current_page = 'search'; get_header(); ?>
-
-    
-    <main>
-        <section>
-            <div class="banner">
-                <div class="container-banner">
-                    <figure id="scene">
-                        <img data-depth-x="0.3" src="./assets/img/banner/banner1.png" alt="" class="principal">
-                        <img data-depth-x="0.9" src="./assets/img/banner/esquerda1.svg" alt="" class="esquerda">
-                        <img data-depth-x=".25" src="./assets/img/banner/direita1.svg" alt="" class="direita">
-                    </figure>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var scene = document.getElementById("scene");
-            var parallaxInstance = new Parallax(scene, {
-                relativeInput: true,
-            });
-        });
-    </script>
-
-</body>
-</html>
+ <!-- #Linha2 Parceiros -->
+ <div class="grid grid-cols-3 md:grid-cols-6 gap-4  pt-5 pb-5 border-b border-inovahc-purple-100">
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo6.png" alt="parceiro" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" class="w-fit" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" >
+        </figure>
+        
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" class="w-fit" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo2.png" alt="parceiro" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo1.png" alt="parceiro" class="w-fit" >
+        </figure>   
+      </div>
+      <!-- #Linha3 Parceiros -->
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4  pt-5 pb-8 flex-wrap">
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo1.png" alt="parceiro" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo2.png" alt="parceiro" class="w-fit" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo3.png" alt="parceiro" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo4.png" alt="parceiro" class="w-fit" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo5.png" alt="parceiro" >
+        </figure>
+        <!-- Logo Parceiros -->
+        <figure class=" flex justify-center items-center" >
+          <img src="./assets/img/parceiros/logo6.png" alt="parceiro" class="w-fit" >
+        </figure>   
+      </div>

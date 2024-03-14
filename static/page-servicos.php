@@ -13,7 +13,7 @@
     <div class="container mx-auto p-6 flex gap-5 flex-col md:flex-row">
       <div class="flex gap-8 flex-col md:w-1/2 justify-center">
         <div>
-          <div class=" text-inovahc-green-300">Serviços</div>
+          <div class=" text-inovahc-green-500">Serviços</div>
           <div class=" text-inovahc-green-800 font-poppins font-bold text-4xl md:text-5xl">Como o inovaHC pode te ajudar?</div>
          
         </div>
@@ -86,7 +86,7 @@
             <div class="figure-area md:w-1/2">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
-                <img data-depth="0.1" src="./assets/img/banner/servicos/base.png" >
+                <img src="./assets/img/banner/servicos/base.png" >
                 <!-- Esquerda -->
                 <img data-depth-x="0.2" src="./assets/img/banner/servicos/esquerda1.png" >
                 <img data-depth="0.15" src="./assets/img/banner/servicos/esquerda2.png" >
@@ -104,7 +104,7 @@
             <div class="text-area md:w-1/2"> 
               <div class="mb-2 md:mb-4 text-white text-3xl font-poppins ">Conheça o portfólio</div>
               <div class="mb-4 md:mb-8 text-white">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. Lorem ipsum consectetur .</div>
-              <button class="btn btn-white">veja os projetos</button>
+              <a href="projetos"><button class="btn btn-white">veja os projetos</button></a>
             </div>
         </div>
        </div>
@@ -123,7 +123,8 @@
         <div class="md:text-center md:w-1/2 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</div>
         <div>
           <button class="btn">link externo</button>
-          <button class="btn">contatos</button>
+          <a href="contato"><button class="btn">contatos</button></a>
+         
         </div>
       </div>   
     </div>

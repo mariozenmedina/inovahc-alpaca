@@ -37,7 +37,7 @@
                 </div>
              
                 <!-- Ficha tecnica -->
-                <div class="flex flex-col gap-4 mb-20">
+                <div class="flex flex-col  mt-20">
                     <div class=" text-inovahc-green-800 text-2xl font-poppins mb-3">
                         Ficha técnica
                     </div>
@@ -119,7 +119,7 @@
                 </div>
                 <!-- Compartilhe somente Mobile -->
                 <div class="flex flex-col md:hidden mb-10 justify-center items-center">
-                    <div class="mb-2 text-xs text-inovahc-green-300">
+                    <div class="mb-2 text-xs text-inovahc-green-500">
                          Compartilhe este conteúdo:
                     </div>
                     <div class="flex gap-2">
