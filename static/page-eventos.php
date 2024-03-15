@@ -59,7 +59,7 @@
     <section>
         <div class="container mx-auto px-6 py-16 flex flex-col">
             <div class="flex flex-col justify-center">
-                <div class="mt-2 flex w-2/3 font-poppins text-3xl  md:w-full  text-inovahc-green-800 ">CTA próximos eventos</div>
+                <div class="mt-2 flex w-full font-poppins text-3xl  md:w-full  text-inovahc-green-800 ">CTA próximos eventos</div>
                 <div class=" mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
             </div> 
             <!-- Mostragem dos Projetos -->

@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <!--  Controller Desktop - Anterior - Proximo -->
-                <div class="flex justify-between mb-10">
+                <div class="flex justify-between my-10">
                     <a href="home" class="flex gap-2">
                         <button class="btn-icon btn-icon-small">
                         <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 

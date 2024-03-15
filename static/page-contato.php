@@ -145,7 +145,7 @@
             </div>
             <div class="text-area md:w-1/2"> 
               <div class="mb-2 md:mb-4  text-inovahc-purple-800 text-3xl font-poppins ">Trabalhe conosco</div>
-              <div class="mb-4 md:mb-8">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. Lorem ipsum consectetur .</div>
+              <div class="mb-4 md:mb-8">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. </div>
               <button class="btn ">veja os projetos</button>
             </div>
         </div>

@@ -1232,6 +1232,10 @@ footer ul li:hover{
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.my-10{
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+}
 .my-12{
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
@@ -1319,15 +1323,6 @@ footer ul li:hover{
 }
 .min-h-\[50px\]{
   min-height: 50px !important;
-}
-.w-2\/3{
-  width: 66.666667% !important;
-}
-.w-\[330px\]{
-  width: 330px !important;
-}
-.w-\[85\%\]{
-  width: 85% !important;
 }
 .w-\[90\%\]{
   width: 90% !important;
@@ -1629,6 +1624,12 @@ footer ul li:hover{
 .text-xs{
   font-size: 0.75rem !important;
   line-height: 1rem !important;
+}
+.text-\[28rem\]{
+  font-size: 28rem !important;
+}
+.text-\[28px\]{
+  font-size: 28px !important;
 }
 .font-bold{
   font-weight: 700 !important;
@@ -2004,6 +2005,7 @@ footer ul li:hover{
 }
 @media (min-width: 768px){
   .banner{
+    min-height: 320px;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -2227,7 +2229,6 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
   width: 100%;
   overflow: visible;
   padding-bottom: 2.5rem;
-  padding-top: 1.5rem;
 }
 @media (min-width: 768px){
   #noticias-slide .splide__track{
@@ -2721,6 +2722,9 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
   }
   .md\:w-full{
     width: 100% !important;
+  }
+  .md\:min-w-\[350px\]{
+    min-width: 350px !important;
   }
   .md\:max-w-4xl{
     max-width: 56rem !important;

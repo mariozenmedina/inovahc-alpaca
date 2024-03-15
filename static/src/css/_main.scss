@@ -335,7 +335,7 @@
   }
   /* Section Banner */
   .banner {
-    @apply relative flex   gap-5  rounded-3xl px-5 py-10 pb-10 md:px-16;
+    @apply relative flex gap-5   rounded-3xl  px-5 py-10 pb-10 md:min-h-[320px] md:px-16;
     .banner-container {
       @apply relative flex flex-col justify-end md:flex-row;
     }
@@ -400,7 +400,7 @@
 #noticias-slide {
   @apply mb-8 w-full md:mb-0;
   .splide__track {
-    @apply w-full overflow-visible pb-10 pt-6  md:pb-20 md:pt-10;
+    @apply w-full overflow-visible pb-10   md:pb-20 md:pt-10;
     .splide__list {
       .splide__slide {
         @media (max-width: 639px) {

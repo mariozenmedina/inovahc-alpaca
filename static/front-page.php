@@ -133,7 +133,7 @@
         <figure >
             <img src="./assets/img/sessao/megafone.svg" alt="megafone">
         </figure>
-        <div class="title">Destaques em notícias</div>
+        <div class="title text-[28px] md:text-3xl">Destaques em notícias</div>
       </div>
     </div>
     <!-- #Slider Noticias -->

@@ -20,12 +20,15 @@
             <!--   Filtros / Forms -->
             <div class="flex md:justify-center md:flex-row flex-col py-8">
                 <div class="flex justify-between md:w-8/12 md:items-center md:flex-row flex-col">
-                    <div class="flex form-inovahc ">
-                        <label for="search-input" class="block relative w-[330px]">
+
+
+                     <!-- Busca -->
+                    <div class="form-inovahc py-4 md:py-0">
+                        <label for="search-input" class="block relative w-full ">
                             <input
                             id="search-input"
                             type="search"
-                            class="pr-8 w-[85%] md:w-full bg-transparent"
+                            class="pr-8 w-[90%] md:w-full md:min-w-[350px] bg-transparent"
                             aria-label="Input (search)"
                             placeholder="busca por palavras-chave"
                             />
@@ -36,11 +39,13 @@
 
                             <!-- Button mobile -->
                             <button type="submit" class="btn-icon btn-icon-big absolute right-0 -top-2 mt-[0.7rem] flex md:hidden">
-                                 <?php svg('icon-busca',14,14,"fill-iwhite");?> 
+                                    <?php svg('icon-busca',14,14,"fill-iwhite");?> 
                             </button>
                     
                         </label>
                     </div>
+
+                    
                     <div class="md:flex  hidden gap-5 ">
                         <button class="btn">aplicar e pesquisar</button>
                         <button class="btn btn-outline">limpar</button>
