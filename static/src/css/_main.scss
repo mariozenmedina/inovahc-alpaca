@@ -271,7 +271,7 @@
       .card-header {
         @apply flex flex-col gap-1;
         .titulo {
-          @apply text-lg font-semibold text-inovahc-purple-800 md:text-base md:font-bold;
+          @apply text-lg font-semibold text-inovahc-purple-800 md:text-base;
         }
         .data {
           @apply text-xs;

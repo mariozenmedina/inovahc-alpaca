@@ -101,7 +101,7 @@
                     <img src="./assets/img/sessao/holofote.svg" alt="premio" >
                 </figure>
                 <div class="title text-inovahc-green-800 mt-3">CTA eventos passados</div>
-                <div class="md:text-center  mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                <div class="md:text-center  md:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
             </div>   
             <!-- Mostragem dos Projetos -->
             <div class="grid md:grid-cols-4 gap-5">

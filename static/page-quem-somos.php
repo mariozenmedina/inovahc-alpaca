@@ -300,7 +300,7 @@
     </div>
   </section>
   <!-- Section Projetos premiados -->
-  <section >
+  <section class="bg-inovahc-blue-300">
     <div class="container mx-auto px-6 mt-10 md:mt-0 bg-inovahc-blue-300 py-12 relative">
       <!--  Section Projetos premiados Header -->
       <div class="section-header flex flex-col justify-center">

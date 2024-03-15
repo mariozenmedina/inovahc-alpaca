@@ -94,7 +94,7 @@
         </figure>
         <div class="flex items-center">
           <div class="">
-              <div class="mb-2 text-sm text-inovahc-green-300">Acompanhe as redes sociais</div>
+              <div class="mb-2 text-sm text-inovahc-green-500">Acompanhe as redes sociais</div>
               
               <div class="flex gap-4">
                   <button class="btn-icon ">  
