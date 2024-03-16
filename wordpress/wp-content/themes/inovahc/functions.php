@@ -22,8 +22,8 @@ function url(){
 }
 
 //MENUS
-/* register_nav_menu( 'principal', 'Menu Principal' );
-register_nav_menu( 'ms', 'Mídias Sociais' ); */
+register_nav_menu( 'principal', 'Menu Principal' );
+register_nav_menu( 'ms', 'Mídias Sociais' );
 
 //THUMBNAILS
 /* add_theme_support('post-thumbnails');
@@ -64,3 +64,36 @@ add_filter('use_block_editor_for_page', '__return_false', 10);
 	}
 	echo paginate_links( $pagination );
 }; */
+
+//SVGS
+function svg($icon,$w,$h,$class,$return = false){
+    if($icon != ""){ 
+        $html = '<svg '.( $w ? 'width="'.$w.'"' : '' ).( $h ? 'height="'.$h.'"' : '' ).( $class ? 'class="'.$class.'"' : '' ).' ><use  xlink:href="#'.$icon.'" /></svg>';
+        if($return){
+            return $html;
+        }
+        echo $html;
+    }
+}
+
+//CLEAN NAME
+function cleanName($s){
+    $s = strtr(utf8_decode($s), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿšÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŠ'), 'aaaaaceeeeiiiinooooouuuuyysAAAAACEEEEIIIINOOOOOUUUUYS');
+    $s = str_replace("'", '_', $s);
+    $s = preg_replace("/[^A-Za-z \_\-]/", "", strtolower($s));
+    $s = preg_replace("/\s+/", "_", $s);
+    $s = preg_replace("/-+/", "-", $s);
+    return $s;
+}
+
+//MENU MS SVGS
+function menu_ms_svg_icons($menu_objects, $args){
+    if($args->theme_location == 'ms'){
+        foreach($menu_objects as $k => $item){
+            $menu_objects[$k]->title = svg($item->classes[0],20,20,"",true);
+            $menu_objects[$k]->classes = array('btn-icon', 'btn-icon-big', 'btn-icon-purple');
+        }
+    }
+    return $menu_objects;
+}
+add_filter('wp_nav_menu_objects', 'menu_ms_svg_icons', 10, 2);
