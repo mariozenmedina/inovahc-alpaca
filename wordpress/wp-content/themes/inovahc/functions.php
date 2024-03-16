@@ -91,7 +91,6 @@ function menu_ms_svg_icons($menu_objects, $args){
     if($args->theme_location == 'ms'){
         foreach($menu_objects as $k => $item){
             $menu_objects[$k]->title = svg($item->classes[0],20,20,"",true);
-            $menu_objects[$k]->classes = array('btn-icon', 'btn-icon-big', 'btn-icon-purple');
         }
     }
     return $menu_objects;

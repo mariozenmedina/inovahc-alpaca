@@ -6,12 +6,12 @@
         <section class="bg-inovahc-green-600"> 
             <div class="container mx-auto p-6 flex flex-col md:flex-row md:justify-between justify-start">
                 <a href="#topo">
-                 <button class="btn mb-10 md:mb-0">voltar ao topo</button>
+                 <button class="btn mb-10 md:mb-0"><?php pll_e('voltar ao topo'); ?></button>
                </a>
 
                <div class="flex flex-col md:flex-row md:gap-4 justify-start md:items-center">
 
-                <div class="font-poppins text-3xl font-light text-white">Assine a news</div>
+                <div class="font-poppins text-3xl font-light text-white"><?php pll_e('Assine a news'); ?></div>
 
                 <div class="flex form-inovahc type-white items-center">
                     <label for="email-input" class="flex-1">
@@ -46,40 +46,26 @@
 
                 <div class="flex flex-col  md:w-4/12 md:max-w-[265px]">
                     <div class="mb-5">
-                        <div class="mb-2 text-xs text-inovahc-green-300">Acompanhe as redes sociais</div>
+                        <div class="mb-2 text-xs text-inovahc-green-300"><?php pll_e('Acompanhe as redes sociais'); ?></div>
                        
-                        <div class="flex gap-2">
-                            <button class="btn-icon btn-icon-white">  
-                                <?php svg('icon-x',19,17,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-white">  
-                                <?php svg('icon-linkedin',19,19,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-white">  
-                                <?php svg('icon-flicker',20,16,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-white">  
-                                <?php svg('icon-facebook',11,20,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-white">  
-                                <?php svg('icon-instagram',19,19,"");?> 
-                            </button>   
-                        </div>
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'ms',
+                            'menu_class' => 'flex gap-2 ms',
+                            'container' => 'ul',
+                            'link_before' => '<button class="btn-icon btn-icon-big btn-icon-white">',
+                            'link_after' => '</button>',
+                        )); ?>
                  
                     </div>
 
                     <div>
-                        <div class="mb-1.5 text-xs text-inovahc-green-300">Mapa</div>
-                       
-                        <ul class="flex text-xs gap-y-1 flex-wrap gap-x-2 text-white font-semibold ">
-                            <a href="home"> <li>início</li></a>
-                            <a href="quem-somos"> <li>quem somos</li></a>
-                            <a href="servicos"><li>serviços</li></a>
-                            <a href="projetos"><li>projetos</li></a>
-                            <a href="conteudos"><li>conteúdos</li></a>
-                            <a href="eventos"><li>eventos</li></a>
-                            <a href="contato"><li>contato</li></a>
-                        </ul>
+                        <div class="mb-1.5 text-xs text-inovahc-green-300"><?php pll_e('Mapa'); ?></div>
+
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'principal',
+                            'menu_class' => 'flex text-xs gap-y-1 flex-wrap gap-x-2 text-white font-semibold',
+                            'container' => 'ul',
+                        )); ?>
                     </div>
                 </div>
             </div> 

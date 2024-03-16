@@ -40,8 +40,10 @@
                 
                     <?php wp_nav_menu(array(
                         'theme_location' => 'ms',
-                        'menu_class' => 'flex gap-3',
-                        'container' => 'div',
+                        'menu_class' => 'flex gap-1 ms',
+                        'container' => 'ul',
+                        'link_before' => '<button class="btn-icon btn-icon-big btn-icon-purple">',
+                        'link_after' => '</button>',
                     )); ?>
                 </div>
 
