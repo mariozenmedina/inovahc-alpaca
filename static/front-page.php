@@ -9,7 +9,7 @@
 
         <li class="splide__slide">
           <figure >
-            <img src="./assets/img/hero/img1.png" >
+            <img src="./assets/img/hero/imgteste2.png" >
           </figure>
         
           <div class="hero-slide-area">

@@ -155,6 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("beforeunload", unmountScrollHandler);
 });
 
+/* -------------- */
+/* Bloquei scroll com menu aberto no mobile */
+/* -------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleMenuMobile = document.getElementById("toggle-menuMobile");
+  toggleMenuMobile.addEventListener("change", function () {
+    if (this.checked) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
+  });
+});
+
 !(function (t) {
   if ("object" == typeof exports && "undefined" != typeof module)
     module.exports = t();

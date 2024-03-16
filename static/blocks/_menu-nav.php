@@ -5,8 +5,8 @@
             
             <!-- Menu Mobile -->
             <input type="checkbox" id="toggle-menuMobile" style="display:none;">
-            <div class="menuMobile overflow-hidden ">
-                <div class="flex flex-col w-full">
+            <div class="menuMobile ">
+                <div class="flex flex-col w-full ">
 
                     <div class="absolute left-6 top-4 block"> 
                         <a href="<?php echo home_url(); ?>">
@@ -25,6 +25,7 @@
                         <a href="conteudos"><li>conteúdos</li></a>
                         <a href="eventos"><li>eventos</li></a>
                         <a href="contato"><li>contatos</li></a>
+                        <li class="btn btn-purple "> inove conosco </li>
                     </ul>
 
                     <div class="flex gap-2 my-12 items-center justify-between">
@@ -43,12 +44,9 @@
                     
                     </div>
 
-                    <div class="mb-6">
-                        <button class="btn btn-purple "> inove conosco </button>
-                    </div>
-
                 
-                    <div class="flex gap-3">
+                
+                    <div class="flex gap-3 pb-10">
                         <button class="btn-icon btn-icon-big btn-icon-purple">  
                             <?php svg('icon-x',19,17,"");?> 
                         </button>
@@ -66,7 +64,6 @@
                         </button>   
                     </div>
                 </div>
-
             </div>
 
             <!-- Menu Desktop -->

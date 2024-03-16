@@ -487,6 +487,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body.menu-open {
+    overflow: hidden;
+  }
 main{
   padding-top: 72px; /* Altura da navbar */
 }
@@ -628,10 +631,11 @@ nav .menuMobile{
   position: absolute;
   right: 100%;
   top: 0px;
-  z-index: 30;
+  z-index: 50;
   display: flex;
   height: 100vh;
   width: 100%;
+  overflow: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(4 116 116 / var(--tw-bg-opacity));
   padding: 1.5rem;
@@ -1386,6 +1390,9 @@ footer ul li:hover{
 .justify-between{
   justify-content: space-between !important;
 }
+.gap-1{
+  gap: 0.25rem !important;
+}
 .gap-10{
   gap: 2.5rem !important;
 }
@@ -1542,6 +1549,9 @@ footer ul li:hover{
 .py-8{
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
+}
+.pb-10{
+  padding-bottom: 2.5rem !important;
 }
 .pb-12{
   padding-bottom: 3rem !important;
@@ -2102,7 +2112,7 @@ footer ul li:hover{
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 #hero-slide .splide__track .splide__list{
-  min-height: 564px;
+  min-height: 550px;
 }
 @media (min-width: 768px){
   #hero-slide .splide__track .splide__list{
@@ -2114,19 +2124,27 @@ footer ul li:hover{
 }
 #hero-slide .splide__track .splide__list .splide__slide figure{
   height: 100%;
+  max-height: 550px;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(4 159 132 / var(--tw-bg-opacity));
 }
+@media (min-width: 768px){
+  #hero-slide .splide__track .splide__list .splide__slide figure{
+    max-height: 600px;
+  }
+}
 #hero-slide .splide__track .splide__list .splide__slide figure img{
   height: 100%;
+  max-height: 550px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
 @media (min-width: 768px){
   #hero-slide .splide__track .splide__list .splide__slide figure img{
+    max-height: 600px;
     min-height: 600px;
-    width: 100%;
   }
 }
 #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area{
@@ -2293,6 +2311,16 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
 }
 #noticias-slide .splide__arrow:hover svg{
   fill: #AD92E7;
+}
+
+/* Ajustes feitos no dia 16/03 */
+ul .ms,
+li .ms{
+  border-style: none;
+}
+ul .ms:hover,
+li .ms:hover{
+  border-style: none;
 }
 
 .splide__container {
