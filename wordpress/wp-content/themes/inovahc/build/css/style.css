@@ -2368,12 +2368,17 @@ li .ms:hover,
     padding-bottom: 0.25rem;
   }
 }
+
+.destaque a {
+  border: none !important;
+}
 .destaque a:hover{
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(65 204 150 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  border: none !important;
 }
 
 .splide__container {
