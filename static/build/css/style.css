@@ -2333,6 +2333,7 @@ li .ms:hover,
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
+  border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(204 189 241 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
