@@ -439,7 +439,8 @@
 
 /* Ajustes feitos no dia 16/03 */
 ul .ms,
-li .ms {
+li .ms,
+.ms li {
   @apply border-none;
   &:hover {
     @apply border-none;

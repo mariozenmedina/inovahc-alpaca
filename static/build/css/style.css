@@ -2315,11 +2315,13 @@ html #hero-slide .splide__track .splide__list .splide__slide .hero-slide-area .h
 
 /* Ajustes feitos no dia 16/03 */
 ul .ms,
-li .ms{
+li .ms,
+.ms li{
   border-style: none;
 }
 ul .ms:hover,
-li .ms:hover{
+li .ms:hover,
+.ms li:hover{
   border-style: none;
 }
 
