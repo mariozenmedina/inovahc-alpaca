@@ -5,6 +5,9 @@
                 case 'hero':
                     include(get_stylesheet_directory() . '/partes/flexible_hero.php');
                     break;
+                case 'big_numbers':
+                    include(get_stylesheet_directory() . '/partes/flexible_big_numbers.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>
