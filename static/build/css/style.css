@@ -2382,6 +2382,15 @@ li .ms:hover,
   border: none !important;
 }
 
+.destaque{
+  border-style: none;
+  border: none !important;
+}
+.destaque:hover{
+  border-style: none;
+  border: none !important;
+}
+
 .splide__container {
   box-sizing: border-box;
   position: relative;

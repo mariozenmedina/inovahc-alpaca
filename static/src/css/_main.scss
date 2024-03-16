@@ -454,3 +454,11 @@ li .ms,
     border: none !important;
   }
 }
+.destaque {
+  @apply border-none;
+  border: none !important;
+  &:hover {
+    @apply border-none;
+    border: none !important;
+  }
+}
