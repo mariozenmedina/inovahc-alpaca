@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let scrollPos = 0;
 
   const controllerNav = document.querySelector(".controller-nav");
+  const controllerAside = document.querySelector("aside");
 
   function handleScroll() {
     isScrolled = window.scrollY > 100;
@@ -143,9 +144,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isScrolled && !isScrollUp) {
       controllerNav.classList.add("scroll-on");
       controllerNav.classList.remove("scroll-up");
+      controllerAside.classList.add("top-[20px]");
+      controllerAside.classList.remove("top-[100px]");
     } else {
       controllerNav.classList.remove("scroll-on");
       controllerNav.classList.add("scroll-up");
+      controllerAside.classList.add("top-[100px]");
+      controllerAside.classList.remove("top-[20px]");
     }
   }
   function mountScrollHandler() {

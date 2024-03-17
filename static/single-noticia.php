@@ -20,7 +20,7 @@
     </section>
     <!-- Section Search  -->
     <section>
-        <div class="container mx-auto p-6 flex flex-col md:flex-row md:gap-20 gap-10">
+        <div class="container relative mx-auto p-6 flex flex-col lg:flex-row lg:gap-20 gap-10">
             <!-- Post - Article -->
             <article class="flex-1">
                 <figure>
@@ -134,7 +134,7 @@
            
 
             <!-- Sidebar somente Desktop -->
-            <aside class="md:w-[400px] hidden md:flex flex-col">
+            <aside class="lg:w-[400px] flex flex-col sticky top-[100px] self-start">
                 <!--  Lista de outros eventos, somente -->
                 <div class="flex flex-col">
                     <figure class="md:w-32">

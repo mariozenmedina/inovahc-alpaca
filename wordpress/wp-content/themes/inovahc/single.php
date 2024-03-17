@@ -9,7 +9,7 @@
         <!-- Single -->
         <?php if( have_posts() ): the_post(); ?>
         <section>
-            <div class="container mx-auto p-6 flex flex-col md:flex-row md:gap-20 gap-10">
+            <div class="container relative mx-auto p-6 flex flex-col lg:flex-row lg:gap-20 gap-10">
                 <!-- Post - Article -->
                 <article class="flex-1">
 
@@ -40,23 +40,6 @@
                                 include(get_stylesheet_directory() . '/partes/single_cols.php');
                         }
                     endwhile; endif; ?>
-
-
-                    
-
-               
-
-                    <!-- Temas relacionados somente Mobile -->
-                    <!-- <div class="flex flex-col md:hidden mb-10">
-                        <div class=" text-inovahc-green-800 text-2xl font-poppins mb-4">
-                            Temas relacionados
-                        </div>
-                        <div class="flex flex-wrap gap-4">
-                            <button class="tag tag-big">Tag A</button>
-                            <button class="tag tag-big">Tag B</button>
-                            <button class="tag tag-big">Tag C</button>
-                        </div>
-                    </div> -->
                     
                     <!-- Share -->
                     <?php include(get_stylesheet_directory() . '/partes/_share.php'); ?>
@@ -66,7 +49,7 @@
             
 
                 <!-- Sidebar somente Desktop -->
-                <aside class="md:w-[400px] hidden md:flex flex-col">
+                <aside class="lg:w-[400px] flex flex-col sticky top-[100px] self-start">
                     <!--  Lista de outros eventos, somente -->
                     <div class="flex flex-col">
                         <figure class="md:w-32">
