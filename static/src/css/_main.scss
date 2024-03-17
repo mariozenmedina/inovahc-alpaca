@@ -20,13 +20,20 @@
   }
   /*  Formatação das paginas Single */
   article {
-    h2 {
-      @apply font-poppins text-4xl text-inovahc-green-800;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-poppins  text-inovahc-green-800;
       display: block;
       margin-block-start: 1.5em;
       margin-block-end: 0;
       margin-inline-start: 0px;
       margin-inline-end: 0px;
+    }
+    h2 {
+      @apply text-4xl;
     }
     h3 {
       @apply font-poppins text-3xl text-inovahc-green-800;
@@ -37,28 +44,13 @@
       margin-inline-end: 0px;
     }
     h4 {
-      @apply font-poppins text-3xl text-inovahc-green-800;
-      display: block;
-      margin-block-start: 1.5em;
-      margin-block-end: 0;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      @apply text-3xl;
     }
     h5 {
-      @apply font-poppins text-2xl text-inovahc-green-800;
-      display: block;
-      margin-block-start: 1.5em;
-      margin-block-end: 0;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      @apply text-2xl text-inovahc-green-800;
     }
     h6 {
-      @apply font-poppins text-xl text-inovahc-green-800;
-      display: block;
-      margin-block-start: 1.5em;
-      margin-block-end: 0;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      @apply text-xl text-inovahc-green-800;
     }
     p {
       display: block;
