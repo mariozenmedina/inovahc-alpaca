@@ -22,6 +22,9 @@
                 case 'header_sm':
                     include(get_stylesheet_directory() . '/partes/flexible_header_sm.php');
                     break;
+                case 'blocos':
+                    include(get_stylesheet_directory() . '/partes/flexible_blocks.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>
