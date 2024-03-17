@@ -57,49 +57,9 @@
                             <button class="tag tag-big">Tag C</button>
                         </div>
                     </div> -->
-                    <!--  Controller Desktop - Anterior - Proximo -->
-                    <!-- <div class="flex justify-between mb-10">
-                        <a href="home" class="flex gap-2">
-                            <button class="btn-icon btn-icon-small">
-                            <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
-                            </button>
-                            <button class="link">
-                                anterior
-                            </button>
-                        </a>
-
-                        <a href="home" class="flex gap-2">
-                            <button class="link">
-                                próximo
-                            </button>
-                            <button class="btn-icon btn-icon-small">
-                            <?php svg('icon-seta-direita',12,12,"fill-white");?> 
-                            </button>
-                        </a>
-                    </div> -->
-                    <!-- Compartilhe somente Mobile -->
-                    <!-- <div class="flex flex-col md:hidden mb-10 justify-center items-center">
-                        <div class="mb-2 text-sm text-inovahc-green-500">
-                            Compartilhe este conteúdo:
-                        </div>
-                        <div class="flex gap-2">
-                            <button class="btn-icon btn-icon-big ">  
-                                <?php svg('icon-x',19,17,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-big">  
-                                <?php svg('icon-linkedin',19,19,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-big">  
-                                <?php svg('icon-flicker',20,16,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-big">  
-                                <?php svg('icon-facebook',11,20,"");?> 
-                            </button>
-                            <button class="btn-icon btn-icon-big">  
-                                <?php svg('icon-instagram',19,19,"");?> 
-                            </button>   
-                        </div>
-                    </div> -->
+                    
+                    <!-- Share -->
+                    <?php include(get_stylesheet_directory() . '/partes/_share.php'); ?>
 
                 </article>
 
@@ -171,6 +131,28 @@
                         </div>
                     </div>
                 </aside>
+            </div>
+            <div class="container mx-auto p-6">
+                <!--  Controller Desktop - Anterior - Proximo -->
+                <div class="flex justify-between mb-10">
+                    <a href="home" class="flex gap-2">
+                        <button class="btn-icon btn-icon-small">
+                        <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
+                        </button>
+                        <button class="link">
+                            anterior
+                        </button>
+                    </a>
+
+                    <a href="home" class="flex gap-2">
+                        <button class="link">
+                            próximo
+                        </button>
+                        <button class="btn-icon btn-icon-small">
+                        <?php svg('icon-seta-direita',12,12,"fill-white");?> 
+                        </button>
+                    </a>
+                </div>
             </div>
         </section>
         <?php endif; ?>

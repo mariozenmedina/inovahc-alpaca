@@ -145,6 +145,7 @@ function add_string_translations() {
         pll_register_string( 'termos_conteudos', 'Conteúdo', 'Termos' );
         pll_register_string( 'termos_eventos', 'Evento', 'Termos' );
         pll_register_string( 'termos_portfolio', 'Projeto', 'Termos' );
+        pll_register_string( 'termos_compartilhe', 'Compartilhe este conteúdo:', 'Termos' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
