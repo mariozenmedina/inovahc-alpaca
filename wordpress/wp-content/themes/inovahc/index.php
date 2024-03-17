@@ -8,6 +8,12 @@
                 case 'big_numbers':
                     include(get_stylesheet_directory() . '/partes/flexible_big_numbers.php');
                     break;
+                case 'carousel':
+                    include(get_stylesheet_directory() . '/partes/flexible_carousel.php');
+                    break;
+                case 'decoy':
+                    include(get_stylesheet_directory() . '/partes/flexible_decoy.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>

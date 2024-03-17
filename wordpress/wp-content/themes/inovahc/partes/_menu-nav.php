@@ -5,7 +5,7 @@
             
             <!-- Menu Mobile -->
             <input type="checkbox" id="toggle-menuMobile" style="display:none;">
-            <div class="menuMobile overflow-hidden ">
+            <div class="menuMobile">
                 <div class="flex flex-col w-full">
 
                     <div class="absolute left-6 top-4 block"> 
