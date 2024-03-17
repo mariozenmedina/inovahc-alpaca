@@ -7,42 +7,65 @@
             </div>
         </section>
         <!-- Single -->
+        <?php if( have_posts() ): the_post(); ?>
         <section>
             <div class="container mx-auto p-6 flex flex-col md:flex-row md:gap-20 gap-10">
                 <!-- Post - Article -->
                 <article class="flex-1">
+
+                    <?php $img = get_field('imagem'); if($img): ?>
                     <figure>
-                        <img src="./assets/img/foto3.jpg" alt="Foto Modelo 1"/>
+                        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>"/>
                     </figure>
+                    <?php endif; ?>
+
                     <!-- Header Default -->
                     <div class="post-header">
-                        <div class="post-header-categoria">Conteúdo</div>
-                        <div class="post-header-titulo">Nome do livro</div>
-                        <div class="post-header-info">08/09/2023 | Autor, veículo etc</div>
+                        <div class="post-header-categoria"><?php switch( get_post_type( get_the_ID() ) ){
+                            case 'eventos':
+                                echo pll_e('Evento');
+                                break;
+                            case 'projetos':
+                                echo pll_e('Projeto');
+                                break;
+                            default:
+                                echo pll_e('Conteúdo');
+                                break;
+                        }; ?></div>
+                        <h1 class="post-header-titulo"><?php the_title(); ?></h1>
+                        <div class="post-header-info"><?php the_date('d/m/Y'); ?><?php $autoria = get_field('autoria'); if($autoria){ echo ' | '.$autoria; } ?></div>
                     </div>
 
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <?php if( have_rows('conteudo_single') ): while( have_rows('conteudo_single') ): the_row();
+                        switch(get_row_layout()){
+                            case 'lide':
+                                echo '<p class="lead">'.get_sub_field('texto').'</p>';
+                                break;
+                            case 'citacao':
+                                echo '<blockquote cite="'.get_sub_field('fonte').'">'.get_sub_field('texto').'</blockquote>';
+                                break;
+                            case 'editor':
+                                the_sub_field('conteudo');
+                                break;
+                            case 'imagem':
+                                $img = get_sub_field('imagem');
+                                $src = $img['url'];
+                                $alt = $img['alt'];
+                                $caption = $img['caption'];
+                                echo '<figure>';
+                                echo "<img src='$src' alt='$alt' />";
+                                if($caption){ echo "<figcaption class='caption'>$caption</figcaption>"; }
+                                echo '</figure>';
+                                break;
+                        }
+                    endwhile; endif; ?>
+                    
 
-                    <p>Para centros médicos e profissionais de saúde que tratam pacientes diabéticos, a BIOO associa conhecimento científico e tecnológico para mudar a realidade de pacientes com complicações do “pé diabético” e que poderiam ser evitadas em até 85% se atendidas precocemente.</p>
-
-                    <blockquote>
-                        “Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod reprehendit nostrud enum.”
-                    </blockquote>
-
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-
-                    <h3>Subtítulo da notícia</h3>
-                    <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-
-                    <figure>
-                        <img src="./assets/img/foto3.jpg" alt="Foto Modelo 1"/>
-                    </figure>
-
-                    <p class="caption">Legenda da imagem</p>
-
+                    <h2>Arquivos para download</h2>
                     <h3>Arquivos para download</h3>
+                    <h4>Arquivos para download</h4>
+                    <h5>Arquivos para download</h5>
+                    <h6>Arquivos para download</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     
                     <!-- Lista de Donwloads -->
@@ -189,5 +212,6 @@
                 </aside>
             </div>
         </section>
+        <?php endif; ?>
     </main>
 <?php get_footer(); ?>

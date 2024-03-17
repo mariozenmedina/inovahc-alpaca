@@ -111,12 +111,15 @@ function add_string_translations() {
         pll_register_string( 'pesquisa_limpar', 'limpar', 'Pesquisa' );
         pll_register_string( 'pesquisa_conteudos', 'Conteúdos', 'Pesquisa' );
         pll_register_string( 'pesquisa_eventos', 'Eventos', 'Pesquisa' );
-        pll_register_string( 'pesquisa_portfolio', 'Portfólio', 'Pesquisa' );
+        pll_register_string( 'pesquisa_portfolio', 'Projetos', 'Pesquisa' );
         pll_register_string( 'pesquisa_resultados', 'Resultados encontrados:', 'Pesquisa' );
         pll_register_string( 'pesquisa_encontrados', 'resultados encontrados', 'Pesquisa' );
         pll_register_string( 'pesquisa_nenhum', 'Nenhum resultado encontrado.', 'Pesquisa' );
         pll_register_string( 'pesquisa_nova', 'Faça uma nova pesquisa.', 'Pesquisa' );
         pll_register_string( 'pesquisa_placeholder', 'busca por palavras-chave', 'Pesquisa' );
+        pll_register_string( 'termos_conteudos', 'Conteúdo', 'Termos' );
+        pll_register_string( 'termos_eventos', 'Evento', 'Termos' );
+        pll_register_string( 'termos_portfolio', 'Projeto', 'Termos' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );

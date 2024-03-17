@@ -494,10 +494,58 @@ main{
   padding-top: 72px; /* Altura da navbar */
 }
 /*  Formatação das paginas Single */
+article h2{
+  font-family: Poppins, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 article h3{
   font-family: Poppins, sans-serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+article h4{
+  font-family: Poppins, sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+article h5{
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(4 116 116 / var(--tw-text-opacity));
+    display: block;
+    margin-block-start: 1.5em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+article h6{
+  font-family: Poppins, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(4 116 116 / var(--tw-text-opacity));
     display: block;
@@ -566,7 +614,6 @@ article figure{
   position: relative;
   margin: 0px;
   display: flex;
-  max-height: 350px;
   max-width: 100%;
   flex-direction: column;
   align-items: center;
@@ -579,7 +626,6 @@ article figure img{
   width: 100%;
   border-radius: 1.5rem;
   object-fit: cover;
-    max-height: 350px;
 }
 article .post-header{
   margin-top: 2rem;
@@ -1487,12 +1533,6 @@ footer ul li:hover{
 }
 .bg-cover{
   background-size: cover !important;
-}
-.bg-\[right_bottom\]{
-  background-position: right bottom !important;
-}
-.bg-no-repeat{
-  background-repeat: no-repeat !important;
 }
 .fill-inovahc-blue-800{
   fill: #23549A !important;
