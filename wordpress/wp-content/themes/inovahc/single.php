@@ -36,6 +36,8 @@
                         <div class="post-header-info"><?php the_date('d/m/Y'); ?><?php $autoria = get_field('autoria'); if($autoria){ echo ' | '.$autoria; } ?></div>
                     </div>
 
+                    <p>TESTE GABRIEL </p>
+
                     <?php if( have_rows('conteudo_single') ): while( have_rows('conteudo_single') ): the_row();
                         switch(get_row_layout()){
                             case 'lide':
@@ -67,8 +69,6 @@
                     <h5>Arquivos para download</h5>
                     <h6>Arquivos para download</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                    <p class="mario">Paragrafo do mario</p>
                     
                     <!-- Lista de Donwloads -->
                     <div class="flex flex-col gap-4 mb-20">      
