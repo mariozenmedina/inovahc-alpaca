@@ -62,7 +62,6 @@
                     
 
                     <h2>Arquivos para download</h2>
-                    <h3>Arquivos para download</h3>
                     <h4>Arquivos para download</h4>
                     <h5>Arquivos para download</h5>
                     <h6>Arquivos para download</h6>
