@@ -566,7 +566,6 @@ article figure{
   position: relative;
   margin: 0px;
   display: flex;
-  max-height: 350px;
   max-width: 100%;
   flex-direction: column;
   align-items: center;
@@ -579,7 +578,6 @@ article figure img{
   width: 100%;
   border-radius: 1.5rem;
   object-fit: cover;
-    max-height: 350px;
 }
 article .post-header{
   margin-top: 2rem;
@@ -1487,12 +1485,6 @@ footer ul li:hover{
 }
 .bg-cover{
   background-size: cover !important;
-}
-.bg-\[right_bottom\]{
-  background-position: right bottom !important;
-}
-.bg-no-repeat{
-  background-repeat: no-repeat !important;
 }
 .fill-inovahc-blue-800{
   fill: #23549A !important;
