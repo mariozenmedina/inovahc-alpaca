@@ -30,10 +30,11 @@ function register_custom_post_types() {
 			'rewrite' => true,
 			'capability_type' => 'post',
 			'has_archive' => true,
+            'taxonomies' => array('post_tag', 'category'),
 			'hierarchical' => false,
 			'menu_position' => 5,
 			'menu_icon' => $item['icon'],
-			'supports' => array('title', 'editor', 'author', 'excerpt', 'custom-fields', 'thumbnail'),
+			'supports' => array('title', 'author', 'excerpt', 'custom-fields', 'thumbnail'),
 			'exclude_from_search' => false
 		  );
 		register_post_type($item['slug'], $args);

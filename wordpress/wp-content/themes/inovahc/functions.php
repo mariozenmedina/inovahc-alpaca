@@ -120,3 +120,28 @@ function add_string_translations() {
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
+
+//REMOVE COMMENTS
+add_action('admin_menu', function () {
+    remove_menu_page('edit-comments.php');
+});
+add_action('admin_init', function () {
+    // Redirect any user trying to access comments page
+    global $pagenow;
+    if ($pagenow === 'edit-comments.php') {
+        wp_redirect(admin_url());
+        exit;
+    }
+
+    // Remove comments metabox from dashboard
+    remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+
+    // Disable support for comments, trackbacks and editor in post types
+    foreach (get_post_types() as $post_type) {
+        if (post_type_supports($post_type, 'comments')) {
+            remove_post_type_support($post_type, 'comments');
+            remove_post_type_support($post_type, 'trackbacks');
+            remove_post_type_support($post_type, 'editor');
+        }
+    }
+});
