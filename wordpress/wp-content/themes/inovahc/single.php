@@ -67,6 +67,8 @@
                     <h5>Arquivos para download</h5>
                     <h6>Arquivos para download</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                    <p class="mario">Paragrafo do mario</p>
                     
                     <!-- Lista de Donwloads -->
                     <div class="flex flex-col gap-4 mb-20">      
