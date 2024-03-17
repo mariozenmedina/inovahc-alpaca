@@ -36,7 +36,7 @@
 <!-- GOOGLE - COLOCAR ANALYTICS -->
 <!-- GOOGLE -->
 </head>
-<body <?php //body_class(); ?>>
+<body <?php body_class(); ?>>
 <!-- Carrega os SVGs -->
     <?php get_template_part('partes/_svg', '_svg'); ?>
 
@@ -46,5 +46,3 @@
                 <!-- Carrega o menu -->
                 <?php get_template_part('partes/_menu-nav', '_menu-nav'); ?>
         </header>
-        
-    <!-- Inicia a main -->
