@@ -1319,8 +1319,14 @@ footer ul li:hover{
 .h-24{
   height: 6rem !important;
 }
+.h-\[90px\]{
+  height: 90px !important;
+}
 .max-h-\[76px\]{
   max-height: 76px !important;
+}
+.max-h-\[90px\]{
+  max-height: 90px !important;
 }
 .min-h-\[110px\]{
   min-height: 110px !important;
@@ -1336,6 +1342,12 @@ footer ul li:hover{
 }
 .w-full{
   width: 100% !important;
+}
+.w-\[90px\]{
+  width: 90px !important;
+}
+.min-w-\[90px\]{
+  min-width: 90px !important;
 }
 .max-w-4xl{
   max-width: 56rem !important;
@@ -1423,6 +1435,9 @@ footer ul li:hover{
 .gap-y-4{
   row-gap: 1rem !important;
 }
+.gap-x-4{
+  column-gap: 1rem !important;
+}
 .overflow-hidden{
   overflow: hidden !important;
 }
@@ -1493,6 +1508,9 @@ footer ul li:hover{
 }
 .fill-white{
   fill: #fff !important;
+}
+.object-contain{
+  object-fit: contain !important;
 }
 .object-cover{
   object-fit: cover !important;
@@ -2200,6 +2218,8 @@ footer ul li:hover{
 .banner.banner-purple{
   --tw-bg-opacity: 1;
   background-color: rgb(204 189 241 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(96 75 140 / var(--tw-text-opacity));
 }
 .banner.banner-purple .banner-title{
   --tw-text-opacity: 1;
@@ -2885,6 +2905,12 @@ li .ms:hover,
   padding: 1em 0;
   right: 0.5em;
   top: 0;
+}
+
+@media (min-width: 640px){
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
 }
 
 @media (min-width: 768px){

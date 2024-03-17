@@ -153,141 +153,29 @@
       </div>
 
       <!--  Grid de Perfil - Equipe -->
-      <div class=" grid md:grid-cols-3 gap-5">
+      <div class=" grid sm:grid-cols-2 md:grid-cols-3 gap-5">
         <!-- Card Perfil -->
         <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
+          <figure class="w-[90px] max-h-[90px]" >
+            <img src="./assets/img/hero/imgteste3.png" alt="Profile 1" class="w-full rounded-lg object-cover min-w-[90px] max-h-[90px]">
           </figure>
           <div>
             <div class=" mb-1">Maria Augusta Pires</div>
             <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
+            <div class="flex flex-wrap gap-x-4">
               <button class="btn-icon ">  
                   <?php svg('icon-linkedin',16,16,"");?> 
               </button>
               <span class="link">email@hc.fm.usp.br</span>
             </div>
           </div>
+        </div>
 
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-
-        </div>
-        <!-- Card Perfil -->
-        <div class="flex gap-4">
-          <figure class >
-            <img src="./assets/img/equipe/perfil1.png" alt="Profile 1" class="w-full rounded-lg object-cover">
-          </figure>
-          <div>
-            <div class=" mb-1">Maria Augusta Pires</div>
-            <div class=" text-xs mb-4">Descrição área de atuação</div>
-            <div class="flex gap-3 justify-center">
-              <button class="btn-icon ">  
-                  <?php svg('icon-linkedin',16,16,"");?> 
-              </button>
-              <span class="link">email@hc.fm.usp.br</span>
-            </div>
-          </div>
-        </div>
+          
+       
+        
+        
+      
       
 
       </div>

@@ -383,10 +383,10 @@
       }
     }
     &.banner-purple {
+      @apply bg-inovahc-purple-100 text-inovahc-purple-800;
       .banner-title {
         @apply text-inovahc-purple-800;
       }
-      @apply bg-inovahc-purple-100;
     }
   }
   /* Modal */
