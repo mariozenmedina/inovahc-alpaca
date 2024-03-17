@@ -36,7 +36,7 @@
                         <div class="post-header-info"><?php the_date('d/m/Y'); ?><?php $autoria = get_field('autoria'); if($autoria){ echo ' | '.$autoria; } ?></div>
                     </div>
 
-                    <p>TESTE GABRIEL </p>
+                    <p>Valen Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in, rerum assumenda cum eaque et unde officia? Ad officiis hic provident reiciendis dicta esse, perspiciatis, natus maxime ipsum repellendus alias! </p>
 
                     <?php if( have_rows('conteudo_single') ): while( have_rows('conteudo_single') ): the_row();
                         switch(get_row_layout()){
