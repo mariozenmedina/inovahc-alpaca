@@ -36,8 +36,13 @@
                                 include(get_stylesheet_directory() . '/partes/single_files.php');
                             case 'botoes':
                                 include(get_stylesheet_directory() . '/partes/single_buttons.php');
+                            case 'duas_colunas':
+                                include(get_stylesheet_directory() . '/partes/single_cols.php');
                         }
                     endwhile; endif; ?>
+
+
+                    
 
                
 
