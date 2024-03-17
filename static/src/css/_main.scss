@@ -86,7 +86,7 @@
 
     /* Formatacao do Menu Responsivo */
     .menuMobile {
-      @apply absolute right-full top-0 z-50 flex  h-screen w-full overflow-auto bg-inovahc-green-800  p-6 text-white transition-all duration-300 ease-linear md:hidden;
+      @apply absolute right-full top-0 z-50 flex  h-screen w-full overflow-auto bg-inovahc-green-800  p-6 text-white transition-all duration-300 ease-linear lg:hidden;
     }
     #toggle-menuMobile:checked ~ .menuMobile {
       @apply translate-x-full;

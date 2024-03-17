@@ -126,7 +126,7 @@
     </div>
   </section>
   <!-- Section Notícias -->
-  <section class=" bg-inovahc-purple-100 sm:bg-black md:bg-red-500">
+  <section class=" bg-inovahc-purple-100 ">
     <div class="container mx-auto px-6 pt-12 relative ">
       <!--  Section Notícias Header -->
       <div class="section-header">

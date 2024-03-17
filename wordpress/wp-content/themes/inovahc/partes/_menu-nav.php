@@ -60,7 +60,7 @@
                     </div>
         
                     <!-- Menu Versão Desktop -->
-                    <div class="hidden md:flex flex-1 justify-end">
+                    <div class="hidden lg:flex flex-1 justify-end">
                         <?php wp_nav_menu(array(
                             'theme_location' => 'principal',
                             'menu_class' => 'flex font-mulish items-center text-white md:gap-2 lg:gap-6',
@@ -83,7 +83,7 @@
 
                     </div>
 
-                    <div class="md:hidden flex items-center">
+                    <div class="lg:hidden flex items-center">
                         <label for="toggle-menuMobile">
                             <?php svg('icon-menu',24,20,"fill-white");?> 
                         </label>
