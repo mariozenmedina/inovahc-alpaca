@@ -33,7 +33,6 @@
     <div class="flex flex-col">
         <div class=" text-inovahc-green-800 text-3xl font-poppins mb-4"><?php echo pll_e('Temas relacionados'); ?></div>
         <div class="flex flex-wrap gap-4">
-            <pre><?php //var_dump(get_the_tags()); ?></pre>
             <?php $tags = get_the_tags(); foreach($tags as $tag): ?>
             <a href="<?php url(); ?>?tag=<?php echo $tag->slug; ?>&post_type=<?php echo $post_type; ?>" class="tag tag-big"><?php echo $tag->name; ?></a>
             <?php endforeach; ?>
