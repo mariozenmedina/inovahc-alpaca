@@ -4,15 +4,7 @@
         <section class="bg-inovahc-green-50 bg-no-repeat bg-[right_bottom]" style="min-height: calc(100vh - 72px) !important; background-image: url('<?php tu(); ?>/img/bg-search.png');">
 
             <div class="container mx-auto p-6 flex gap-5 flex-col ">
-                <!--  Breadcrumbs - Voltar -->
-                <div>
-                    <a href="javascript:history.back();" class="flex gap-2">
-                        <button class="btn-icon btn-icon-small">
-                            <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
-                        </button>
-                        <button class="link"><?php pll_e('voltar'); ?></button>
-                    </a>
-                </div>
+                <?php include_once(get_stylesheet_directory() . '/partes/_breadcrumb.php'); ?>
                 <!--   Filtros / Forms -->
                 <div class="flex md:justify-center md:flex-row flex-col py-8">
                     <form action="<?php url(); ?>" class="flex justify-between md:w-8/12 md:items-center md:flex-row flex-col">
