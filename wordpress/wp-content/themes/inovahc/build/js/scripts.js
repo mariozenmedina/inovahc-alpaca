@@ -23,8 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
       paginationPosition: "bottom",
       perPage: 4,
       breakpoints: {
-        640: {
+        500: {
           perPage: 1,
+        },
+        750: {
+          perPage: 2,
+        },
+        1000: {
+          perPage: 3,
         },
       },
     }).mount();
