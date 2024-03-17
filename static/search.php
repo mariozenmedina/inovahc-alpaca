@@ -3,7 +3,8 @@
 
 <main>
     <!-- Section Search  -->
-    <section class="bg-inovahc-green-50 bg-no-repeat md:bg-[url('../../assets/img/grafismo/bg-search.png')] bg-[right_bottom]" style="min-height: calc(100vh - 72px)!important;">
+    <section class="bg-inovahc-green-50 bg-no-mobile" style="min-height: calc(100vh - 72px)!important; background-image: url('./assets/img/grafismo/bg-search.png'); ">
+
 
         <div class="container mx-auto p-6 flex gap-5 flex-col ">
             <!--  Breadcrumbs - Voltar -->

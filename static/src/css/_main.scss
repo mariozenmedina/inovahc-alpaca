@@ -495,3 +495,11 @@ li .ms,
     border: none !important;
   }
 }
+
+/* Ajuste Dia 17/03 */
+.bg-no-mobile {
+  @apply bg-[right_bottom] bg-no-repeat;
+  @media (max-width: 600px) {
+    background-image: none !important;
+  }
+}
