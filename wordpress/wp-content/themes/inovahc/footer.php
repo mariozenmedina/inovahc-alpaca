@@ -102,7 +102,7 @@
     </script>
 
     <!-- Carrega o Script -->
-    <script src="<?php tu(); ?>/build/js/scripts.js"></script>
+    <script src="<?php tu(); ?>/js/scripts.js"></script>
 
 
 </body>    
