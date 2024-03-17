@@ -123,9 +123,9 @@
   <!-- Section Banner -->
   <section>
     <div class="container mx-auto px-6 py-28  ">
-       <div class="banner bg-inovahc-purple-100">
+       <div class="banner banner-purple">
          <div class="banner-container">
-            <div class="figure-area md:w-1/2">
+            <div class="figure-area">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
                 <img  src="./assets/img/banner/contato/base.png" >
@@ -143,10 +143,10 @@
                 <img  src="./assets/img/banner/contato/full.png" alt="" class="principal">
               </figure>
             </div>
-            <div class="text-area md:w-1/2"> 
-              <div class="mb-2 md:mb-4  text-inovahc-purple-800 text-3xl font-poppins ">Trabalhe conosco</div>
+            <div class="text-area"> 
+              <div class="banner-title">Trabalhe conosco</div>
               <div class="mb-4 md:mb-8">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. </div>
-              <button class="btn ">veja os projetos</button>
+              <button>veja os projetos</button>
             </div>
         </div>
        </div>

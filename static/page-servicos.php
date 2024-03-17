@@ -89,9 +89,9 @@
   <!-- Section Banner -->
   <section>
     <div class="container mx-auto px-6 pt-28 pb-28 md:py-28  ">
-       <div class="banner bg-inovahc-green-800">
+       <div class="banner banner-green">
          <div class="banner-container">
-            <div class="figure-area md:w-1/2">
+            <div class="figure-area">
               <!-- Versao Desktop Parallax -->
               <figure id="scene" ref="scene" class="md:flex hidden">
                 <img src="./assets/img/banner/servicos/base.png" >
@@ -109,10 +109,10 @@
                 <img  src="./assets/img/banner/servicos/full.png" alt="" class="principal">
               </figure>
             </div>
-            <div class="text-area md:w-1/2"> 
-              <div class="mb-2 md:mb-4 text-white text-3xl font-poppins ">Conheça o portfólio</div>
-              <div class="mb-4 md:mb-8 text-white">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. Lorem ipsum consectetur .</div>
-              <a href="projetos"><button class="btn btn-white">veja os projetos</button></a>
+            <div class="text-area "> 
+              <div class="banner-title ">Conheça o portfólio</div>
+              <div class="mb-4 md:mb-8">Lorem ipsum dolor elit consectetur adipiscing, eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation. Lorem ipsum consectetur .</div>
+              <a href="projetos"><button>veja os projetos</button></a>
             </div>
         </div>
        </div>
