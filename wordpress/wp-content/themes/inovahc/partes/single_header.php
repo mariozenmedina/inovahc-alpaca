@@ -18,7 +18,7 @@
         <?php the_title(); ?>
     </h1>
     <div class="post-header-info">
-        <?php the_date('d/m/Y'); ?>
+        <?php echo get_the_date('d/m/Y'); ?>
         <?php $autoria = get_field('autoria');
         if ($autoria) {
             echo ' | ' . $autoria;

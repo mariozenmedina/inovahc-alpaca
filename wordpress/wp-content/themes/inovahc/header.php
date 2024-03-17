@@ -36,7 +36,7 @@
 <!-- GOOGLE - COLOCAR ANALYTICS -->
 <!-- GOOGLE -->
 </head>
-<body <?php body_class(); ?>>
+<body>
 <!-- Carrega os SVGs -->
     <?php get_template_part('partes/_svg', '_svg'); ?>
 

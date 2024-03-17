@@ -1,0 +1,14 @@
+<div class="flex flex-col md:flex-row gap-4">
+    <?php $img = get_field('imagem'); if($img): ?>
+    <figure class=" bg-inovahc-blue-800 rounded-lg md:w-1/3 max-h-[76px]">
+        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="w-full max-h-[76px] rounded-lg object-cover">
+    </figure>
+    <?php endif; ?>
+    <div class="flex flex-col md:w-2/3">
+        <div class="text-inovahc-purple-800 mb-1 font-semibold"><?php the_title(); ?></div>
+        <div class="text-xs mb-2"><?php echo get_the_date('d/m/Y'); ?></div>
+        <div>
+            <a href="<?php the_permalink(); ?>" class="link"><?php pll_e('leia mais'); ?></a>
+        </div>
+    </div>
+</div>

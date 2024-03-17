@@ -43,19 +43,19 @@
                                 break;
                         }
                     endwhile; endif; ?>
-                    
-                    <!-- Share -->
-                    <?php include(get_stylesheet_directory() . '/partes/_share.php'); ?>
 
                 </article>
 
                 <?php include(get_stylesheet_directory() . '/partes/single_aside.php'); ?>
             </div>
-
-            <div class="container mx-auto p-6">
-                <?php include(get_stylesheet_directory() . '/partes/single_controller.php'); ?>
-            </div>
         </section>
         <?php endif; ?>
+        <?php include(get_stylesheet_directory() . '/partes/_flexible.php'); ?>
+        <div class="container mx-auto p-6">
+            <?php include(get_stylesheet_directory() . '/partes/single_controller.php'); ?>
+
+            <!-- Share -->
+            <?php include(get_stylesheet_directory() . '/partes/_share.php'); ?>
+        </div>
     </main>
 <?php get_footer(); ?>

@@ -134,6 +134,7 @@ function add_string_translations() {
         pll_register_string( 'botao_carregar', 'carregar mais', 'Botão' );
         pll_register_string( 'botao_anterior', 'anterior', 'Botão' );
         pll_register_string( 'botao_proximo', 'próximo', 'Botão' );
+        pll_register_string( 'botao_mais', 'leia mais', 'Botão' );
         pll_register_string( 'newsletter_obrigado', 'Obrigado!', 'Newsletter' );
         pll_register_string( 'pesquisa_limpar', 'limpar', 'Pesquisa' );
         pll_register_string( 'pesquisa_conteudos', 'Conteúdos', 'Pesquisa' );
@@ -148,6 +149,7 @@ function add_string_translations() {
         pll_register_string( 'termos_eventos', 'Evento', 'Termos' );
         pll_register_string( 'termos_portfolio', 'Projeto', 'Termos' );
         pll_register_string( 'termos_compartilhe', 'Compartilhe este conteúdo:', 'Termos' );
+        pll_register_string( 'termos_relacionados', 'Temas relacionados', 'Termos' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );

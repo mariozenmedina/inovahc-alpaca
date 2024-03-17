@@ -18,7 +18,7 @@
                 <div class="text-area"> 
                     <div class="banner-title"><?php the_sub_field('titulo'); ?></div>
                     <div class="mb-4 md:mb-8"><?php the_sub_field('texto') ?></div>
-                    <?php $botao = get_sub_field('botao'); if($botao['url']){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
+                    <?php $botao = get_sub_field('botao'); if($botao){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
                 </div>
             </div>
         </div>
