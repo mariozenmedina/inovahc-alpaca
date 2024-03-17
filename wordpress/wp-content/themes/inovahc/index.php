@@ -31,6 +31,9 @@
                 case 'equipe':
                     include(get_stylesheet_directory() . '/partes/flexible_team.php');
                     break;
+                case 'logos':
+                    include(get_stylesheet_directory() . '/partes/flexible_logos.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>
