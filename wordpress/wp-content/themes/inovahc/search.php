@@ -6,9 +6,9 @@
             <div class="container mx-auto p-6 flex gap-5 flex-col ">
                 <!--  Breadcrumbs - Voltar -->
                 <div>
-                    <a href="<?php url(); ?>" class="flex gap-2">
+                    <a href="javascript:history.back();" class="flex gap-2">
                         <button class="btn-icon btn-icon-small">
-                        <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
+                            <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
                         </button>
                         <button class="link"><?php pll_e('voltar'); ?></button>
                     </a>
