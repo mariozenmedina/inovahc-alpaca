@@ -15,8 +15,8 @@ module.exports = {
       js: "./static/build/js",
     },
     wordpress: {
-      css: "./wordpress/wp-content/themes/inovahc/build/css",
-      js: "./wordpress/wp-content/themes/inovahc/build/js",
+      css: "./wordpress/wp-content/themes/inovahc/css",
+      js: "./wordpress/wp-content/themes/inovahc/js",
     },
   },
   content: ["./*.php", "./**/*.php"],
