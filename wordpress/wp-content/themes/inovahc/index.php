@@ -37,6 +37,9 @@
                 case 'figura_responsiva':
                     include(get_stylesheet_directory() . '/partes/flexible_responsive_figure.php');
                     break;
+                case 'awards':
+                    include(get_stylesheet_directory() . '/partes/flexible_awards.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>
