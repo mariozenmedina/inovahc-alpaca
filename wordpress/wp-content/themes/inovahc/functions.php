@@ -87,6 +87,31 @@ function cleanName($s){
     return $s;
 }
 
+//FORMAT FILE SIZE STRING
+function format_file_size($size){
+    $int = 0;
+    while($size > 1024){
+        $size /= 1024;
+        $int++;
+    }
+    $term = 'B';
+    switch($int){
+        case 1:
+            $term = 'KB';
+            break;
+        case 2:
+            $term = 'MB';
+            break;
+        case 3:
+            $term = 'GB';
+            break;
+        default:
+            $term = 'B';
+            break;
+    }
+    return $int.$term;
+}
+
 //MENU MS SVGS
 function menu_ms_svg_icons($menu_objects, $args){
     if($args->theme_location == 'ms'){

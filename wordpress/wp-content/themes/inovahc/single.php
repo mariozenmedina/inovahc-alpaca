@@ -13,28 +13,9 @@
                 <!-- Post - Article -->
                 <article class="flex-1">
 
-                    <?php $img = get_field('imagem'); if($img): ?>
-                    <figure>
-                        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>"/>
-                    </figure>
-                    <?php endif; ?>
+                    <?php $img = get_field('imagem'); include(get_stylesheet_directory() . '/partes/single_image.php'); ?>
 
-                    <!-- Header Default -->
-                    <div class="post-header">
-                        <div class="post-header-categoria"><?php switch( get_post_type( get_the_ID() ) ){
-                            case 'eventos':
-                                echo pll_e('Evento');
-                                break;
-                            case 'projetos':
-                                echo pll_e('Projeto');
-                                break;
-                            default:
-                                echo pll_e('Conteúdo');
-                                break;
-                        }; ?></div>
-                        <h1 class="post-header-titulo"><?php the_title(); ?></h1>
-                        <div class="post-header-info"><?php the_date('d/m/Y'); ?><?php $autoria = get_field('autoria'); if($autoria){ echo ' | '.$autoria; } ?></div>
-                    </div>
+                    <?php include(get_stylesheet_directory() . '/partes/single_header.php'); ?>
 
                     <?php if( have_rows('conteudo_single') ): while( have_rows('conteudo_single') ): the_row();
                         switch(get_row_layout()){
@@ -49,43 +30,19 @@
                                 break;
                             case 'imagem':
                                 $img = get_sub_field('imagem');
-                                $src = $img['url'];
-                                $alt = $img['alt'];
-                                $caption = $img['caption'];
-                                echo '<figure>';
-                                echo "<img src='$src' alt='$alt' />";
-                                if($caption){ echo "<figcaption class='caption'>$caption</figcaption>"; }
-                                echo '</figure>';
+                                include(get_stylesheet_directory() . '/partes/single_image.php');
                                 break;
+                            case 'arquivos':
+                                include(get_stylesheet_directory() . '/partes/single_files.php');
+                            case 'botoes':
+                                include(get_stylesheet_directory() . '/partes/single_buttons.php');
                         }
                     endwhile; endif; ?>
-                    
 
-                    <h2>Arquivos para download</h2>
-                    <h4>Arquivos para download</h4>
-                    <h5>Arquivos para download</h5>
-                    <h6>Arquivos para download</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    
-                    <!-- Lista de Donwloads -->
-                    <div class="flex flex-col gap-4 mb-20">      
-                        <!-- Card 1 -->
-                        <div class="card w-full p-4">
-                            <div class=" text-inovahc-purple-800 text-lg font-semibold">Título lorem ipsum magna  consectetur nostrud tempor dolorem </div>
-                            <div class="mb-4 text-xs">.ppt | 15mb</div>
-                            <div class="link">download</div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="card w-full p-4">
-                            <div class=" text-inovahc-purple-800 text-lg font-semibold">Título lorem ipsum magna  consectetur nostrud tempor dolorem </div>
-                            <div class="mb-4 text-xs">.ppt | 15mb</div>
-                            <div class="link">download</div>
-                        </div>
-                    </div>
-                
+               
 
                     <!-- Temas relacionados somente Mobile -->
-                    <div class="flex flex-col md:hidden mb-10">
+                    <!-- <div class="flex flex-col md:hidden mb-10">
                         <div class=" text-inovahc-green-800 text-2xl font-poppins mb-4">
                             Temas relacionados
                         </div>
@@ -94,9 +51,9 @@
                             <button class="tag tag-big">Tag B</button>
                             <button class="tag tag-big">Tag C</button>
                         </div>
-                    </div>
+                    </div> -->
                     <!--  Controller Desktop - Anterior - Proximo -->
-                    <div class="flex justify-between mb-10">
+                    <!-- <div class="flex justify-between mb-10">
                         <a href="home" class="flex gap-2">
                             <button class="btn-icon btn-icon-small">
                             <?php svg('icon-seta-esquerda',12,12,"fill-white");?> 
@@ -114,9 +71,9 @@
                             <?php svg('icon-seta-direita',12,12,"fill-white");?> 
                             </button>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- Compartilhe somente Mobile -->
-                    <div class="flex flex-col md:hidden mb-10 justify-center items-center">
+                    <!-- <div class="flex flex-col md:hidden mb-10 justify-center items-center">
                         <div class="mb-2 text-sm text-inovahc-green-500">
                             Compartilhe este conteúdo:
                         </div>
@@ -137,7 +94,7 @@
                                 <?php svg('icon-instagram',19,19,"");?> 
                             </button>   
                         </div>
-                    </div>
+                    </div> -->
 
                 </article>
 

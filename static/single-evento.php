@@ -34,9 +34,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 </div>
                 <!-- Info evento -->
-                <div class=" mb-10"> 
+                <div class="mb-10"> 
                     <!-- Duas colunas -->
-                    <div class=" grid grid-cols-2 gap-4 mb-6">
+                    <div class="grid grid-cols-2 gap-4 mb-6">
                         <!-- Card 1 -->
                         <div class="flex">
                             <div class="p-2">
