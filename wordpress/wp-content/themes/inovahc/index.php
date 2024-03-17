@@ -25,6 +25,12 @@
                 case 'blocos':
                     include(get_stylesheet_directory() . '/partes/flexible_blocks.php');
                     break;
+                case 'ribbon':
+                    include(get_stylesheet_directory() . '/partes/flexible_ribbon.php');
+                    break;
+                case 'equipe':
+                    include(get_stylesheet_directory() . '/partes/flexible_team.php');
+                    break;
             }
         ?>
     <?php endwhile; endif; ?>
