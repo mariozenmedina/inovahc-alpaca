@@ -105,6 +105,7 @@ function add_string_translations() {
         pll_register_string( 'rodape_voltar', 'voltar ao topo', 'Rodapé' );
         pll_register_string( 'rodape_assine', 'Assine a news', 'Rodapé' );
         pll_register_string( 'botao_carregar', 'carregar mais', 'Botão' );
+        pll_register_string( 'newsletter_obrigado', 'Obrigado!', 'Newsletter' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
