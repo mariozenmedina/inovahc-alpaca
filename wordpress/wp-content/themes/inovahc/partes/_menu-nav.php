@@ -9,7 +9,7 @@
                 <div class="flex flex-col w-full">
 
                     <div class="absolute left-6 top-4 block"> 
-                        <a href="<?php echo home_url(); ?>">
+                        <a href="<?php url(); ?>">
                             <?php svg('logo-inovahc',55,40,"fill-white");?> 
                         </a>
                     </div>
@@ -25,7 +25,7 @@
 
                     <div class="flex gap-2 my-12 items-center justify-between">
                         <div>
-                            <a href="search">
+                            <a href="<?php url(); ?>?s">
                                 <button class="btn-icon btn-icon-white  btn-icon-big">
                                 <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
                                 </button>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="flex  items-center">
-                            <a href="search">
+                            <a href="<?php url(); ?>?s">
                             <button class="btn-icon btn-icon-white btn-icon-big">
                                 <?php svg('icon-busca',17,17,"fill-inovahc-green-800");?> 
                             </button>

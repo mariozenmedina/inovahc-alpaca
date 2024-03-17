@@ -18,7 +18,8 @@ function tu(){
 	bloginfo('template_url');
 }
 function url(){
-	bloginfo('url');
+	//bloginfo('url');
+    echo pll_home_url();
 }
 
 //MENUS
@@ -106,6 +107,16 @@ function add_string_translations() {
         pll_register_string( 'rodape_assine', 'Assine a news', 'Rodapé' );
         pll_register_string( 'botao_carregar', 'carregar mais', 'Botão' );
         pll_register_string( 'newsletter_obrigado', 'Obrigado!', 'Newsletter' );
+        pll_register_string( 'pesquisa_voltar', 'voltar', 'Pesquisa' );
+        pll_register_string( 'pesquisa_limpar', 'limpar', 'Pesquisa' );
+        pll_register_string( 'pesquisa_conteudos', 'Conteúdos', 'Pesquisa' );
+        pll_register_string( 'pesquisa_eventos', 'Eventos', 'Pesquisa' );
+        pll_register_string( 'pesquisa_portfolio', 'Portfólio', 'Pesquisa' );
+        pll_register_string( 'pesquisa_resultados', 'Resultados encontrados:', 'Pesquisa' );
+        pll_register_string( 'pesquisa_encontrados', 'resultados encontrados', 'Pesquisa' );
+        pll_register_string( 'pesquisa_nenhum', 'Nenhum resultado encontrado.', 'Pesquisa' );
+        pll_register_string( 'pesquisa_nova', 'Faça uma nova pesquisa.', 'Pesquisa' );
+        pll_register_string( 'pesquisa_placeholder', 'busca por palavras-chave', 'Pesquisa' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
