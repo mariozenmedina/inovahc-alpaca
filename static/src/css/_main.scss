@@ -95,8 +95,8 @@
       }
     }
   }
-  aside{
-    @apply transition-all duration-300 ease-in-out pb-6;
+  aside {
+    @apply pb-6 transition-all duration-300 ease-in-out;
   }
   /* Navegação do topo */
   nav {
@@ -508,7 +508,7 @@ li .ms,
     border: none !important;
   }
 }
-.destaque {
+:not-(footer) .destaque {
   @apply border-none;
   border: none !important;
   &:hover {
