@@ -1170,11 +1170,11 @@
                                         "parent_repeater": "field_65eef58e9e4e6"
                                     },
                                     {
-                                        "key": "field_65eef5b29e4e9",
-                                        "label": "Data",
-                                        "name": "data",
+                                        "key": "field_65f79e82fdfa1",
+                                        "label": "Gravata",
+                                        "name": "gravata",
                                         "aria-label": "",
-                                        "type": "date_picker",
+                                        "type": "text",
                                         "instructions": "",
                                         "required": 0,
                                         "conditional_logic": 0,
@@ -1183,9 +1183,11 @@
                                             "class": "",
                                             "id": ""
                                         },
-                                        "display_format": "d\/m\/Y",
-                                        "return_format": "d\/m\/Y",
-                                        "first_day": 1,
+                                        "default_value": "",
+                                        "maxlength": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
                                         "parent_repeater": "field_65eef58e9e4e6"
                                     },
                                     {
@@ -1210,126 +1212,9 @@
                                         "parent_repeater": "field_65eef58e9e4e6"
                                     },
                                     {
-                                        "key": "field_65eef5d09e4eb",
-                                        "label": "Link",
-                                        "name": "link",
-                                        "aria-label": "",
-                                        "type": "group",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        },
-                                        "layout": "block",
-                                        "parent_repeater": "field_65eef58e9e4e6",
-                                        "sub_fields": [
-                                            {
-                                                "key": "field_65eef5e39e4ec",
-                                                "label": "URL",
-                                                "name": "url",
-                                                "aria-label": "",
-                                                "type": "link",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "return_format": "array"
-                                            },
-                                            {
-                                                "key": "field_65eef5ed9e4ed",
-                                                "label": "Texto",
-                                                "name": "texto",
-                                                "aria-label": "",
-                                                "type": "text",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "default_value": "",
-                                                "maxlength": "",
-                                                "placeholder": "",
-                                                "prepend": "",
-                                                "append": ""
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "key": "field_65eef6019e4ee",
-                                        "label": "Tag",
-                                        "name": "tag",
-                                        "aria-label": "",
-                                        "type": "repeater",
-                                        "instructions": "",
-                                        "required": 0,
-                                        "conditional_logic": 0,
-                                        "wrapper": {
-                                            "width": "",
-                                            "class": "",
-                                            "id": ""
-                                        },
-                                        "layout": "table",
-                                        "min": 0,
-                                        "max": 0,
-                                        "collapsed": "",
-                                        "button_label": "Adicionar Linha",
-                                        "rows_per_page": 20,
-                                        "parent_repeater": "field_65eef58e9e4e6",
-                                        "sub_fields": [
-                                            {
-                                                "key": "field_65eef60e9e4ef",
-                                                "label": "URL",
-                                                "name": "url",
-                                                "aria-label": "",
-                                                "type": "link",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "return_format": "array",
-                                                "parent_repeater": "field_65eef6019e4ee"
-                                            },
-                                            {
-                                                "key": "field_65eef61b9e4f0",
-                                                "label": "Texto",
-                                                "name": "texto",
-                                                "aria-label": "",
-                                                "type": "text",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "default_value": "",
-                                                "maxlength": "",
-                                                "placeholder": "",
-                                                "prepend": "",
-                                                "append": "",
-                                                "parent_repeater": "field_65eef6019e4ee"
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "key": "field_65eef6479e4f1",
-                                        "label": "Informação",
-                                        "name": "informacao",
+                                        "label": "Blocos de Informação",
+                                        "name": "blocos",
                                         "aria-label": "",
                                         "type": "repeater",
                                         "instructions": "",
@@ -1346,7 +1231,6 @@
                                         "collapsed": "",
                                         "button_label": "Adicionar Linha",
                                         "rows_per_page": 20,
-                                        "parent_repeater": "field_65eef58e9e4e6",
                                         "sub_fields": [
                                             {
                                                 "key": "field_65eef6669e4f2",
@@ -1391,11 +1275,11 @@
                                                 "parent_repeater": "field_65eef6479e4f1"
                                             },
                                             {
-                                                "key": "field_65eef6819e4f4",
-                                                "label": "E-mail",
-                                                "name": "e-mail",
+                                                "key": "field_65f79eccfdfa2",
+                                                "label": "Botão",
+                                                "name": "botao",
                                                 "aria-label": "",
-                                                "type": "group",
+                                                "type": "link",
                                                 "instructions": "",
                                                 "required": 0,
                                                 "conditional_logic": 0,
@@ -1404,103 +1288,11 @@
                                                     "class": "",
                                                     "id": ""
                                                 },
-                                                "layout": "block",
-                                                "parent_repeater": "field_65eef6479e4f1",
-                                                "sub_fields": [
-                                                    {
-                                                        "key": "field_65eef6929e4f5",
-                                                        "label": "URL",
-                                                        "name": "url",
-                                                        "aria-label": "",
-                                                        "type": "link",
-                                                        "instructions": "",
-                                                        "required": 0,
-                                                        "conditional_logic": 0,
-                                                        "wrapper": {
-                                                            "width": "",
-                                                            "class": "",
-                                                            "id": ""
-                                                        },
-                                                        "return_format": "array"
-                                                    },
-                                                    {
-                                                        "key": "field_65eef6a59e4f6",
-                                                        "label": "Texto",
-                                                        "name": "texto",
-                                                        "aria-label": "",
-                                                        "type": "text",
-                                                        "instructions": "",
-                                                        "required": 0,
-                                                        "conditional_logic": 0,
-                                                        "wrapper": {
-                                                            "width": "",
-                                                            "class": "",
-                                                            "id": ""
-                                                        },
-                                                        "default_value": "",
-                                                        "maxlength": "",
-                                                        "placeholder": "",
-                                                        "prepend": "",
-                                                        "append": ""
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "field_65eef7059e4f7",
-                                                "label": "Link",
-                                                "name": "link",
-                                                "aria-label": "",
-                                                "type": "group",
-                                                "instructions": "",
-                                                "required": 0,
-                                                "conditional_logic": 0,
-                                                "wrapper": {
-                                                    "width": "",
-                                                    "class": "",
-                                                    "id": ""
-                                                },
-                                                "layout": "block",
-                                                "parent_repeater": "field_65eef6479e4f1",
-                                                "sub_fields": [
-                                                    {
-                                                        "key": "field_65eef7249e4f8",
-                                                        "label": "URL",
-                                                        "name": "url",
-                                                        "aria-label": "",
-                                                        "type": "link",
-                                                        "instructions": "",
-                                                        "required": 0,
-                                                        "conditional_logic": 0,
-                                                        "wrapper": {
-                                                            "width": "",
-                                                            "class": "",
-                                                            "id": ""
-                                                        },
-                                                        "return_format": "array"
-                                                    },
-                                                    {
-                                                        "key": "field_65eef72c9e4f9",
-                                                        "label": "Texto",
-                                                        "name": "texto",
-                                                        "aria-label": "",
-                                                        "type": "text",
-                                                        "instructions": "",
-                                                        "required": 0,
-                                                        "conditional_logic": 0,
-                                                        "wrapper": {
-                                                            "width": "",
-                                                            "class": "",
-                                                            "id": ""
-                                                        },
-                                                        "default_value": "",
-                                                        "maxlength": "",
-                                                        "placeholder": "",
-                                                        "prepend": "",
-                                                        "append": ""
-                                                    }
-                                                ]
+                                                "return_format": "array",
+                                                "parent_repeater": "field_65eef6479e4f1"
                                             }
-                                        ]
+                                        ],
+                                        "parent_repeater": "field_65eef58e9e4e6"
                                     }
                                 ]
                             },
