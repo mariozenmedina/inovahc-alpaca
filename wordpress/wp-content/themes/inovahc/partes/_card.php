@@ -1,34 +1,61 @@
+<?php
+    if($post_type){
+        $img = get_field('imagem');
+        $pTitulo = get_the_title();
+        $pData = get_the_date('d/m/Y');
+        $pExcerpt = get_the_excerpt();
+        $pBlocos = array();
+        $pTags = get_the_tags();
+    }
+    else{
+        $img = $card['imagem'];
+        $pTitulo = $card['titulo'];
+        $pData = $card['gravata'];
+        $pExcerpt = $card['texto'];
+        $pBlocos = $card['blocos'];
+        $pTags = array();
+    }
+?>
 <div class="card">
-    <figure >
-        <img src="./assets/img/noticias/figura1.png" alt="Foto 1">
+    <?php if($img): ?>
+    <figure>
+        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
     </figure>
+    <?php endif; ?>
+
     <div class="card-content">
+
         <div class="card-header">
-            <div class="titulo">Título lorem ipsum magna  consectetur nostrud tempor dolorem adipiscing</div>
-            <div class="data">08/09/2023</div>
-            <div class="texto">Introdução ou fragmento da notícia consectetur adipiscing elit, sed do eiusmod tempor incididunt...</div>
+            <?php if($pTitulo): ?><div class="titulo"><?php echo $pTitulo; ?></div><?php endif; ?>
+            <?php if($pData): ?><div class="data"><?php echo $pData; ?></div><?php endif; ?>
+            <?php if($pExcerpt): ?><div class="texto"><?php echo $pExcerpt; ?></div><?php endif; ?>
         </div>
+
+        <?php if(is_array($pBlocos)): foreach($pBlocos as $info): ?>
         <div class="card-info">
             <div class="representante">
-                <div class="titulo">Prof. Representante</div>
-                <div class="nome">Prof. Dr. Fabio Jatene</div>
-                <button class="link small">grabello.inovaincor@fz.org.br</button>
+                <?php if($info['chapeu']): ?><div class="titulo"><?php echo $info['chapeu']; ?></div><?php endif; ?>
+                <?php if($info['texto']): ?><div class="nome"><?php echo $info['texto']; ?></div><?php endif; ?>
+                <?php if($info['botao']): ?>
+                    <a class="link small" href="<?php echo $info['botao']['url']; ?>" target="<?php echo $info['botao']['target']; ?>"><?php echo $info['botao']['title']; ?></a>
+                <?php endif; ?>
             </div>
-            <div class="representante-more">
-                <div class="titulo">Conheça mais</div>
-                <button class="link small">www.fz.org.br/inovaincor</button>
-            </div>
-        </div> 
+        </div>
+        <?php endforeach; endif; ?>
+
+        <?php if($post_type): ?>
         <div>
-        <button class="link">
-            leia mais
-        </button>
+            <a href="<?php the_permalink(); ?>" class="link"><?php pll_e('leia mais'); ?></a>
         </div>
+        <?php endif; ?>
        
+        <?php if($post_type): ?>
         <div class="card-tags">
-            <button class="tag">categoria 1</button>
-            <button class="tag">categoria 2</button>
-          
+            <?php if(is_array($pTags)): foreach($pTags as $tag): ?>
+                <a href="<?php url(); ?>?tag=<?php echo $tag->slug; ?>&post_type=<?php echo $post_type; ?>" class="tag tag-big"><?php echo $tag->name; ?></a>
+            <?php endforeach; endif; ?>
         </div>
+        <?php endif; ?>
+
     </div>
 </div>

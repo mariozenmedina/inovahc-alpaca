@@ -20,7 +20,8 @@
                     <ul class="splide__list">
                         <?php switch($type){
                             case 'post_type':
-                                $query = new WP_Query( array( 'post_type' => get_sub_field('post_type') ) );
+                                $post_type = get_sub_field('post_type');
+                                $query = new WP_Query( array( 'post_type' => $post_type ) );
                                 if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
                                     echo '<li class="splide__slide">';
                                     include(get_stylesheet_directory() . '/partes/_card.php');
@@ -28,6 +29,7 @@
                                 endwhile; endif; wp_reset_postdata();
                                 break;
                             case 'categoria':
+                                $post_type = get_sub_field('post_type');
                                 $query = new WP_Query( array( 'post_type' => get_sub_field('post_type'), 'cat' => get_sub_field('taxonomia') ) );
                                 if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
                                     echo '<li class="splide__slide">';
@@ -36,6 +38,7 @@
                                 endwhile; endif; wp_reset_postdata();
                                 break;
                             default:
+                                $post_type = NULL;
                                 foreach( get_sub_field('cards') as $card ){
                                     echo '<li class="splide__slide">';
                                     include(get_stylesheet_directory() . '/partes/_card.php');
