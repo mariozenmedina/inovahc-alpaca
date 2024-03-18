@@ -23,7 +23,7 @@
         </div>
         <?php endif; ?>
         <div class="md:text-center">
-            <?php $botao = get_sub_field('botao'); if($botao['url']){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
+            <?php $botao = get_sub_field('botao'); if($botao){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
         </div>
     </div>
 </section>

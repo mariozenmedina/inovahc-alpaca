@@ -1,5 +1,5 @@
 <!-- Section Notícias -->
-<section class=" bg-inovahc-purple-100">
+<section class="bg-inovahc-<?php the_sub_field('cor'); ?>">
     <div class="container mx-auto px-6 pt-12 relative ">
         <!--  Section Notícias Header -->
         <div class="section-header">
@@ -51,8 +51,9 @@
             </div>
         </div>
     </div>
+
     <!-- Section Notícias Rodape -->
-    <?php $botao = get_sub_field('botao'); if($botao['url']): ?>
+    <?php $botao = get_sub_field('botao'); if($botao): ?>
     <div class="container mx-auto px-6 pb-12">
         <?php include(get_stylesheet_directory() . '/partes/_botao.php'); ?>
     </div>
