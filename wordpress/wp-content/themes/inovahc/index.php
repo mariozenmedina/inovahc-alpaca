@@ -46,20 +46,6 @@
                 <!-- Paginação -->
                 <div class="py-4 flex justify-end gap-4  items-center"> 
                     <?php pagination(); ?>
-                    <!-- <div class=" text-inovahc-green-500">
-                    Página 
-                    <span class=" text-inovahc-green-800">XX</span>
-                    de 
-                    <span class=" text-inovahc-green-800">XX</span>
-                    </div>
-                    <div class="flex gap-2">
-                        <button class="btn-icon" disabled >
-                            <?php svg('icon-anterior',7,12,"fill-white");?> 
-                        </button>
-                        <button class="btn-icon" active>
-                            <?php svg('icon-proximo',7,12,"fill-white");?> 
-                        </button>
-                    <div> -->
                 </div>
             </div>
         </section>
