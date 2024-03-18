@@ -2562,11 +2562,11 @@ li .ms:hover,
   border: none !important;
 }
 
-.destaque{
+:not-(footer) .destaque{
   border-style: none;
   border: none !important;
 }
-.destaque:hover{
+:not-(footer) .destaque:hover{
   border-style: none;
   border: none !important;
 }
