@@ -1,9 +1,9 @@
 <?php
 
 $search = sanitize_text_field($_GET['s']);
-$resPost = new WP_Query( array( 'post_type' => 'post', 's' => $search ) );
-$resEventos = new WP_Query( array( 'post_type' => 'eventos', 's' => $search ) );
-$resProjetos = new WP_Query( array( 'post_type' => 'projetos', 's' => $search ) );
+$resPost = new WP_Query( array( 'post_type' => 'post', 's' => $search, 'posts_per_page' => -1 ) );
+$resEventos = new WP_Query( array( 'post_type' => 'eventos', 's' => $search, 'posts_per_page' => -1 ) );
+$resProjetos = new WP_Query( array( 'post_type' => 'projetos', 's' => $search, 'posts_per_page' => -1 ) );
 
 ?>
 <?php get_header(); ?>
