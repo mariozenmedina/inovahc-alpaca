@@ -1,3 +1,11 @@
+<?php
+
+$search = sanitize_text_field($_GET['s']);
+$resPost = new WP_Query( array( 'post_type' => 'post', 's' => $search ) );
+$resEventos = new WP_Query( array( 'post_type' => 'eventos', 's' => $search ) );
+$resProjetos = new WP_Query( array( 'post_type' => 'projetos', 's' => $search ) );
+
+?>
 <?php get_header(); ?>
     <main>
         <!-- Section Search  -->
@@ -34,6 +42,8 @@
                         </div>
                     </form>
                 </div>
+
+                <?php if($resPost->post_count || $resEventos->post_count || $resProjetos->post_count): ?>
                 <!-- Com Resultados -->
                 <div>
                     <div class="flex md:justify-center md:flex-row flex-col text-inovahc-green-800 text-center font-poppins text-3xl">
@@ -43,20 +53,22 @@
                     <div class="grid md:grid-cols-3 gap-4 py-6">
                         <div class="card px-4 py-3 w-full">
                             <div class="text-xl font-semibold text-inovahc-purple-800"><?php pll_e('Conteúdos'); ?></div>
-                            <div class="text-inovahc-green-500 font-bold underline">100 <?php pll_e('resultados encontrados'); ?></div>
+                            <a href="<?php echo get_post_type_archive_link('post'); ?>?s=<?php echo $search; ?>" class="text-inovahc-green-500 font-bold underline"><?php echo $resPost->post_count; ?> <?php pll_e('resultados encontrados'); ?></a>
                         </div>
                     
                         <div class="card px-4 py-3  w-full">
                             <div class="text-xl font-semibold text-inovahc-purple-800"><?php pll_e('Eventos'); ?></div>
-                            <div class="text-inovahc-green-500 font-bold underline">100 <?php pll_e('resultados encontrados'); ?></div>
+                            <a href="<?php echo get_post_type_archive_link('eventos'); ?>?s=<?php echo $search; ?>" class="text-inovahc-green-500 font-bold underline"><?php echo $resEventos->post_count; ?> <?php pll_e('resultados encontrados'); ?></a>
                         </div>
 
                         <div class="card px-4 py-3  w-full">
                             <div class="text-xl font-semibold text-inovahc-purple-800"><?php pll_e('Portfólio'); ?></div>
-                            <div class="text-inovahc-green-500 font-bold underline">100 <?php pll_e('resultados encontrados'); ?></div>
+                            <a href="<?php echo get_post_type_archive_link('projetos'); ?>?s=<?php echo $search; ?>" class="text-inovahc-green-500 font-bold underline"><?php echo $resProjetos->post_count; ?> <?php pll_e('resultados encontrados'); ?></a>
                         </div>
                     </div>
                 </div>
+                
+                <?php else: ?>
                 <!-- Nenhum resultado encontrado. -->
                 <div>
                     <div class="flex md:justify-center md:flex-row flex-col text-inovahc-green-800 text-center font-poppins text-3xl mb-2">
@@ -71,6 +83,7 @@
                         </figure>
                     </div>
                 </div>
+                <?php endif; ?>
 
 
                 
