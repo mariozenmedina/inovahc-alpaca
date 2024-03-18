@@ -121,9 +121,11 @@ dropdownButtons.forEach((button) =>
 /* -------------- */
 document.addEventListener("DOMContentLoaded", function () {
   var scene = document.getElementById("scene");
-  var parallaxInstance = new Parallax(scene, {
-    relativeInput: true,
-  });
+    if(scene){
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true,
+        });
+    }
 });
 
 /* -------------- */
@@ -144,13 +146,17 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isScrolled && !isScrollUp) {
       controllerNav.classList.add("scroll-on");
       controllerNav.classList.remove("scroll-up");
-      controllerAside.classList.add("top-[20px]");
-      controllerAside.classList.remove("top-[100px]");
+      if(controllerAside){
+        controllerAside.classList.add("top-[20px]");
+        controllerAside.classList.remove("top-[100px]");
+      }
     } else {
       controllerNav.classList.remove("scroll-on");
       controllerNav.classList.add("scroll-up");
-      controllerAside.classList.add("top-[100px]");
-      controllerAside.classList.remove("top-[20px]");
+      if(controllerAside){
+        controllerAside.classList.add("top-[100px]");
+        controllerAside.classList.remove("top-[20px]");
+      }
     }
   }
   function mountScrollHandler() {
@@ -180,6 +186,72 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* -------------- */
+/* Archive tags de pesquisa */
+/* -------------- */
+const filteredTaxonomies = document.getElementById('filtered-taxonomies');
+const aplicarFiltrosArchive = document.getElementById('aplicar-filtros-archive');
+if(filteredTaxonomies && aplicarFiltrosArchive){
+    const searchText = document.getElementById('search-input');
+    const categories = document.querySelectorAll('input[name=category]');
+    const tecnologias = document.querySelectorAll('input[name=tecnologia]');
+    const instituicoes = document.querySelectorAll('input[name=instituicao]');
+    let selectedTerms = {
+        cat: new Set(),
+        tecnologia: new Set(),
+        instituicao: new Set()
+    };
+    [...categories,...tecnologias,...instituicoes].forEach(dom=>{
+        createOrRemoveFilterLabel(dom);
+        prepareFiltrosUrl();
+        dom.addEventListener('change', _ => {
+            createOrRemoveFilterLabel(_.target);
+            prepareFiltrosUrl();
+        });
+    });
+
+    function createOrRemoveFilterLabel(target){
+        if( !target.checked ){
+            let lb = document.getElementById(`filtered-label-${target.value}`);
+            if(lb) lb.remove();
+            selectedTerms[target.dataset.tax].delete(target.value);
+        }
+        else{
+            let label = new DOMParser().parseFromString(`<label id="filtered-label-${target.value}" for="filter_${target.value}" class="tag">${target.dataset.name} <svg width="5" height="5" class="fill-inovahc-blue-800 ml-2 "><use xlink:href="#icon-fechar-menu"></use></svg></label>`, 'text/html').querySelector('label');
+            filteredTaxonomies.append( label );
+            selectedTerms[target.dataset.tax].add(target.value);
+        }
+    }
+
+    function prepareFiltrosUrl(){
+        let url = aplicarFiltrosArchive.dataset.baseurl+'?s='+searchText.value;
+
+        if(selectedTerms.cat.size){
+            selectedTerms.cat.forEach((cat, idx) => url+=('&cat[]='+cat));
+        }
+        if(selectedTerms.tecnologia.size){
+            selectedTerms.tecnologia.forEach((cat, idx) => url+=('&tecnologia[]='+cat));
+        }
+        if(selectedTerms.instituicao.size){
+            selectedTerms.instituicao.forEach((cat, idx) => url+=('&instituicao[]='+cat));
+        }
+
+        aplicarFiltrosArchive.setAttribute('href', url);
+    }
+
+    searchText.addEventListener('input', _ => {
+        prepareFiltrosUrl();
+    });
+    searchText.addEventListener('keypress', e => {
+        if(e.key === "Enter"){
+            filterSubmit()
+        }
+    });
+
+    function filterSubmit(){
+        aplicarFiltrosArchive.click();
+    }
+}
 !(function (t) {
   if ("object" == typeof exports && "undefined" != typeof module)
     module.exports = t();

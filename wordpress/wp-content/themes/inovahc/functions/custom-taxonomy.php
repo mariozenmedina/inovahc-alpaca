@@ -1,7 +1,8 @@
-<?php /*
+<?php
 add_action( 'init', 'create_taxonomy_category' );
 function create_taxonomy_category() {
-	$custom[] = array('slug' => 'setores', 'name' => 'Setor', 'plural' => 'Setores', 'post-type' => array('receitas'));
+	$custom[] = array('slug' => 'tecnologia', 'name' => 'Tecnologia', 'plural' => 'Tecnologias', 'post-type' => array('projetos'));
+	$custom[] = array('slug' => 'instituicao', 'name' => 'Instituição', 'plural' => 'Instituições', 'post-type' => array('projetos'));
 	foreach($custom as $item){
 		$labels = array(
 			'name' => $item['plural'],

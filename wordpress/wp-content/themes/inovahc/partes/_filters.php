@@ -20,38 +20,12 @@
                 <div class="select-inovahc-dropdown" data-id="1">
                     
                     <ul class="form-inovahc two-colls">
+                        <?php $tematicas = get_terms( array('taxonomy' => 'category', 'hide_empty' => false) ); foreach( $tematicas as $tm ): ?>
                         <li>
-                            <input type="checkbox" id="item1" name="itens">
-                            <label for="item1">Item 1</label>
+                            <input <?php if(isset($_GET['cat']) && in_array($tm->term_taxonomy_id, $_GET['cat'])){ echo 'checked'; } ?> data-name="<?php echo $tm->name; ?>" data-tax="cat" type="checkbox" value="<?php echo $tm->term_taxonomy_id; ?>" id="filter_<?php echo $tm->term_taxonomy_id; ?>" name="category" />
+                            <label for="filter_<?php echo $tm->term_taxonomy_id; ?>"><?php echo $tm->name; ?></label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="item2" name="itens">
-                            <label for="item2">Item 2</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item3" name="itens">
-                            <label for="item3">Item 3</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item4" name="itens">
-                            <label for="item4">Item 4</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item5" name="itens">
-                            <label for="item5">temática C ipsum dolor sit amet, consectetur adipiscing elit</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item6" name="itens">
-                            <label for="item6">Item 6</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item7" name="itens">
-                            <label for="item7">temática C ipsum dolor sit amet, consectetur adipiscing elit</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item8" name="itens">
-                            <label for="item8">Item 8</label>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
 
 
@@ -80,18 +54,12 @@
                 <!-- Dropdown -->
                 <div class="select-inovahc-dropdown" data-id="2">
                     <ul class="form-inovahc">
+                        <?php $tech = get_terms( array('taxonomy' => 'tecnologia', 'hide_empty' => false) ); foreach( $tech as $tm ): ?>
                         <li>
-                            <input type="checkbox" id="item1" name="itens">
-                            <label for="item1">Hardware</label>
+                            <input <?php if(isset($_GET['tecnologia']) && in_array($tm->slug, $_GET['tecnologia'])){ echo 'checked'; } ?> data-name="<?php echo $tm->name; ?>" data-tax="tecnologia" type="checkbox" value="<?php echo $tm->slug; ?>" id="filter_<?php echo $tm->term_taxonomy_id; ?>" name="tecnologia" />
+                            <label for="filter_<?php echo $tm->term_taxonomy_id; ?>"><?php echo $tm->name; ?></label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="item2" name="itens">
-                            <label for="item2">Software</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item3" name="itens">
-                            <label for="item2">biotech</label>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
 
 
@@ -120,18 +88,12 @@
                 <!-- Dropdown -->
                 <div class="select-inovahc-dropdown" data-id="3">
                     <ul class="form-inovahc">
+                        <?php $inst = get_terms( array('taxonomy' => 'instituicao', 'hide_empty' => false) ); foreach( $inst as $tm ): ?>
                         <li>
-                            <input type="checkbox" id="item1" name="itens">
-                            <label for="item1">Tipo A</label>
+                            <input <?php if(isset($_GET['instituicao']) && in_array($tm->slug, $_GET['instituicao'])){ echo 'checked'; } ?> data-name="<?php echo $tm->name; ?>" data-tax="instituicao" type="checkbox" value="<?php echo $tm->slug; ?>" id="filter_<?php echo $tm->term_taxonomy_id; ?>" name="instituicao" />
+                            <label for="filter_<?php echo $tm->term_taxonomy_id; ?>"><?php echo $tm->name; ?></label>
                         </li>
-                        <li>
-                            <input type="checkbox" id="item2" name="itens">
-                            <label for="item2">Tipo B</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item3" name="itens">
-                            <label for="item2">tipo C ipsum dolor sit amet, consectetur adipiscing elit</label>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
 
 
@@ -144,32 +106,30 @@
         </div>
         <?php endif; ?>
         <!-- Busca -->
-        <form class="form-inovahc py-4 md:py-0">
-            <label for="search-input" class="block relative w-full">
-                <input id="search-input" type="search" name="s" value="<?php echo sanitize_text_field(@$_GET['s']); ?>" class="pr-8 w-[90%] md:w-full bg-transparent" aria-label="Input (search)" placeholder="<?php pll_e('busca por palavras-chave'); ?>" />
+        <div class="form-inovahc py-4 md:py-0">
+            <label for="search-input" class="block relative w-full ">
+            <input id="search-input" type="search" name="s" value="<?php echo sanitize_text_field(@$_GET['s']); ?>" class="pr-8 w-[90%] md:w-full bg-transparent" aria-label="Input (search)" placeholder="<?php pll_e('busca por palavras-chave'); ?>" />
                 <!-- Button desktop -->
-                <button type="submit" class="absolute right-0 top-0 mt-[0.7rem] mr-2 hidden md:flex">
+                <button onclick="filterSubmit()" class="absolute right-0 top-0 mt-[0.7rem] mr-2 hidden md:flex">
                     <?php svg('icon-busca',17,17,"fill-inovahc-gray-400");?> 
                 </button>
 
                 <!-- Button mobile -->
-                <button type="submit" class="btn-icon btn-icon-big absolute right-0 -top-2 mt-[0.7rem] flex md:hidden">
+                <button onclick="filterSubmit()" class="btn-icon btn-icon-big absolute right-0 -top-2 mt-[0.7rem] flex md:hidden">
                         <?php svg('icon-busca',14,14,"fill-iwhite");?> 
                 </button>
         
             </label>
-        </form>
+        </div>
         
     </div>
 
     <div class="container mx-auto flex-col gap-4 md:flex-row px-6 pb-6 flex justify-between">
-        <div class="flex gap-2 items-center">
-            <span class="tag">
-                categoria fecha filtro  <?php svg('icon-fechar-menu',5,5,"fill-inovahc-blue-800 ml-2 ");?>
-            </span>
-            <span class="tag">
-                categoria fecha filtro  <?php svg('icon-fechar-menu',5,5,"fill-inovahc-blue-800 ml-2 ");?>
-            </span>
+        <div class="flex gap-4 justify-between md:justify-start">
+            <a id="aplicar-filtros-archive" data-baseurl="<?php echo get_post_type_archive_link($post_type); ?>" class="btn">aplicar e pesquisar</a>
+            <a href="<?php echo get_post_type_archive_link($post_type); ?>" class="btn btn-outline">limpar</a>
+        </div>
+        <div class="flex gap-2 items-center" id="filtered-taxonomies">
         </div>
     </div>
 </section>

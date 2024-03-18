@@ -35,10 +35,7 @@ add_image_size('capa-mobile', 900, 1200, true); */
 include_once(get_stylesheet_directory() . '/functions/custom-post-type.php');
 
 //REGISTRANDO TAXONOMY
-//include_once(get_stylesheet_directory() . '/functions/custom-taxonomy.php');
-
-//REMOVE MENUS
-//include_once(get_stylesheet_directory() . '/functions/remove-menus.php');
+include_once(get_stylesheet_directory() . '/functions/custom-taxonomy.php');
 
 //REMOVE GUTEMBERG
 add_filter('use_block_editor_for_post', '__return_false', 10);
@@ -187,8 +184,8 @@ add_action('admin_init', function () {
 
 //ADD ARCHIVE SEARCH
 function archive_search_template( $template ){
-    global $wp_query;   
-    $post_type = get_query_var('post_type');   
+    global $wp_query;
+    $post_type = get_query_var('post_type');
     if( $wp_query->is_search && ($post_type == 'post' || $post_type == 'projetos' || $post_type == 'eventos') ){
         return locate_template('index.php');
     }   

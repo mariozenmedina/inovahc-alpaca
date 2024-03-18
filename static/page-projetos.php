@@ -180,7 +180,6 @@
             
                 </label>
             </div>
-          
         </div>
 
         <div class="container mx-auto flex-col gap-4 md:flex-row px-6 pb-6 flex justify-between">
