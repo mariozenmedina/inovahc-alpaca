@@ -37,6 +37,9 @@
             case 'awards':
                 include(get_stylesheet_directory() . '/partes/flexible_awards.php');
                 break;
+            case 'contato':
+                include(get_stylesheet_directory() . '/partes/flexible_contact.php');
+                break;
         }
     ?>
 <?php endwhile; endif; ?>
