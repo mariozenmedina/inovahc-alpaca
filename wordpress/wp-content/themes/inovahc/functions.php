@@ -1,17 +1,9 @@
 <?php
-/*update_option( 'siteurl', 'http://blankthemaster.com.br' );
-update_option( 'home', 'http://blankthemaster.com.br' );*/
 
 //FILESIZES
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
-
-//CHANGE ACF CAPABILITY
-/* function my_acf_capability( $string ) {
-    return 'manage_options_acf';
-}
-add_filter('acf/settings/capability', 'my_acf_capability'); */
 
 //BLOGINFO
 function tu(){
@@ -25,11 +17,6 @@ function url(){
 //MENUS
 register_nav_menu( 'principal', 'Menu Principal' );
 register_nav_menu( 'ms', 'Mídias Sociais' );
-
-//THUMBNAILS
-/* add_theme_support('post-thumbnails');
-add_image_size('capa', 1600, 700, true);
-add_image_size('capa-mobile', 900, 1200, true); */
 
 //REGISTRANDO POST TYPE
 include_once(get_stylesheet_directory() . '/functions/custom-post-type.php');
@@ -73,16 +60,6 @@ function svg($icon,$w,$h,$class,$return = false){
         }
         echo $html;
     }
-}
-
-//CLEAN NAME
-function cleanName($s){
-    $s = strtr(utf8_decode($s), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿšÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝŠ'), 'aaaaaceeeeiiiinooooouuuuyysAAAAACEEEEIIIINOOOOOUUUUYS');
-    $s = str_replace("'", '_', $s);
-    $s = preg_replace("/[^A-Za-z \_\-]/", "", strtolower($s));
-    $s = preg_replace("/\s+/", "_", $s);
-    $s = preg_replace("/-+/", "-", $s);
-    return $s;
 }
 
 //FORMAT FILE SIZE STRING
