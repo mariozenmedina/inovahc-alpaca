@@ -36,6 +36,7 @@
         <!-- Section Projetos  -->
         <section>
             <div class="container mx-auto px-6 py-16 flex flex-col">
+
                 <!-- Mostragem dos Projetos -->
                 <div class="grid md:grid-cols-4 gap-5">
                     <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
@@ -44,7 +45,8 @@
                 </div>    
                 <!-- Paginação -->
                 <div class="py-4 flex justify-end gap-4  items-center"> 
-                    <div class=" text-inovahc-green-500">
+                    <?php pagination(); ?>
+                    <!-- <div class=" text-inovahc-green-500">
                     Página 
                     <span class=" text-inovahc-green-800">XX</span>
                     de 
@@ -57,7 +59,7 @@
                         <button class="btn-icon" active>
                             <?php svg('icon-proximo',7,12,"fill-white");?> 
                         </button>
-                    <div>
+                    <div> -->
                 </div>
             </div>
         </section>

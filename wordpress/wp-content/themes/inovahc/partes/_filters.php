@@ -10,7 +10,7 @@
                 <button type="button" class="select-inovahc-button" data-id="1">
                     <span class="flex gap-2 items-center">
                     <?php svg('icon-filter',11,11,"fill-white");?>
-                    filtrar por temática
+                    <?php pll_e('filtrar por temática'); ?>
                     </span>
                     <span class="chevron">
                     <?php svg('icon-dropdown',12,7,"fill-white");?>
@@ -28,10 +28,9 @@
                         <?php endforeach; ?>
                     </ul>
 
-
                     <div class="flex justify-between">
-                        <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
-                        <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
+                        <p></p>
+                        <button class="btn btn-outline" onclick="closeAllDropdowns()"><?php pll_e('fechar'); ?></button>
                     </div>
                 </div>
             </label>
@@ -45,7 +44,7 @@
                 <button type="button" class="select-inovahc-button" data-id="2">
                     <span class="flex gap-2 items-center">
                     <?php svg('icon-filter',11,11,"fill-white");?>
-                    filtrar por tecnologia
+                    <?php pll_e('filtrar por tecnologia'); ?>
                     </span>
                     <span class="chevron">
                     <?php svg('icon-dropdown',12,7,"fill-white");?>
@@ -62,10 +61,9 @@
                         <?php endforeach; ?>
                     </ul>
 
-
                     <div class="flex justify-between">
-                        <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
-                        <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
+                        <p></p>
+                        <button class="btn btn-outline" onclick="closeAllDropdowns()"><?php pll_e('fechar'); ?></button>
                     </div>
                 </div>
             </label>
@@ -79,7 +77,7 @@
                 <button type="button" class="select-inovahc-button" data-id="3">
                     <span class="flex gap-2 items-center">
                     <?php svg('icon-filter',11,11,"fill-white");?>
-                    filtrar por instituição
+                    <?php pll_e('filtrar por instituição'); ?>
                     </span>
                     <span class="chevron">
                     <?php svg('icon-dropdown',12,7,"fill-white");?>
@@ -96,10 +94,9 @@
                         <?php endforeach; ?>
                     </ul>
 
-
                     <div class="flex justify-between">
-                        <button class="btn" onclick="closeAllDropdowns()">selecionar</button>
-                        <button class="btn btn-outline" onclick="closeAllDropdowns()">cancelar</button>
+                        <p></p>
+                        <button class="btn btn-outline" onclick="closeAllDropdowns()"><?php pll_e('fechar'); ?></button>
                     </div>
                 </div>
             </label>
@@ -126,8 +123,8 @@
 
     <div class="container mx-auto flex-col gap-4 md:flex-row px-6 pb-6 flex justify-between">
         <div class="flex gap-4 justify-between md:justify-start">
-            <a id="aplicar-filtros-archive" data-baseurl="<?php echo get_post_type_archive_link($post_type); ?>" class="btn">aplicar e pesquisar</a>
-            <a href="<?php echo get_post_type_archive_link($post_type); ?>" class="btn btn-outline">limpar</a>
+            <a id="aplicar-filtros-archive" data-baseurl="<?php echo get_post_type_archive_link($post_type); ?>" class="btn"><?php pll_e('aplicar e pesquisar'); ?></a>
+            <a href="<?php echo get_post_type_archive_link($post_type); ?>" class="btn btn-outline"><?php pll_e('limpar'); ?></a>
         </div>
         <div class="flex gap-2 items-center" id="filtered-taxonomies">
         </div>

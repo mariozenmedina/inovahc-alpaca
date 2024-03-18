@@ -42,26 +42,27 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 add_filter('use_block_editor_for_page', '__return_false', 10);
 
 //PAGINATION
-/* function pagination($prev='&laquo;',$next='&raquo;'){
-	global $wp_query, $wp_rewrite;
+function pagination($prev='&laquo;',$next='&raquo;'){
+    global $wp_query, $wp_rewrite;
 	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
-	$pagination = array(
-		'base' => @add_query_arg('paged','%#%'),
-		'format' => '',
-		'total' => $wp_query->max_num_pages,
-		'current' => $current,
-		'prev_text' => __($prev),
-		'next_text' => __($next),
-		'type' => 'plain'
-	);
-	if($wp_rewrite->using_permalinks()){
-		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
-	}
-	if(!empty($wp_query->query_vars['s'])){
-		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
-	}
-	echo paginate_links( $pagination );
-}; */
+    
+    $pagination_links = paginate_links( array(
+        'prev_text' => '<button class="btn-icon" '.( $current == 1 ? 'disabled' : 'active' ).'>'.svg('icon-anterior',7,12,"fill-white", true).'</button>',
+        'next_text' => '<button class="btn-icon" '.( $current < $wp_query->max_num_pages ? 'active' : 'disabled' ).'>'.svg('icon-proximo',7,12,"fill-white", true).'</button>',
+        'type' => 'array'
+    ) );
+
+    echo '<div class="text-inovahc-green-500">';
+    pll_e('Página');
+    echo ' <span class="text-inovahc-green-800">'.$current.'</span> ';
+    pll_e('de');
+    echo ' <span class="text-inovahc-green-800">'.$wp_query->max_num_pages.'</span></div>';
+
+    echo '<div class="flex gap-2">';
+        echo $current == 1 ? '<button class="btn-icon" disabled>'.svg('icon-anterior',7,12,"fill-white", true).'</button>' : $pagination_links[0];
+        echo ($current < $wp_query->max_num_pages) ? end($pagination_links) : '<button class="btn-icon" disabled>'.svg('icon-proximo',7,12,"fill-white", true).'</button>';
+    echo '<div>';
+};
 
 //SVGS
 function svg($icon,$w,$h,$class,$return = false){
@@ -132,6 +133,7 @@ function add_string_translations() {
         pll_register_string( 'botao_anterior', 'anterior', 'Botão' );
         pll_register_string( 'botao_proximo', 'próximo', 'Botão' );
         pll_register_string( 'botao_mais', 'leia mais', 'Botão' );
+        pll_register_string( 'botao_aplicar_pesquisar', 'aplicar e pesquisar', 'Botão' );
         pll_register_string( 'newsletter_obrigado', 'Obrigado!', 'Newsletter' );
         pll_register_string( 'pesquisa_limpar', 'limpar', 'Pesquisa' );
         pll_register_string( 'pesquisa_conteudos', 'Conteúdos', 'Pesquisa' );
@@ -153,6 +155,10 @@ function add_string_translations() {
         pll_register_string( 'texto_post', 'Aqui você encontra tudo o que temos de Conteúdos', 'Feed' );
         pll_register_string( 'texto_eventos', 'Aqui você encontra tudo o que temos de Eventos', 'Feed' );
         pll_register_string( 'texto_projetos', 'Aqui você encontra tudo o que temos de Projetos', 'Feed' );
+        pll_register_string( 'filtro_tematica', 'filtrar por temática', 'Filtro' );
+        pll_register_string( 'filtro_tecnologia', 'filtrar por tecnologia', 'Filtro' );
+        pll_register_string( 'filtro_instituicao', 'filtrar por instituição', 'Filtro' );
+        pll_register_string( 'filtro_fechar', 'fechar', 'Filtro' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
