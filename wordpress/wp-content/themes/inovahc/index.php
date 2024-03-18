@@ -33,9 +33,34 @@
 
         <?php include_once(get_stylesheet_directory() . '/partes/_filters.php'); ?>
 
+        <!-- Section Projetos  -->
+        <section>
+            <div class="container mx-auto px-6 py-16 flex flex-col">
+                <!-- Mostragem dos Projetos -->
+                <div class="grid md:grid-cols-4 gap-5">
+                    <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
+                    <?php include(get_stylesheet_directory() . '/partes/_card.php'); ?>
+                    <?php endwhile; endif; ?>
+                </div>    
+                <!-- Paginação -->
+                <div class="py-4 flex justify-end gap-4  items-center"> 
+                    <div class=" text-inovahc-green-500">
+                    Página 
+                    <span class=" text-inovahc-green-800">XX</span>
+                    de 
+                    <span class=" text-inovahc-green-800">XX</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn-icon" disabled >
+                            <?php svg('icon-anterior',7,12,"fill-white");?> 
+                        </button>
+                        <button class="btn-icon" active>
+                            <?php svg('icon-proximo',7,12,"fill-white");?> 
+                        </button>
+                    <div>
+                </div>
+            </div>
+        </section>
 
-        <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
-            <h2><?php the_title(); ?></h2>
-        <?php endwhile; endif; ?>
     </main>
 <?php get_footer(); ?>
