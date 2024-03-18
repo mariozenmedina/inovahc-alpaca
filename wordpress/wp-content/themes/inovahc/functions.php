@@ -150,6 +150,12 @@ function add_string_translations() {
         pll_register_string( 'termos_portfolio', 'Projeto', 'Termos' );
         pll_register_string( 'termos_compartilhe', 'Compartilhe este conteúdo:', 'Termos' );
         pll_register_string( 'termos_relacionados', 'Temas relacionados', 'Termos' );
+        pll_register_string( 'feed_post', 'Feed de Conteúdos', 'Feed' );
+        pll_register_string( 'feed_eventos', 'Feed de Eventos', 'Feed' );
+        pll_register_string( 'feed_projetos', 'Feed de Projetos', 'Feed' );
+        pll_register_string( 'texto_post', 'Aqui você encontra tudo o que temos de Conteúdos', 'Feed' );
+        pll_register_string( 'texto_eventos', 'Aqui você encontra tudo o que temos de Eventos', 'Feed' );
+        pll_register_string( 'texto_projetos', 'Aqui você encontra tudo o que temos de Projetos', 'Feed' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );
@@ -178,3 +184,14 @@ add_action('admin_init', function () {
         }
     }
 });
+
+//ADD ARCHIVE SEARCH
+function archive_search_template( $template ){
+    global $wp_query;   
+    $post_type = get_query_var('post_type');   
+    if( $wp_query->is_search && ($post_type == 'post' || $post_type == 'projetos' || $post_type == 'eventos') ){
+        return locate_template('index.php');
+    }   
+    return $template;   
+}
+add_filter( 'template_include', 'archive_search_template' );
