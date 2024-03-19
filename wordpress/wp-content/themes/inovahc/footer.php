@@ -1,7 +1,7 @@
 </div>
 
 <!-- Footer Conteudo -->
-<footer class="flex flex-col ">
+<footer class="flex flex-col" >
 
     <section class="bg-inovahc-green-600">
         <div class="container mx-auto p-6 flex flex-col md:flex-row md:justify-between justify-start">

@@ -7,8 +7,8 @@ module.exports = {
   content: [
     "./static/*.{html,js,php}",
     "./static/**/*.{html,js,php}",
-    "./wordpress/wp-content/themes/inovahc/*.php",
-    "./wordpress/wp-content/themes/inovahc/**/*.php",
+    "./wordpress/wp-content/themes/inovahc/*.{html,js,php}",
+    "./wordpress/wp-content/themes/inovahc/**/*.{html,js,php}",
   ],
   theme: {
     extend: options.extend,
