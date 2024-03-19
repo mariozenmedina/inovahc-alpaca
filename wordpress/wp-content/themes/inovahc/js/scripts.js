@@ -127,9 +127,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 /* -------------- */
-/* Scroll */
+/* Scroll Controller */
 /* -------------- */
 document.addEventListener("DOMContentLoaded", function () {
   let isScrolled = false;
@@ -138,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const controllerNav = document.querySelector(".controller-nav");
   const controllerAside = document.querySelector("aside");
+  const toggleMenuMobile = document.getElementById("toggle-menuMobile");
+  const body = document.body;
 
   function handleScroll() {
     isScrolled = window.scrollY > 100;
@@ -159,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+
   function mountScrollHandler() {
     scrollPos = window.scrollY;
     window.addEventListener("scroll", handleScroll);
@@ -168,24 +170,39 @@ document.addEventListener("DOMContentLoaded", function () {
     window.removeEventListener("scroll", handleScroll);
   }
 
+  function disableScroll() {
+    // Salva a posição atual da janela de visualização
+    var scrollY = window.scrollY;
+    // Salva a posição atual do scroll da janela de visualização
+    var scrollX = window.scrollX;
+    // Adiciona estilos ao corpo para desabilitar o scroll
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = `-${scrollX}px`;
+  }
+
+  function enableScroll() {
+    // Remove os estilos do corpo para reabilitar o scroll
+    body.style.position = "";
+    body.style.top = "";
+    body.style.left = "";
+    // Retorna a janela de visualização à posição original de scroll
+    window.scrollTo(scrollX, scrollY);
+  }
+
+  toggleMenuMobile.addEventListener("change", function () {
+    if (this.checked) {
+      body.classList.add("menu-open");
+      disableScroll();
+    } else {
+      body.classList.remove("menu-open");
+      enableScroll();
+    }
+  });
+
   mountScrollHandler();
   window.addEventListener("beforeunload", unmountScrollHandler);
 });
-
-/* -------------- */
-/* Bloquei scroll com menu aberto no mobile */
-/* -------------- */
-document.addEventListener("DOMContentLoaded", function () {
-  var toggleMenuMobile = document.getElementById("toggle-menuMobile");
-  toggleMenuMobile.addEventListener("change", function () {
-    if (this.checked) {
-      document.body.classList.add("menu-open");
-    } else {
-      document.body.classList.remove("menu-open");
-    }
-  });
-});
-
 /* -------------- */
 /* Archive tags de pesquisa */
 /* -------------- */

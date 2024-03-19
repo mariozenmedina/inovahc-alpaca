@@ -316,7 +316,10 @@
 @layer utilities {
   /*   Card / Card-Content */
   .card {
-    @apply w-full rounded-lg bg-white shadow-inovahc;
+    @apply w-full rounded-lg bg-white shadow-inovahc transition-all duration-300 ease-in-out;
+    &:hover {
+      @apply shadow-lg;
+    }
     figure {
       @apply h-auto  w-full rounded-t-lg;
       img {
@@ -369,7 +372,10 @@
   }
   /* Big Number */
   .big-number {
-    @apply flex flex-row items-center justify-center gap-4 rounded-lg px-4 py-3 shadow-inovahc md:flex-col md:gap-0;
+    @apply flex flex-row items-center justify-center gap-4 rounded-lg px-4 py-3 shadow-inovahc transition-all duration-300 ease-in-out md:flex-col md:gap-0;
+    &:hover {
+      @apply shadow-lg;
+    }
     figure {
       @apply mb-1;
     }
@@ -538,5 +544,12 @@ li .ms,
   @apply bg-[right_bottom] bg-no-repeat;
   @media (max-width: 600px) {
     background-image: none !important;
+  }
+}
+
+body {
+  &.scroll-lock {
+    @apply bg-red-800;
+    overflow: hidden;
   }
 }
