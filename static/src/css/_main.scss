@@ -163,7 +163,9 @@
   /* Icones / Botoes circulares / Small / White / Purple  */
   .btn-icon {
     @apply flex h-7 w-7 items-center  justify-center rounded-full bg-inovahc-green-800  fill-white text-xsmall font-bold  text-white transition duration-300 ease-in-out disabled:bg-inovahc-gray-400 disabled:opacity-20 disabled:hover:bg-inovahc-gray-400;
-
+    svg {
+      @apply -mt-[2px];
+    }
     &.active,
     &:hover {
       @apply bg-inovahc-green-500;
@@ -284,7 +286,7 @@
 @layer utilities {
   /*   Card / Card-Content */
   .card {
-    @apply w-fit rounded-lg bg-white shadow-inovahc;
+    @apply w-full rounded-lg bg-white shadow-inovahc;
     figure {
       @apply h-auto w-full rounded-t-lg;
       img {

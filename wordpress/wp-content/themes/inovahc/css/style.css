@@ -960,6 +960,9 @@ footer ul li:hover{
     /*  Icone White */
     /*  Icone Purple */
   }
+.btn-icon svg{
+  margin-top: -2px;
+}
 .btn-icon.active, .btn-icon:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(65 204 150 / var(--tw-bg-opacity));
@@ -1520,10 +1523,6 @@ footer ul li:hover{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(204 189 241 / var(--tw-bg-opacity)) !important;
 }
-.bg-red-600{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity)) !important;
-}
 .bg-transparent{
   background-color: transparent !important;
 }
@@ -1744,7 +1743,7 @@ footer ul li:hover{
 }
 /*   Card / Card-Content */
 .card{
-  width: fit-content;
+  width: 100%;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
