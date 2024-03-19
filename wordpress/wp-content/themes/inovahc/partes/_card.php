@@ -17,16 +17,27 @@
     }
 ?>
 <div class="card">
+
     <?php if($img): ?>
     <figure>
-        <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+        <a href="<?php the_permalink(); ?>" >
+            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+        </a>
+    </figure>
+    <?php else: ?>
+    <figure>
+        <a href="<?php the_permalink(); ?>">
+            <img src="<?php tu(); ?>/img/no-img.jpg" alt="Sem imagem">
+        </a>
     </figure>
     <?php endif; ?>
 
     <div class="card-content">
 
         <div class="card-header">
+            <a href="<?php the_permalink(); ?>" >
             <?php if($pTitulo): ?><div class="titulo"><?php echo $pTitulo; ?></div><?php endif; ?>
+            </a>
             <?php if($pData): ?><div class="data"><?php echo $pData; ?></div><?php endif; ?>
             <?php if($pExcerpt): ?><div class="texto"><?php echo $pExcerpt; ?></div><?php endif; ?>
         </div>
@@ -34,6 +45,7 @@
         <?php if(is_array($pBlocos)): foreach($pBlocos as $info): ?>
         <div class="card-info">
             <div class="representante">
+
                 <?php if($info['chapeu']): ?><div class="titulo"><?php echo $info['chapeu']; ?></div><?php endif; ?>
                 <?php if($info['texto']): ?><div class="nome"><?php echo $info['texto']; ?></div><?php endif; ?>
                 <?php if($info['botao']): ?>
