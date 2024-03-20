@@ -1,6 +1,6 @@
 <!-- Section Banner -->
-<section class="grudado">
-    <div class="container mx-auto px-6  pb-14 ">
+<section >
+    <div class="container mx-auto px-6  ">
         <div class="banner banner-<?php the_sub_field('cor'); ?>">
             <div class="banner-container">
                 <div class="figure-area">

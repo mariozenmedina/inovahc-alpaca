@@ -1,5 +1,5 @@
-<section class="bg-inovahc-blue-300 pt-12 grudado temicon">
-    <div class="container mx-auto px-6 mt-10 md:mt-0 bg-inovahc-blue-300 relative">
+<section class="bg-inovahc-blue-300 grudado temicon">
+    <div class="container mx-auto px-6 relative">
         <!--  Section Projetos premiados Header -->
         <div class="section-header flex flex-col justify-center">
             <figure>
@@ -25,6 +25,8 @@
 
         </div>
 
-        <button class="btn"><?php pll_e('carregar mais'); ?></button>
+        <div class=" pb-12">
+            <button class="btn"><?php pll_e('carregar mais'); ?></button>
+        </div>
     </div>
 </section>

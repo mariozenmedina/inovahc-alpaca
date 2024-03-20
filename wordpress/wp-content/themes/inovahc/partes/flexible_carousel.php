@@ -1,6 +1,6 @@
 <!-- Section Notícias -->
 <section class="bg-inovahc-<?php the_sub_field('cor'); ?> temicon">
-    <div class="container mx-auto px-6 pt-20 md:pt-12 relative ">
+    <div class="container mx-auto px-6 relative ">
         <!--  Section Notícias Header -->
         <div class="section-header">
             <figure>

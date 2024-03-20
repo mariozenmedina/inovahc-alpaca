@@ -1,5 +1,5 @@
 <!-- Filter -->
-<section class="py-2 md:py-14">
+<section >
     <div class="container w-full grid grid-cols-1 md:grid-cols-4 mx-auto p-6  flex-col  gap-3 md:gap-6">
 
         <?php if($post_type != 'eventos'): ?>

@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="flex gap-8 flex-col  md:mb-20">
+        <div class="flex gap-8 flex-col ">
             <?php $botao = get_sub_field('botao'); if($botao['url']){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
         </div>
     </div>

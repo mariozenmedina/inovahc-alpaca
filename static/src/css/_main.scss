@@ -392,7 +392,7 @@
     position: relative;
   }
   section.temicon::before {
-    @apply absolute left-0 top-0 block h-40 w-full bg-white content-[""] md:h-28;
+    @apply absolute left-0 top-0 block h-24 w-full bg-white content-[""] md:h-14;
   }
   .section-header {
     @apply relative  mx-auto my-6 flex  flex-col md:my-0 md:w-full md:items-center md:justify-center;

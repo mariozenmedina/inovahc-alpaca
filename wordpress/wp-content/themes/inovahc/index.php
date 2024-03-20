@@ -35,7 +35,7 @@
 
         <!-- Section Projetos  -->
         <section>
-            <div class="container mx-auto px-6 py-16 flex flex-col">
+            <div class="container mx-auto px-6 flex flex-col">
 
                 <!-- Mostragem dos Projetos -->
                 <div class="grid md:grid-cols-4 gap-5">

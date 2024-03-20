@@ -6,7 +6,7 @@
             </figure>
             <div class="title text-inovahc-green-800 mt-3"><?php the_sub_field('titulo'); ?></div>
             <div class="md:text-center md:w-1/2 mb-8"><?php the_sub_field('texto'); ?></div>
-            <div>
+            <div class=" pb-12">
                 <?php
                     $botoes = get_sub_field('botoes'); foreach($botoes as $b){
                         $botao = $b['botao'];

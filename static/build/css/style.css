@@ -1733,9 +1733,6 @@ footer .destaque{
 .pt-16{
   padding-top: 4rem !important;
 }
-.pt-20{
-  padding-top: 5rem !important;
-}
 .pt-28{
   padding-top: 7rem !important;
 }
@@ -2107,7 +2104,7 @@ section.temicon::before{
   left: 0px;
   top: 0px;
   display: block;
-  height: 10rem;
+  height: 6rem;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2116,7 +2113,7 @@ section.temicon::before{
 }
 @media (min-width: 768px){
   section.temicon::before{
-    height: 7rem;
+    height: 3.5rem;
   }
 }
 .section-header{
@@ -3164,9 +3161,6 @@ body.scroll-lock{
   }
   .md\:pb-8{
     padding-bottom: 2rem !important;
-  }
-  .md\:pt-12{
-    padding-top: 3rem !important;
   }
   .md\:text-left{
     text-align: left !important;
