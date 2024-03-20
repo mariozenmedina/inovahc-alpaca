@@ -1,5 +1,5 @@
 <!-- Section Hero -->
-<section id="hero-slide" class="splide" aria-label="Hero Home">
+<section id="hero-slide" class="splide grudado" aria-label="Hero Home">
     <div class="splide__track">
         <ul class="splide__list">
             <?php $capas = get_sub_field('lista_de_capas'); foreach($capas as $c): ?>

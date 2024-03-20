@@ -1,6 +1,6 @@
 <!-- Section Notícias -->
-<section class="bg-inovahc-<?php the_sub_field('cor'); ?> grudado">
-    <div class="container mx-auto px-6  relative ">
+<section class="bg-inovahc-<?php the_sub_field('cor'); ?> temicon">
+    <div class="container mx-auto px-6 pt-20 md:pt-12 relative ">
         <!--  Section Notícias Header -->
         <div class="section-header">
             <figure>
@@ -54,7 +54,7 @@
 
     <!-- Section Notícias Rodape -->
     <?php $botao = get_sub_field('botao'); if($botao): ?>
-    <div class="container mx-auto px-6 ">
+    <div class="container mx-auto px-6 pb-12">
         <?php include(get_stylesheet_directory() . '/partes/_botao.php'); ?>
     </div>
     <?php endif; ?>

@@ -1733,6 +1733,9 @@ footer .destaque{
 .pt-16{
   padding-top: 4rem !important;
 }
+.pt-20{
+  padding-top: 5rem !important;
+}
 .pt-28{
   padding-top: 7rem !important;
 }
@@ -2096,6 +2099,26 @@ footer .destaque{
   color: rgb(96 75 140 / var(--tw-text-opacity));
 }
 /* Section Header */
+section.temicon {
+    position: relative !important;
+  }
+section.temicon::before{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  height: 10rem;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+}
+@media (min-width: 768px){
+  section.temicon::before{
+    height: 7rem;
+  }
+}
 .section-header{
   position: relative;
   margin-left: auto;
@@ -2114,15 +2137,9 @@ footer .destaque{
     justify-content: center;
   }
 }
-.section-header figure{
-  position: absolute;
-  top: -8rem;
-}
-@media (min-width: 768px){
-  .section-header figure{
-    top: -7rem;
+.section-header figure {
+    /*   @apply relative ; */
   }
-}
 .section-header .title{
   margin-bottom: 1rem;
   margin-top: 0.5rem;
@@ -3147,6 +3164,9 @@ body.scroll-lock{
   }
   .md\:pb-8{
     padding-bottom: 2rem !important;
+  }
+  .md\:pt-12{
+    padding-top: 3rem !important;
   }
   .md\:text-left{
     text-align: left !important;

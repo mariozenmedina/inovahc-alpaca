@@ -1,4 +1,4 @@
-<section class="bg-inovahc-green-50 grudado">
+<section class="bg-inovahc-green-50 grudado temicon">
     <div class="container mx-auto px-6  relative ">
         <div class="section-header flex flex-col justify-center">
             <figure>

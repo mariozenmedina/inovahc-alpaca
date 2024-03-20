@@ -388,10 +388,16 @@
     }
   }
   /* Section Header */
+  section.temicon {
+    position: relative;
+  }
+  section.temicon::before {
+    @apply absolute left-0 top-0 block h-40 w-full bg-white content-[""] md:h-28;
+  }
   .section-header {
-    @apply relative  mx-auto my-6 flex flex-col  md:my-0 md:w-full md:items-center md:justify-center;
+    @apply relative  mx-auto my-6 flex  flex-col md:my-0 md:w-full md:items-center md:justify-center;
     figure {
-      @apply absolute -top-32  md:-top-28;
+      /*   @apply relative ; */
     }
     .title {
       @apply mb-4 mt-2 flex w-full font-poppins  text-3xl text-inovahc-purple-800 md:w-full md:justify-center md:text-center;
