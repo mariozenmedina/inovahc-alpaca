@@ -491,11 +491,21 @@ body.menu-open {
     overflow: hidden;
   }
 main{
-  padding-top: 72px; /* Altura da navbar */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 72px;
 }
-/*   main {
-    @apply flex flex-col gap-16  md:gap-28;
-  } */
+@media (min-width: 768px){
+  main{
+    gap: 7rem;
+  }
+}
+main { /* Altura da navbar */
+  }
+main section:not(.grudado):last-child{
+  padding-bottom: 7rem;
+}
 /*  Formatação das paginas Single */
 article h2,
   article h3,

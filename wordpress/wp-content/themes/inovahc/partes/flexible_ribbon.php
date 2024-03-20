@@ -1,5 +1,5 @@
-<section class="bg-inovahc-green-50">
-    <div class="container mx-auto px-6 py-12 relative ">
+<section class="bg-inovahc-green-50 grudado">
+    <div class="container mx-auto px-6  relative ">
         <div class="section-header flex flex-col justify-center">
             <figure>
             <img src="<?php $img = get_sub_field('icone'); echo $img['url']; ?>" alt="<?php echo $img['alt'] ?>">

@@ -1,6 +1,6 @@
 <!-- Section Projetos inovaHC  -->
 <section>
-    <div class="container mx-auto px-6 py-16 flex gap-5 flex-col ">
+    <div class="container mx-auto px-6 flex gap-5 flex-col ">
         <?php $linhas = get_sub_field('linha'); foreach($linhas as $linha): ?>
         <div class="flex flex-col md:flex-row gap-5">
             <?php foreach($linha['bloco'] as $bloco): ?>

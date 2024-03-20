@@ -1,5 +1,5 @@
 <section>
-    <div class="container mx-auto px-6 py-12 relative ">
+    <div class="container mx-auto px-6  relative ">
         <div class="flex gap-8 flex-col items-center md:justify-center">
             <div class=" md:text-center md:w-1/2">
                 <div class="text-inovahc-green-800 text-3xl font-poppins mb-2"><?php the_sub_field('titulo'); ?></div>

@@ -16,11 +16,12 @@
   }
 
   main {
-    @apply pt-[72px]; /* Altura da navbar */
+    @apply flex flex-col gap-16 pt-[72px] md:gap-28; /* Altura da navbar */
   }
-  /*   main {
-    @apply flex flex-col gap-16  md:gap-28;
-  } */
+  main section:not(.grudado):last-child {
+    @apply pb-28;
+  }
+
   /*  Formatação das paginas Single */
   article {
     h2,

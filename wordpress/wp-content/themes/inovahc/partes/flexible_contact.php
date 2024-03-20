@@ -1,6 +1,6 @@
 <!-- Section Contato  -->
 <section>
-    <div class="container mx-auto px-6 md:py-16 flex gap-5 flex-col md:flex-row ">
+    <div class="container mx-auto px-6 flex gap-5 flex-col md:flex-row ">
         <div class="flex flex-col justify-between md:w-1/2">
             <div class="flex flex-col gap-6">
                 <div class="flex gap-2">
