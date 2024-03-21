@@ -10,7 +10,7 @@
 
         <!--  Grid de Perfil - Equipe -->
         <div class=" grid sm:grid-cols-2 md:grid-cols-3 gap-5">
-            <?php $colabs = get_sub_field('colaboradores'); foreach($colabs as $c): ?>
+            <?php $colabs = get_sub_field('colaboradores'); if($colabs && is_array($colabs)): foreach($colabs as $c): ?>
             <!-- Card Perfil -->
             <div class="flex gap-4">
                 <figure class="w-[90px] max-h-[90px]">
@@ -31,12 +31,12 @@
                     </div>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <?php endforeach; endif; ?>
 
         </div>
 
         <div class="flex gap-8 flex-col ">
-            <?php $botao = get_sub_field('botao'); if($botao['url']){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
+            <?php $botao = get_sub_field('botao'); if($botao){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?>
         </div>
     </div>
 </section>
