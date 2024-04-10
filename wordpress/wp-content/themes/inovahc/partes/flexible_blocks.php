@@ -8,7 +8,7 @@
                 <div class=" md:text-center flex md:justify-center md:items-center flex-col"> 
                     <div class="mb-2 md:mb-4 text-inovahc-purple-800 text-3xl font-poppins "><?php echo $bloco['titulo']; ?></div>
                     <div class="mb-4 md:w-8/12 "><?php echo $bloco['texto']; ?></div>
-                    <div><?php $botao = $bloco['botao']; if($botao['url']){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?></div>
+                    <div><?php $botao = $bloco['botao']; if($botao){ include(get_stylesheet_directory() . '/partes/_botao.php'); } ?></div>
                 </div>
             </div>
             <?php endforeach; ?>

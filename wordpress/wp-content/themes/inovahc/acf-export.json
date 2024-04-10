@@ -24,7 +24,8 @@
                 "return_format": "object",
                 "field_type": "checkbox",
                 "multiple": 0,
-                "allow_null": 0
+                "allow_null": 0,
+                "bidirectional_target": []
             }
         ],
         "location": [
@@ -949,7 +950,7 @@
                         "display": "block",
                         "sub_fields": [
                             {
-                                "key": "field_65f80a2788ab6",
+                                "key": "field_65f80a8bff95f",
                                 "label": "Cor do Carrossel",
                                 "name": "cor",
                                 "aria-label": "",
@@ -1119,7 +1120,8 @@
                                 "return_format": "id",
                                 "field_type": "select",
                                 "allow_null": 0,
-                                "multiple": 0
+                                "multiple": 0,
+                                "bidirectional_target": []
                             },
                             {
                                 "key": "field_65eef58e9e4e6",
@@ -1538,6 +1540,7 @@
                                         "collapsed": "",
                                         "button_label": "Adicionar Bloco",
                                         "rows_per_page": 20,
+                                        "parent_repeater": "field_65f6520f3a551",
                                         "sub_fields": [
                                             {
                                                 "key": "field_65f6522b3a553",
@@ -1598,8 +1601,7 @@
                                                 "return_format": "array",
                                                 "parent_repeater": "field_65f6521a3a552"
                                             }
-                                        ],
-                                        "parent_repeater": "field_65f6520f3a551"
+                                        ]
                                     }
                                 ]
                             }
@@ -1998,7 +2000,7 @@
                     "layout_65f671e087b48": {
                         "key": "layout_65f671e087b48",
                         "name": "figura_responsiva",
-                        "label": "Figura e Botão",
+                        "label": "Título, Texto, Figura e Botão",
                         "display": "block",
                         "sub_fields": [
                             {
@@ -2277,12 +2279,309 @@
                         "min": "",
                         "max": ""
                     },
-                    "layout_65f803233f571": {
-                        "key": "layout_65f803233f571",
+                    "layout_65f803bfd8a95": {
+                        "key": "layout_65f803bfd8a95",
                         "name": "contato",
                         "label": "Contato",
                         "display": "block",
-                        "sub_fields": [],
+                        "sub_fields": [
+                            {
+                                "key": "field_66154b286b4c5",
+                                "label": "Informações",
+                                "name": "info",
+                                "aria-label": "",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "table",
+                                "min": 0,
+                                "max": 0,
+                                "collapsed": "",
+                                "button_label": "Adicionar Informação",
+                                "rows_per_page": 20,
+                                "sub_fields": [
+                                    {
+                                        "key": "field_66154d166b4c8",
+                                        "label": "Ícone",
+                                        "name": "icone",
+                                        "aria-label": "",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": "",
+                                        "preview_size": "medium",
+                                        "parent_repeater": "field_66154b286b4c5"
+                                    },
+                                    {
+                                        "key": "field_66154e216b4ca",
+                                        "label": "Item",
+                                        "name": "item",
+                                        "aria-label": "",
+                                        "type": "flexible_content",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "layouts": {
+                                            "layout_66154e2b1c502": {
+                                                "key": "layout_66154e2b1c502",
+                                                "name": "texto",
+                                                "label": "Texto",
+                                                "display": "block",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_66154e436b4cb",
+                                                        "label": "Texto",
+                                                        "name": "texto",
+                                                        "aria-label": "",
+                                                        "type": "text",
+                                                        "instructions": "",
+                                                        "required": 0,
+                                                        "conditional_logic": 0,
+                                                        "wrapper": {
+                                                            "width": "",
+                                                            "class": "",
+                                                            "id": ""
+                                                        },
+                                                        "default_value": "",
+                                                        "maxlength": "",
+                                                        "placeholder": "",
+                                                        "prepend": "",
+                                                        "append": ""
+                                                    }
+                                                ],
+                                                "min": "",
+                                                "max": ""
+                                            },
+                                            "layout_66154e4c6b4cc": {
+                                                "key": "layout_66154e4c6b4cc",
+                                                "name": "link",
+                                                "label": "Link",
+                                                "display": "block",
+                                                "sub_fields": [
+                                                    {
+                                                        "key": "field_66154e526b4ce",
+                                                        "label": "Link",
+                                                        "name": "link",
+                                                        "aria-label": "",
+                                                        "type": "link",
+                                                        "instructions": "",
+                                                        "required": 0,
+                                                        "conditional_logic": 0,
+                                                        "wrapper": {
+                                                            "width": "",
+                                                            "class": "",
+                                                            "id": ""
+                                                        },
+                                                        "return_format": "array"
+                                                    }
+                                                ],
+                                                "min": "",
+                                                "max": ""
+                                            }
+                                        },
+                                        "min": "",
+                                        "max": "",
+                                        "button_label": "Adicionar linha",
+                                        "parent_repeater": "field_66154b286b4c5"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_66168fb41edc5",
+                                "label": "Iframe do Maps",
+                                "name": "maps",
+                                "aria-label": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "maxlength": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_661693ec75b60",
+                                "label": "Acompanhe as Mídias Sociais",
+                                "name": "midias_sociais",
+                                "aria-label": "",
+                                "type": "flexible_content",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layouts": {
+                                    "layout_661693fb8466b": {
+                                        "key": "layout_661693fb8466b",
+                                        "name": "x",
+                                        "label": "Twitter",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_6616943675b61",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "aria-label": "",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    "layout_6616944775b62": {
+                                        "key": "layout_6616944775b62",
+                                        "name": "linkedin",
+                                        "label": "Linkedin",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_6616944775b63",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "aria-label": "",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    "layout_6616945775b64": {
+                                        "key": "layout_6616945775b64",
+                                        "name": "flicker",
+                                        "label": "Flicker",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_6616945775b65",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "aria-label": "",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    "layout_6616946975b66": {
+                                        "key": "layout_6616946975b66",
+                                        "name": "facebook",
+                                        "label": "Facebook",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_6616946975b67",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "aria-label": "",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": ""
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    },
+                                    "layout_6616947575b68": {
+                                        "key": "layout_6616947575b68",
+                                        "name": "instagram",
+                                        "label": "Instagram",
+                                        "display": "block",
+                                        "sub_fields": [
+                                            {
+                                                "key": "field_6616947575b69",
+                                                "label": "Link",
+                                                "name": "link",
+                                                "aria-label": "",
+                                                "type": "link",
+                                                "instructions": "",
+                                                "required": 0,
+                                                "conditional_logic": 0,
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "return_format": "array"
+                                            }
+                                        ],
+                                        "min": "",
+                                        "max": ""
+                                    }
+                                },
+                                "min": "",
+                                "max": "",
+                                "button_label": "Adicionar linha"
+                            }
+                        ],
                         "min": "",
                         "max": ""
                     }
