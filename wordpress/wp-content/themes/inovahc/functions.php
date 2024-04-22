@@ -136,6 +136,9 @@ function add_string_translations() {
         pll_register_string( 'filtro_tecnologia', 'filtrar por tecnologia', 'Filtro' );
         pll_register_string( 'filtro_instituicao', 'filtrar por instituição', 'Filtro' );
         pll_register_string( 'filtro_fechar', 'fechar', 'Filtro' );
+        pll_register_string( 'info_contato_tel', '+55 (11) XXXX XXXX', 'Contato' );
+        pll_register_string( 'info_contato_email', 'email@hc.fm.usp.br', 'Contato' );
+        pll_register_string( 'info_contato_endereco', 'Prédio do CEAC, 4º e 5º andares,<br /> Complexo do HCFMUSP <br />Cerqueira César, São Paulo - SP<br /> CEP. 05401-000', 'Contato' );
     }
 }
 add_action( 'after_setup_theme', 'add_string_translations' );

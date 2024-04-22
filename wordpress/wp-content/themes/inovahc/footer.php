@@ -40,9 +40,9 @@
                     <?php svg('logo-inovahc-footer', 77, 77, "fill-white"); ?>
                 </div>
                 <div class="flex flex-col gap-3 text-white">
-                    <div class="link link-white small">+55 (11) XXXX XXXX</div>
-                    <div class="link link-white small">email@hc.fm.usp.br</div>
-                    <div class="text-xs">Prédio do CEAC, 4º e 5º andares,<br /> Complexo do HCFMUSP <br />Cerqueira César, São Paulo - SP<br /> CEP. 05401-000</div>
+                    <div class="link link-white small"><?php pll_e('+55 (11) XXXX XXXX'); ?></div>
+                    <div class="link link-white small"><?php pll_e('email@hc.fm.usp.br'); ?></div>
+                    <div class="text-xs"><?php pll_e('Prédio do CEAC, 4º e 5º andares,<br /> Complexo do HCFMUSP <br />Cerqueira César, São Paulo - SP<br /> CEP. 05401-000'); ?></div>
                 </div>
             </div>
 
