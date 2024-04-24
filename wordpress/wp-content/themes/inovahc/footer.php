@@ -71,7 +71,7 @@
 
                     <?php wp_nav_menu(
                         array(
-                            'theme_location' => 'principal',
+                            'theme_location' => 'rodape',
                             'menu_class' => 'flex text-xs gap-y-1 flex-wrap gap-x-2 text-white font-semibold',
                             'container' => 'ul',
                         )

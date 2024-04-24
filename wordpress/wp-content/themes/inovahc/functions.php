@@ -16,6 +16,7 @@ function url(){
 
 //MENUS
 register_nav_menu( 'principal', 'Menu Principal' );
+register_nav_menu( 'rodape', 'Menu Rodapé' );
 register_nav_menu( 'ms', 'Mídias Sociais' );
 
 //REGISTRANDO POST TYPE
