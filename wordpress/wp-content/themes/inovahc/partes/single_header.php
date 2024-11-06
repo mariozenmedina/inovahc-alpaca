@@ -1,7 +1,7 @@
 <!-- Header Default -->
 <div class="post-header">
     <div class="post-header-categoria">
-        <?php switch (get_post_type(get_the_ID())) {
+        <?php $post_type = get_post_type(get_the_ID()); switch ($post_type) {
             case 'eventos':
                 echo pll_e('Evento');
                 break;
@@ -18,7 +18,7 @@
         <?php the_title(); ?>
     </h1>
     <div class="post-header-info">
-        <?php echo get_the_date('d/m/Y'); ?>
+        <?php echo $post_type == "eventos" ? '' : get_the_date('d/m/Y'); ?>
         <?php $autoria = get_field('autoria');
         if ($autoria) {
             echo ' | ' . $autoria;

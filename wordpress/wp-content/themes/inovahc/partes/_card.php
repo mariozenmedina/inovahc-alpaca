@@ -38,7 +38,7 @@
             <a href="<?php the_permalink(); ?>" >
             <?php if($pTitulo): ?><div class="titulo"><?php echo $pTitulo; ?></div><?php endif; ?>
             </a>
-            <?php if($pData): ?><div class="data"><?php echo $pData; ?></div><?php endif; ?>
+            <?php if($pData && $post_type !== "eventos"): ?><div class="data"><?php echo $pData; ?></div><?php endif; ?>
             <?php if($pExcerpt): ?><div class="texto"><?php echo $pExcerpt; ?></div><?php endif; ?>
         </div>
 
