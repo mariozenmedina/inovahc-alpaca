@@ -8,9 +8,11 @@
             <div class="md:text-center md:w-1/2 mb-8"><?php the_sub_field('texto'); ?></div>
             <div class=" pb-12">
                 <?php
-                    $botoes = get_sub_field('botoes'); foreach($botoes as $b){
-                        $botao = $b['botao'];
-                        include(get_stylesheet_directory() . '/partes/_botao.php');
+                    $botoes = get_sub_field('botoes'); if(is_array($botoes)){
+                        foreach($botoes as $b){
+                            $botao = $b['botao'];
+                            include(get_stylesheet_directory() . '/partes/_botao.php');
+                        }
                     }
                 ?>
             </div>
