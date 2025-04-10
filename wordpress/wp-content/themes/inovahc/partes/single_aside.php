@@ -24,7 +24,7 @@
         <!--  Grid de Relacionados -->
         <div class=" grid grid-cols-1  gap-5 pb-8">
             <!-- Card -->
-            <?php $query = new WP_Query( array( 'post_type'=>$post_type, 'orderby' => 'rand', 'post__not_in' => array( get_the_id() ) ) ); ?>
+            <?php $query = new WP_Query( array( 'post_type'=>$post_type, 'posts_per_page' => 3, 'orderby' => 'rand', 'post__not_in' => array( get_the_id() ) ) ); ?>
             <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
             <?php include(get_stylesheet_directory() . '/partes/_card_relacionado.php'); ?>
             <?php endwhile; endif; wp_reset_postdata(); ?>

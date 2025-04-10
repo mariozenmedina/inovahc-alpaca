@@ -12,7 +12,7 @@
     <?php endif; ?>
     <div class="flex flex-col md:w-2/3">
         <div class="text-inovahc-purple-800 mb-1 font-semibold"><?php the_title(); ?></div>
-        <div class="text-xs mb-2"><?php echo $post_type != 'eventos' ? get_the_date('d/m/Y') : ''; ?></div>
+        <div class="text-xs mb-2"><?php echo $post_type != 'eventos' ? the_field('pre_autoria') : ''; ?></div>
         <div>
             <a href="<?php the_permalink(); ?>" class="link"><?php pll_e('leia mais'); ?></a>
         </div>

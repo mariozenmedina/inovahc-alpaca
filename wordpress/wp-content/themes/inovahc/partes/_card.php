@@ -2,7 +2,8 @@
     if($post_type){
         $img = get_field('imagem');
         $pTitulo = get_the_title();
-        $pData = get_the_date('d/m/Y');
+        //$pData = get_the_date('d/m/Y');
+        $pData = get_field('pre_autoria');
         $pExcerpt = get_the_excerpt();
         $pBlocos = array();
         $pTags = get_the_tags();
